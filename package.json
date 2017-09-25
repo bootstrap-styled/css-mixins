@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-styled-mixins",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Library bootstrap-styled-mixins description",
   "main": "lib/index.js",
   "jsnext:main": "dist/bootstrap-styled-mixins.es.js",
@@ -135,7 +135,7 @@
     "sinon": "^2.3.2",
     "toctoc": "^0.2.3",
     "color": "^2.0.0",
-    "bootstrap-styled-utils": "git+ssh://git@module.kopaxgroup.com:20024/styled-components/bootstrap-styled-utils.git#v0.0.4"
+    "bootstrap-styled-utils": "git+ssh://git@module.kopaxgroup.com:20024/styled-components/bootstrap-styled-utils.git#v0.0.6"
   },
   "jest": {
     "roots": [
@@ -176,6 +176,6 @@
   ],
   "peerDependencies": {
     "color": "^2.0.0",
-    "bootstrap-styled-utils": "git+ssh://git@module.kopaxgroup.com:20024/styled-components/bootstrap-styled-utils.git#v0.0.4"
+    "bootstrap-styled-utils": "git+ssh://git@module.kopaxgroup.com:20024/styled-components/bootstrap-styled-utils.git#v0.0.6"
   }
 }
