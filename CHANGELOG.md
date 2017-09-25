@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.0.4] - 2017-09-25
+
+- Upgraded to `bootstrap-styled-utils` from 0.0.2 to 0.0.4.
+
 ## [0.0.3] - 2017-09-25
 
 - Removed `math-utils` dependency.
