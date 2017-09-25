@@ -1960,7 +1960,12 @@ var defaultProps$35 = {
   '$transition-fade': 'opacity .15s linear',
   '$transition-collapse': 'height .35s ease'
 };
-
+function getTransitionUtilities() {
+  var enableTransitions = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : defaultProps$35['$enable-transitions'];
+  var transitionFade = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : defaultProps$35['$transition-fade'];
+  var transitionCollapse = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : defaultProps$35['$transition-collapse'];
+  return '\n    ' + fade(enableTransitions, transitionFade) + '\n    ' + collapse(enableTransitions, transitionCollapse) + '\n  ';
+}
 function fade() {
   var enableTransitions = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : defaultProps$35['$enable-transitions'];
   var transitionFade = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : defaultProps$35['$transition-fade'];
@@ -1982,6 +1987,7 @@ function getReactTransition(enableTransition, transition$$1) {
 }
 var transition$2 = {
   defaultProps: defaultProps$35,
+  getTransitionUtilities: getTransitionUtilities,
   getReactTransition: getReactTransition,
   fade: fade,
   collapse: collapse
