@@ -16,13 +16,13 @@ const mode = prod ? 'production' : 'development';
 console.log(`Creating ${mode} bundle...`);
 
 const output = prod ?
-[
-  { file: `dist/${pkg.name}.min.js`, format: 'umd' },
-] :
-[
-  { file: `dist/${pkg.name}.js`, format: 'umd' },
-  { file: `dist/${pkg.name}.es.js`, format: 'es' },
-];
+  [
+    { file: `dist/${pkg.name}.min.js`, format: 'umd' },
+  ] :
+  [
+    { file: `dist/${pkg.name}.js`, format: 'umd' },
+    { file: `dist/${pkg.name}.es.js`, format: 'es' },
+  ];
 
 const plugins = [
   // Unlike Webpack and Browserify, Rollup doesn't automatically shim Node
@@ -66,5 +66,5 @@ export default {
   exports: 'named',
   output,
   plugins,
-  globals: { color: 'color', 'math-utils': 'math-utils', 'bootstrap-styled-utils': 'bootstrap-styled-utils' },
+  globals: { color: 'color', 'bootstrap-styled-utils': 'bootstrap-styled-utils' },
 };

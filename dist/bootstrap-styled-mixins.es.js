@@ -1,6 +1,5 @@
 import color from 'color';
-import { unitUtils } from 'math-utils';
-import { parseTransition } from 'bootstrap-styled-utils';
+import { parseTransition, unitUtils } from 'bootstrap-styled-utils';
 
 function tabFocus() {
   return "\n    /* WebKit-specific. Other browsers will keep their default outline style. */\n    /* (Initially tried to also force default via 'outline: initial', */\n    /* but that seems to erroneously remove the outline in Firefox altogether.) */\n    outline: 5px auto -webkit-focus-ring-color;\n    outline-offset: -2px;\n  ";
@@ -2041,5 +2040,4 @@ var visibility$1 = {
 };
 
 export { a$1 as aMixins, alert as alertMixins, backgroundVariant as backgroundVariantMixins, badge as badgeMixins, borderRadius$1 as radius, boxShadow, breakpoints as bp, buttons as buttonsMixins, buttonGroup$1 as buttonGroupMixins, cards as cardsMixins, clearfix, ifElse, ifThen, float as floatMixins, forms as formsMixins, customForms$1 as customformsMixins, gradients as gradient, grid as gridMixins, gridFramework as gridFrameworkMixins, hover, listGroup as listGroupMixins, lists as listsMixins, nav$1 as navMixins, navbar$1 as navbarMixins, navDivider$1 as navDividerMixins, navbarAlign as navbarAlignMixins, navbarToggleable$1 as navbarToggleableMixins, paginations as paginationsMixins, progress as progressMixins, resetFilter$1 as resetFilterMixins, resetText$1 as resetTextMixins, resize as resizeMixins, srOnly, srOnlyFocusable, size, tabFocus$1 as tabFocusMixins, tableRow as tableRowMixins, textEmphasis as textEmphasisMixins, textHide$1 as textHideMixins, textTruncate, transition, typography$1 as typographyMixins, variables as variablesMixins, invisible, align as alignUtils, background as backgroundUtils, borders as bordersUtils, clearfix$2 as clearfixUtils, cursor as cursorUtils, display as displayUtils, flex as flexUtils, float$1 as floatUtils, position as positionUtils, reboot as rebootUtils, screenreaders as screenreadersUtils, sizing as sizingUtils, spacing as spacingUtils, transition$2 as transitionUtils, text as textUtils, visibility$1 as visibilityUtils };
-export { unitUtils } from 'math-utils';
 //# sourceMappingURL=bootstrap-styled-mixins.es.js.map

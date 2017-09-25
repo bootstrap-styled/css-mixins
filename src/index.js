@@ -58,4 +58,3 @@ export { default as spacingUtils } from './utilities/spacing';
 export { default as transitionUtils } from './utilities/transition';
 export { default as textUtils } from './utilities/text';
 export { default as visibilityUtils } from './utilities/visibility';
-export { unitUtils } from 'math-utils';
