@@ -14,7 +14,9 @@ bootstrap-styled-mixins npm package.
 
 ## Table of Contents
 
+  - [Installation](#installation)
   - [Changelog](#changelog)
+  - [Mixins and Utilities](#mixins-and-utilities)
   - [Reminders](#reminders)
   - [Quick start](#quick-start)
   - [Release](#release)
