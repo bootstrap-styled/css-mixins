@@ -77,6 +77,7 @@ export function getReactTransition(enableTransition, transition) {
 
 export default {
   defaultProps,
+  getTransitionUtilities,
   getReactTransition,
   fade,
   collapse,
