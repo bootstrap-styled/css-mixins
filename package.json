@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-styled-mixins",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Library bootstrap-styled-mixins description",
   "main": "lib/index.js",
   "jsnext:main": "dist/bootstrap-styled-mixins.es.js",
