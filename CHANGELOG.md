@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.0.3] - 2017-09-25
+
+- Removed `math-utils` dependency.
+- Upgraded to `bootstrap-styled-utils` from 0.0.1 to 0.0.2.
+
 ## [0.0.2] - 2017-09-25
 
 - Added `getTransitionUtilities` to default exports in transition utility.

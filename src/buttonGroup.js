@@ -1,4 +1,4 @@
-import { unitUtils } from 'math-utils';
+import { unitUtils } from 'bootstrap-styled-utils';
 import { hover } from './hover';
 import { borderRightRadius, borderLeftRadius, borderBottomRadius, borderTopRadius } from './border-radius';
 import { boxShadow } from './box-shadow';
