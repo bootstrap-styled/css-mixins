@@ -133,8 +133,7 @@
     "rollup-plugin-visualizer": "^0.3.1",
     "rollup-watch": "^4.3.1",
     "sinon": "^2.3.2",
-    "toctoc": "^0.2.3",
-    "bootstrap-styled-utils": "git+ssh://git@module.kopaxgroup.com:20024/styled-components/bootstrap-styled-utils.git#v0.0.6"
+    "toctoc": "^0.2.3"
   },
   "jest": {
     "roots": [
@@ -173,10 +172,8 @@
     "build:readme",
     "lint-staged"
   ],
-  "peerDependencies": {
-    "bootstrap-styled-utils": "git+ssh://git@module.kopaxgroup.com:20024/styled-components/bootstrap-styled-utils.git#v0.0.6"
-  },
   "dependencies": {
+    "bootstrap-styled-utils": "git+ssh://git@module.kopaxgroup.com:20024/styled-components/bootstrap-styled-utils.git#v1.0.0",
     "color": "^1.0.3"
   }
 }
