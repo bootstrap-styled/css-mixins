@@ -42,8 +42,8 @@
     "lib",
     "src"
   ],
-  "keywords": "",
-  "author": "",
+  "keywords": "bootstrap-styled",
+  "author": "Dimitri Kopriwa <dimitri.kopriwa@kopaxgroup.com>",
   "license": "UNLICENSED",
   "eslintConfig": {
     "parser": "babel-eslint",

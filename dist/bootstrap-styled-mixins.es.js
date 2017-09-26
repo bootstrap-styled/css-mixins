@@ -66,6 +66,10 @@ var a$1 = {
   a: a
 };
 
+function unwrapExports (x) {
+	return x && x.__esModule ? x['default'] : x;
+}
+
 function createCommonjsModule(fn, module) {
 	return module = { exports: {} }, fn(module, module.exports), module.exports;
 }
@@ -1692,138 +1696,15 @@ function boxShadow() {
   return '';
 }
 
-var parseTransition = function parseTransition(transitions) {
-  if (!transitions) {
-    return [];
-  }
-  var sample = transitions;
-  var RULE_DELIMITER = ',';
-  var PROPERTY_DELIMITER = ' ';
-  var MS_UNIT = 'ms';
-  var TMP_STR = 'TMP';
-  var DEFAULT_PROPERTY = 'all';
-  var DEFAULT_DURATION = 0;
-  var DEFAULT_TIMING_FUNCTION = 'ease';
-  var DEFAULT_DELAY = 0;
-  var BEZIER_REGEX = /cubic-bezier\([^\)]+\)/gi;
-  var cubicBezierList = transitions.match(BEZIER_REGEX);
-  if (cubicBezierList) {
-    sample = sample.replace(BEZIER_REGEX, TMP_STR);
-  }
-  var transitionList = sample.split(RULE_DELIMITER).map(function (rule) {
-    var properties = rule.trim().split(PROPERTY_DELIMITER);
-    return {
-      property: properties[0] || DEFAULT_PROPERTY,
-      duration: properties[1] && !(properties[1].indexOf(MS_UNIT) !== -1) ? parseFloat(properties[1]) * 1000 : parseFloat(properties[1]) || DEFAULT_DURATION,
-      timingFunction: properties[2] && properties[2] !== TMP_STR ? properties[2] : cubicBezierList ? cubicBezierList.shift() : DEFAULT_TIMING_FUNCTION,
-      delay: properties[3] && !(properties[3].indexOf(MS_UNIT) !== -1) ? parseFloat(properties[3]) * 1000 : parseFloat(properties[3]) || DEFAULT_DELAY
-    };
-  });
-  return transitionList;
-};
-var asyncGenerator = function () {
-  function AwaitValue(value) {
-    this.value = value;
-  }
-  function AsyncGenerator(gen) {
-    var front, back;
-    function send(key, arg) {
-      return new Promise(function (resolve, reject) {
-        var request = {
-          key: key,
-          arg: arg,
-          resolve: resolve,
-          reject: reject,
-          next: null
-        };
-        if (back) {
-          back = back.next = request;
-        } else {
-          front = back = request;
-          resume(key, arg);
-        }
-      });
-    }
-    function resume(key, arg) {
-      try {
-        var result = gen[key](arg);
-        var value = result.value;
-        if (value instanceof AwaitValue) {
-          Promise.resolve(value.value).then(function (arg) {
-            resume("next", arg);
-          }, function (arg) {
-            resume("throw", arg);
-          });
-        } else {
-          settle(result.done ? "return" : "normal", result.value);
-        }
-      } catch (err) {
-        settle("throw", err);
-      }
-    }
-    function settle(type, value) {
-      switch (type) {
-        case "return":
-          front.resolve({
-            value: value,
-            done: true
-          });
-          break;
-        case "throw":
-          front.reject(value);
-          break;
-        default:
-          front.resolve({
-            value: value,
-            done: false
-          });
-          break;
-      }
-      front = front.next;
-      if (front) {
-        resume(front.key, front.arg);
-      } else {
-        back = null;
-      }
-    }
-    this._invoke = send;
-    if (typeof gen.return !== "function") {
-      this.return = undefined;
-    }
-  }
-  if (typeof Symbol === "function" && Symbol.asyncIterator) {
-    AsyncGenerator.prototype[Symbol.asyncIterator] = function () {
-      return this;
-    };
-  }
-  AsyncGenerator.prototype.next = function (arg) {
-    return this._invoke("next", arg);
-  };
-  AsyncGenerator.prototype.throw = function (arg) {
-    return this._invoke("throw", arg);
-  };
-  AsyncGenerator.prototype.return = function (arg) {
-    return this._invoke("return", arg);
-  };
-  return {
-    wrap: function (fn) {
-      return function () {
-        return new AsyncGenerator(fn.apply(this, arguments));
-      };
-    },
-    await: function (value) {
-      return new AwaitValue(value);
-    }
-  };
-}();
-var classCallCheck = function (instance, Constructor) {
-  if (!(instance instanceof Constructor)) {
-    throw new TypeError("Cannot call a class as a function");
-  }
-};
+var unitUtils = createCommonjsModule(function (module, exports) {
+'use strict';
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 var UnitUtils = function UnitUtils() {
   var _this = this;
-  classCallCheck(this, UnitUtils);
+  _classCallCheck(this, UnitUtils);
   this.UNIT = {
     EM: 'em',
     REM: 'rem',
@@ -1878,7 +1759,10 @@ var UnitUtils = function UnitUtils() {
     return '' + Math.floor(value / total * 100 * Math.pow(10, decimal)) / Math.pow(10, decimal) + _this.UNIT.PERCENT;
   };
 };
-var index = new UnitUtils();
+exports.default = new UnitUtils();
+module.exports = exports['default'];
+});
+var unitUtils$1 = unwrapExports(unitUtils);
 
 var defaultProps$6 = {
   '$grid-breakpoints': {
@@ -1907,8 +1791,8 @@ function breakpointMax(name) {
   var breakpoints = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : defaultProps$6['$grid-breakpoints'];
   var next = breakpointNext(name, breakpoints);
   if (next) {
-    var min = index.rmUnit(breakpointMin(next, breakpoints), index.UNIT.PX);
-    return (min - 1).toString() + index.UNIT.PX;
+    var min = unitUtils$1.rmUnit(breakpointMin(next, breakpoints), unitUtils$1.UNIT.PX);
+    return (min - 1).toString() + unitUtils$1.UNIT.PX;
   }
   return null;
 }
@@ -2144,7 +2028,7 @@ function buttonGroup() {
   var $btnPaddingYSm = arguments.length > 10 && arguments[10] !== undefined ? arguments[10] : defaultProps$9['$btn-padding-y-sm'];
   var $fontSizeSm = arguments.length > 11 && arguments[11] !== undefined ? arguments[11] : defaultProps$9['$font-size-sm'];
   var $btnBorderRadiusSm = arguments.length > 12 && arguments[12] !== undefined ? arguments[12] : defaultProps$9['$btn-border-radius-sm'];
-  return ' \n    /*  Make the div behave like a button */\n    &.btn-group,\n    & .btn-group,\n    &.btn-group-vertical,\n    & .btn-group-vertical {\n      position: relative;\n      display: inline-flex;\n      vertical-align: middle; /* match .btn alignment given font-size hack above */\n    \n      > .btn {\n        position: relative;\n        flex: 0 1 auto;\n        margin-bottom: 0;\n    \n        /* Bring the "active" button to the front */\n        &:focus,\n        &:active,\n        &.active {\n          z-index: 2;\n        }\n        ' + hover('\n          z-index: 2;\n        ') + '\n      }\n    }\n    \n    /*  Prevent double borders when buttons are next to each other */\n    &.btn-group,\n    & .btn-group {\n      .btn + .btn,\n      .btn + .btn-group,\n      .btn-group + .btn,\n      .btn-group + .btn-group {\n        margin-left: -' + $inputBtnBorderWidth + ';\n      }\n    }\n    \n    /* Optional: Group multiple button groups together for a toolbar */\n    &.btn-toolbar,\n    & .btn-toolbar {\n      display: flex;\n      flex-wrap: wrap;\n      justify-content: flex-start;\n    \n      .input-group {\n        width: auto;\n      }\n    }\n     \n    &.btn-group,\n    & .btn-group {\n      > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {\n        border-radius: 0;\n      }\n    }\n    \n    /* Set corners individual because sometimes a single button can be in a .btn-group and we need :first-child and :last-child to both match */\n    &.btn-group,\n    & .btn-group {\n      > .btn:first-child {\n        margin-left: 0;\n    \n        &:not(:last-child):not(.dropdown-toggle) {\n          ' + borderRightRadius($enableRounded, '0') + '\n        }\n      }\n    }\n    /* Need .dropdown-toggle since :last-child does not apply given a .dropdown-menu immediately after it */\n    &.btn-group > .btn:last-child:not(:first-child),\n    & .btn-group > .btn:last-child:not(:first-child),\n    &.btn-group > .dropdown-toggle:not(:first-child),\n    & .btn-group > .dropdown-toggle:not(:first-child) {\n      ' + borderLeftRadius($enableRounded, '0') + '\n    }\n    \n    /* Custom edits for including btn-groups within btn-groups (useful for including dropdown buttons within a btn-group) */\n    &.btn-group > .btn-group,\n    & .btn-group > .btn-group {\n      float: left;\n    }\n    &.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn,\n    & .btn-group > .btn-group:not(:first-child):not(:last-child) > .btn {\n      border-radius: 0;\n    }\n    &.btn-group > .btn-group:first-child:not(:last-child),\n    & .btn-group > .btn-group:first-child:not(:last-child) {\n      > .btn:last-child,\n      > .dropdown-toggle {\n        ' + borderRightRadius($enableRounded, '0') + '\n      }\n    }\n    &.btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child,\n    & .btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child {\n      ' + borderLeftRadius($enableRounded, '0') + '\n    }\n    \n    /* On active and open, do not show outline */\n    &.btn-group .dropdown-toggle:active,\n    & .btn-group .dropdown-toggle:active,\n    &.btn-group.open .dropdown-toggle,\n    & .btn-group.open .dropdown-toggle {\n      outline: 0;\n    }\n    \n    \n    /* \n    Sizing Remix the default button sizing classes into new ones for easier manipulation.\n    */\n    \n    &.btn-group-sm > .btn,\n    & .btn-group-sm > .btn { \n      ' + buttonSize($enableRounded, $btnPaddingYSm, $btnPaddingXSm, $fontSizeSm, $btnBorderRadiusSm) + '\n    }\n    &.btn-group-lg > .btn,\n    & .btn-group-lg > .btn {\n      ' + buttonSize($enableRounded, $btnPaddingYLg, $btnPaddingXLg, $fontSizeLg, $btnBorderRadiusLg) + '\n    }\n    \n    /*\n     Split button dropdowns\n    */\n    \n    & .btn + .dropdown-toggle-split {\n      padding-right: ' + index.math.multiply($btnPaddingX, 0.75) + ';\n      padding-left: ' + index.math.multiply($btnPaddingX, 0.75) + ';\n    \n      &::after {\n        margin-left: 0;\n      }\n    }\n    \n    & .btn-sm + .dropdown-toggle-split {\n      padding-right: ' + index.math.multiply($btnPaddingXSm, 0.75) + ';\n      padding-left: ' + index.math.multiply($btnPaddingXSm, 0.75) + ';\n    }\n    \n    & .btn-lg + .dropdown-toggle-split {\n      padding-right: ' + index.math.multiply($btnPaddingXLg, 0.75) + ';\n      padding-left: ' + index.math.multiply($btnPaddingXLg, 0.75) + ';\n    }\n    \n    \n    /* The clickable button for toggling the menu */\n    /* Remove the gradient and set the same inset shadow as the :active state */\n    &.btn-group.open .dropdown-toggle {\n      ' + boxShadow($enableShadows, $btnActiveBoxShadow) + '\n    \n      /* Show no shadow for .btn-link since it has no other button styles. */\n      &.btn-link {\n        ' + boxShadow($enableShadows, 'none') + '\n      }\n    }\n\n    /*\n     Vertical button groups\n    */\n    \n    &.btn-group-vertical,\n    & .btn-group-vertical {\n      display: inline-flex;\n      flex-direction: column;\n      align-items: flex-start;\n      justify-content: center;\n    \n      .btn,\n      .btn-group {\n        width: 100%;\n      }\n      \n      > .btn + .btn,\n      > .btn + .btn-group,\n      > .btn-group + .btn,\n      > .btn-group + .btn-group {\n        margin-top: -' + $inputBtnBorderWidth + ';\n        margin-left: 0;\n      }\n    }\n    \n    &.btn-group-vertical > .btn,\n    & .btn-group-vertical > .btn {\n      &:not(:first-child):not(:last-child) {\n        border-radius: 0;\n      }\n      &:first-child:not(:last-child) {\n        ' + borderBottomRadius($enableRounded, '0') + '\n      }\n      &:last-child:not(:first-child) {\n        ' + borderTopRadius($enableRounded, '0') + '\n      }\n    }\n    \n    &.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn,\n    & .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn {\n      border-radius: 0;\n    }\n    \n    &.btn-group-vertical > .btn-group:first-child:not(:last-child),\n    & .btn-group-vertical > .btn-group:first-child:not(:last-child) {\n      > .btn:last-child,\n      > .dropdown-toggle {\n        ' + borderBottomRadius($enableRounded, '0') + '      \n      }\n    }\n    &.btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child,\n    & .btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child {\n      ' + borderTopRadius($enableRounded, '0') + '\n    }\n    \n    &.btn-group {\n      > .btn,\n      > .btn-group > .btn {\n        input[type="radio"],\n        input[type="checkbox"] {\n          position: absolute;\n          clip: rect(0,0,0,0);\n          pointer-events: none;\n        }\n      }\n    }\n  ';
+  return ' \n    /*  Make the div behave like a button */\n    &.btn-group,\n    & .btn-group,\n    &.btn-group-vertical,\n    & .btn-group-vertical {\n      position: relative;\n      display: inline-flex;\n      vertical-align: middle; /* match .btn alignment given font-size hack above */\n    \n      > .btn {\n        position: relative;\n        flex: 0 1 auto;\n        margin-bottom: 0;\n    \n        /* Bring the "active" button to the front */\n        &:focus,\n        &:active,\n        &.active {\n          z-index: 2;\n        }\n        ' + hover('\n          z-index: 2;\n        ') + '\n      }\n    }\n    \n    /*  Prevent double borders when buttons are next to each other */\n    &.btn-group,\n    & .btn-group {\n      .btn + .btn,\n      .btn + .btn-group,\n      .btn-group + .btn,\n      .btn-group + .btn-group {\n        margin-left: -' + $inputBtnBorderWidth + ';\n      }\n    }\n    \n    /* Optional: Group multiple button groups together for a toolbar */\n    &.btn-toolbar,\n    & .btn-toolbar {\n      display: flex;\n      flex-wrap: wrap;\n      justify-content: flex-start;\n    \n      .input-group {\n        width: auto;\n      }\n    }\n     \n    &.btn-group,\n    & .btn-group {\n      > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {\n        border-radius: 0;\n      }\n    }\n    \n    /* Set corners individual because sometimes a single button can be in a .btn-group and we need :first-child and :last-child to both match */\n    &.btn-group,\n    & .btn-group {\n      > .btn:first-child {\n        margin-left: 0;\n    \n        &:not(:last-child):not(.dropdown-toggle) {\n          ' + borderRightRadius($enableRounded, '0') + '\n        }\n      }\n    }\n    /* Need .dropdown-toggle since :last-child does not apply given a .dropdown-menu immediately after it */\n    &.btn-group > .btn:last-child:not(:first-child),\n    & .btn-group > .btn:last-child:not(:first-child),\n    &.btn-group > .dropdown-toggle:not(:first-child),\n    & .btn-group > .dropdown-toggle:not(:first-child) {\n      ' + borderLeftRadius($enableRounded, '0') + '\n    }\n    \n    /* Custom edits for including btn-groups within btn-groups (useful for including dropdown buttons within a btn-group) */\n    &.btn-group > .btn-group,\n    & .btn-group > .btn-group {\n      float: left;\n    }\n    &.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn,\n    & .btn-group > .btn-group:not(:first-child):not(:last-child) > .btn {\n      border-radius: 0;\n    }\n    &.btn-group > .btn-group:first-child:not(:last-child),\n    & .btn-group > .btn-group:first-child:not(:last-child) {\n      > .btn:last-child,\n      > .dropdown-toggle {\n        ' + borderRightRadius($enableRounded, '0') + '\n      }\n    }\n    &.btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child,\n    & .btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child {\n      ' + borderLeftRadius($enableRounded, '0') + '\n    }\n    \n    /* On active and open, do not show outline */\n    &.btn-group .dropdown-toggle:active,\n    & .btn-group .dropdown-toggle:active,\n    &.btn-group.open .dropdown-toggle,\n    & .btn-group.open .dropdown-toggle {\n      outline: 0;\n    }\n    \n    \n    /* \n    Sizing Remix the default button sizing classes into new ones for easier manipulation.\n    */\n    \n    &.btn-group-sm > .btn,\n    & .btn-group-sm > .btn { \n      ' + buttonSize($enableRounded, $btnPaddingYSm, $btnPaddingXSm, $fontSizeSm, $btnBorderRadiusSm) + '\n    }\n    &.btn-group-lg > .btn,\n    & .btn-group-lg > .btn {\n      ' + buttonSize($enableRounded, $btnPaddingYLg, $btnPaddingXLg, $fontSizeLg, $btnBorderRadiusLg) + '\n    }\n    \n    /*\n     Split button dropdowns\n    */\n    \n    & .btn + .dropdown-toggle-split {\n      padding-right: ' + unitUtils$1.math.multiply($btnPaddingX, 0.75) + ';\n      padding-left: ' + unitUtils$1.math.multiply($btnPaddingX, 0.75) + ';\n    \n      &::after {\n        margin-left: 0;\n      }\n    }\n    \n    & .btn-sm + .dropdown-toggle-split {\n      padding-right: ' + unitUtils$1.math.multiply($btnPaddingXSm, 0.75) + ';\n      padding-left: ' + unitUtils$1.math.multiply($btnPaddingXSm, 0.75) + ';\n    }\n    \n    & .btn-lg + .dropdown-toggle-split {\n      padding-right: ' + unitUtils$1.math.multiply($btnPaddingXLg, 0.75) + ';\n      padding-left: ' + unitUtils$1.math.multiply($btnPaddingXLg, 0.75) + ';\n    }\n    \n    \n    /* The clickable button for toggling the menu */\n    /* Remove the gradient and set the same inset shadow as the :active state */\n    &.btn-group.open .dropdown-toggle {\n      ' + boxShadow($enableShadows, $btnActiveBoxShadow) + '\n    \n      /* Show no shadow for .btn-link since it has no other button styles. */\n      &.btn-link {\n        ' + boxShadow($enableShadows, 'none') + '\n      }\n    }\n\n    /*\n     Vertical button groups\n    */\n    \n    &.btn-group-vertical,\n    & .btn-group-vertical {\n      display: inline-flex;\n      flex-direction: column;\n      align-items: flex-start;\n      justify-content: center;\n    \n      .btn,\n      .btn-group {\n        width: 100%;\n      }\n      \n      > .btn + .btn,\n      > .btn + .btn-group,\n      > .btn-group + .btn,\n      > .btn-group + .btn-group {\n        margin-top: -' + $inputBtnBorderWidth + ';\n        margin-left: 0;\n      }\n    }\n    \n    &.btn-group-vertical > .btn,\n    & .btn-group-vertical > .btn {\n      &:not(:first-child):not(:last-child) {\n        border-radius: 0;\n      }\n      &:first-child:not(:last-child) {\n        ' + borderBottomRadius($enableRounded, '0') + '\n      }\n      &:last-child:not(:first-child) {\n        ' + borderTopRadius($enableRounded, '0') + '\n      }\n    }\n    \n    &.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn,\n    & .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn {\n      border-radius: 0;\n    }\n    \n    &.btn-group-vertical > .btn-group:first-child:not(:last-child),\n    & .btn-group-vertical > .btn-group:first-child:not(:last-child) {\n      > .btn:last-child,\n      > .dropdown-toggle {\n        ' + borderBottomRadius($enableRounded, '0') + '      \n      }\n    }\n    &.btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child,\n    & .btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child {\n      ' + borderTopRadius($enableRounded, '0') + '\n    }\n    \n    &.btn-group {\n      > .btn,\n      > .btn-group > .btn {\n        input[type="radio"],\n        input[type="checkbox"] {\n          position: absolute;\n          clip: rect(0,0,0,0);\n          pointer-events: none;\n        }\n      }\n    }\n  ';
 }
 var buttonGroup$1 = {
   defaultProps: defaultProps$9,
@@ -2470,9 +2354,9 @@ function customForms() {
   Object.keys($customFileText['button-label']).forEach(function ($lang) {
     customFileControlAfterList.push('\n      &:lang(' + $lang + ')::before {\n        content: "' + $customFileText['button-label'][$lang] + '";\n      }\n    ');
   });
-  var selectBorderWidth = index.math.multiply($borderWidth, 2);
-  var customSelectPaddingRight = index.math.addition($customSelectPaddingY, $customSelectIndicatorPadding);
-  var lineHeightBaseMinusCustomControlIndicatorSize = index.math.subtract($lineHeightBase, $customControlIndicatorSize);
+  var selectBorderWidth = unitUtils$1.math.multiply($borderWidth, 2);
+  var customSelectPaddingRight = unitUtils$1.math.addition($customSelectPaddingY, $customSelectIndicatorPadding);
+  var lineHeightBaseMinusCustomControlIndicatorSize = unitUtils$1.math.subtract($lineHeightBase, $customControlIndicatorSize);
   return '\n    /* Embedded icons from Open Iconic. */\n    /* Released under MIT and copyright 2014 Waybury. */\n    /* https://useiconic.com/open */\n    \n    \n    /* Checkboxes and radios */\n    /* Base class takes care of all the key behavioral aspects. */\n    \n    & .custom-control {\n      position: relative;\n      display: inline-flex;\n      min-height: calc(1rem * ' + $lineHeightBase + ');\n      padding-left: ' + $customControlGutter + ';\n      margin-right: ' + $customControlSpacerX + ';\n    }\n    \n    & .custom-control-input {\n      position: absolute;\n      z-index: -1; /* Put the input behind the label so it does not overlay text */\n      opacity: 0;\n    \n      &:checked ~ .custom-control-indicator {\n        color: ' + $customControlCheckedIndicatorColor + ';\n        background-color: ' + $customControlCheckedIndicatorBg + ';\n        ' + boxShadow($enableShadows, $customControlCheckedIndicatorBoxShadow) + '\n      }\n    \n      &:focus ~ .custom-control-indicator {\n        /* the mixin is not used here to make sure there is feedback */\n        box-shadow: ' + $customControlFocusIndicatorBoxShadow + ';\n      }\n    \n      &:active ~ .custom-control-indicator {\n        color: ' + $customControlActiveIndicatorColor + ';\n        background-color: ' + $customControlActiveIndicatorBg + ';\n        ' + boxShadow($enableShadows, $customControlActiveIndicatorBoxShadow) + '\n      }\n    \n      &:disabled {\n        ~ .custom-control-indicator {\n          cursor: ' + $customControlDisabledCursor + ';\n          background-color: ' + $customControlDisabledIndicatorBg + ';\n        }\n    \n        ~ .custom-control-description {\n          color: ' + $customControlDisabledDescriptionColor + ';\n          cursor: ' + $customControlDisabledCursor + ';\n        }\n      }\n    }\n    \n    /* Custom indicator */\n    /* Generates a shadow element to create our makeshift checkbox/radio background. */\n    \n    & .custom-control-indicator {\n      position: absolute;\n      top: calc(' + lineHeightBaseMinusCustomControlIndicatorSize + ' / 2);\n      left: 0;\n      display: block;\n      width: ' + $customControlIndicatorSize + ';\n      height: ' + $customControlIndicatorSize + ';\n      pointer-events: none;\n      user-select: none;\n      background-color: ' + $customControlIndicatorBg + ';\n      background-repeat: no-repeat;\n      background-position: center center;\n      background-size: ' + $customControlIndicatorBgSize + ';\n      ' + boxShadow($enableShadows, $customControlIndicatorBoxShadow) + '\n    }\n    \n    /* Checkboxes */\n    /* Tweak just a few things for checkboxes.  */\n    \n    & .custom-checkbox {\n      & .custom-control-indicator {\n        ' + borderRadius($enableRounded, $customCheckboxRadius) + '\n      }\n    \n      & .custom-control-input:checked ~ .custom-control-indicator {\n        background-image: ' + $customCheckboxCheckedIcon + ';\n      }\n    \n      & .custom-control-input.indeterminate ~ .custom-control-indicator {\n        background-color: ' + $customCheckboxIndeterminateBg + ';\n        background-image: ' + $customCheckboxIndeterminateIcon + ';\n        ' + boxShadow($enableShadows, $customCheckboxIndeterminateBoxShadow) + '\n      }\n    }\n    \n    /* Radios */\n    /* Tweak just a few things for radios. */\n    \n    & .custom-radio {\n      & .custom-control-indicator {\n        border-radius: ' + $customRadioRadius + ';\n      }\n    \n      & .custom-control-input:checked ~ .custom-control-indicator {\n        background-image: ' + $customRadioCheckedIcon + ';\n      }\n    }\n    \n    \n    /* Layout options */\n    /* By default radios and checkboxes are inline-block with no additional spacing */\n    /* set. Use these optional classes to tweak the layout. */\n    \n    & .custom-controls-stacked {\n      display: flex;\n      flex-direction: column;\n    \n      & .custom-control {\n        margin-bottom: ' + $customControlSpacerY + ';\n    \n        + & .custom-control {\n          margin-left: 0;\n        }\n      }\n    }\n    \n    \n    /* Select */\n    /* Replaces the browser default select with a custom one, mostly pulled from */\n    /* http://primercss.io. */\n    \n    & .custom-select {\n      display: inline-block;\n      max-width: 100%;\n      height: calc(' + $inputHeight + ' + ' + selectBorderWidth + ');\n      padding: ' + $customSelectPaddingY + ' ' + customSelectPaddingRight + ' ' + $customSelectPaddingY + ' ' + $customSelectPaddingX + ';\n      line-height: ' + $customSelectLineHeight + ';\n      color: ' + $customSelectColor + ';\n      vertical-align: middle;\n      background: ' + $customSelectBg + ' ' + $customSelectIndicator + ' no-repeat right ' + $customSelectPaddingX + ' center;\n      background-size: ' + $customSelectBgSize + ';\n      border: ' + $customSelectBorderWidth + ' solid ' + $customSelectBorderColor + ';\n      ' + borderRadius($enableRounded, $customSelectBorderRadius) + '\n      /* Use vendor prefixes as appearance is not part of the CSS spec.  */\n      -moz-appearance: none;\n      -webkit-appearance: none;\n    \n      &:focus {\n        border-color: ' + $customSelectFocusBorderColor + ';\n        outline: none;\n        ' + boxShadow($enableShadows, $customSelectFocusBoxShadow) + '\n    \n        ::-ms-value {\n          /* For visual consistency with other platforms/browsers, */\n          /* supress the default white text on blue background highlight given to */\n          /* the selected option text when the (still closed) <select> receives focus */\n          /* in IE and (under certain conditions) Edge. */\n          /* See https://github.com/twbs/bootstrap/issues/19398. */\n          color: ' + $inputColor + ';\n          background-color: ' + $inputBg + ';\n        }\n      }\n    \n      &:disabled {\n        color: ' + $customSelectDisabledColor + ';\n        cursor: ' + $cursorDisabled + ';\n        background-color: ' + $customSelectDisabledBg + ';\n      }\n    \n      /* Hides the default caret in IE11 */\n      ::-ms-expand {\n        opacity: 0;\n      }\n    }\n    \n    & .custom-select-sm {\n      padding-top: ' + $customSelectPaddingY + ';\n      padding-bottom: ' + $customSelectPaddingY + ';\n      font-size: ' + $customSelectSmFontSize + ';\n    \n      /* &:not([multiple]) { */\n      /*   height: 26px; */\n      /*   min-height: 26px; */\n      /* } */\n    }\n    \n    \n    /* File */\n    /* Custom file input. */\n    \n    & .custom-file {\n      position: relative;\n      display: inline-block;\n      max-width: 100%;\n      height: ' + $customFileHeight + ';\n      margin-bottom: 0;\n    }\n    \n    & .custom-file-input {\n      min-width: ' + $customFileWidth + ';\n      max-width: 100%;\n      height: ' + $customFileHeight + ';\n      margin: 0;\n      opacity: 0;\n    \n      &:focus ~ .custom-file-control {\n        ' + boxShadow($enableShadows, $customFileFocusBoxShadow) + '\n      }\n    }\n    \n    & .custom-file-control {\n      position: absolute;\n      top: 0;\n      right: 0;\n      left: 0;\n      z-index: 5;\n      height: ' + $customFileHeight + ';\n      padding: ' + $customFilePaddingX + ' ' + $customFilePaddingY + ';\n      line-height: ' + $customFileLineHeight + ';\n      color: ' + $customFileColor + ';\n      pointer-events: none;\n      user-select: none;\n      background-color: ' + $customFileBg + ';\n      border: ' + $customFileBorderWidth + ' solid ' + $customFileBorderColor + ';\n      ' + borderRadius($enableRounded, $customFileBorderRadius) + '\n      ' + boxShadow($enableShadows, $customFileBoxShadow) + '\n      \n      ' + customFileControlBeforeList.join('\n') + '\n    \n      &::before {\n        position: absolute;\n        top: ' + $customFileBorderWidth + ';\n        right: ' + $customFileBorderWidth + ';\n        bottom: ' + $customFileBorderWidth + ';\n        z-index: 6;\n        display: block;\n        height: ' + $customFileHeight + ';\n        padding: ' + $customFilePaddingX + ' ' + $customFilePaddingY + ';\n        line-height: ' + $customFileLineHeight + ';\n        color: ' + $customFileButtonColor + ';\n        background-color: ' + $customFileButtonBg + ';\n        border: ' + $customFileBorderWidth + ' solid ' + $customFileBorderColor + ';\n        ' + borderRadius(0, $enableRounded, $customFileBorderRadius, $customFileBorderRadius, 0) + '\n      }\n\n      ' + customFileControlAfterList.join('\n') + '\n    }\n  ';
 }
 var customForms$1 = {
@@ -2564,7 +2448,7 @@ function makeContainer() {
     var columns = [];
     Object.keys(gridGutterWidths).forEach(function (breakpoint) {
       var gutter = gridGutterWidths[breakpoint];
-      var column = mediaBreakpointUp(breakpoint, gutter, '\n        padding-right: ' + index.rmUnit(gutter) / 2 + index.detectUnit(gutter) + ';\n        padding-left:  ' + index.rmUnit(gutter) / 2 + index.detectUnit(gutter) + ';\n      ');
+      var column = mediaBreakpointUp(breakpoint, gutter, '\n        padding-right: ' + unitUtils$1.rmUnit(gutter) / 2 + unitUtils$1.detectUnit(gutter) + ';\n        padding-left:  ' + unitUtils$1.rmUnit(gutter) / 2 + unitUtils$1.detectUnit(gutter) + ';\n      ');
       columns.push(column);
     });
     return '\n      position: relative;\n      margin-left: auto;\n      margin-right: auto;    \n      ' + columns.join('\n') + '\n    ';
@@ -2591,7 +2475,7 @@ function makeGutters() {
   var gutterList = [];
   Object.keys(gridGutterWidths).forEach(function (breakpoint) {
     var gutterValue = gridGutterWidths[breakpoint];
-    gutterValue = '' + index.rmUnit(gutterValue) / 2 + index.detectUnit(gutterValue);
+    gutterValue = '' + unitUtils$1.rmUnit(gutterValue) / 2 + unitUtils$1.detectUnit(gutterValue);
     var gutter = mediaBreakpointUp(breakpoint, breakpoints$$1, '\n      padding-right: ' + gutterValue + ';\n      padding-left:  ' + gutterValue + ';\n    ');
     gutterList.push(gutter);
   });
@@ -2604,7 +2488,7 @@ function makeRow() {
     var rowList = [];
     Object.keys(gridGutterWidths).forEach(function (breakpoint) {
       var gutter = gridGutterWidths[breakpoint];
-      gutter = '' + index.rmUnit(gutter) / -2 + index.detectUnit(gutter);
+      gutter = '' + unitUtils$1.rmUnit(gutter) / -2 + unitUtils$1.detectUnit(gutter);
       var row = '\n        margin-right: ' + gutter + ';\n        margin-left:  ' + gutter + ';\n      ';
       rowList.push(row);
     });
@@ -2617,7 +2501,7 @@ function makeColReady() {
   var colReadyList = [];
   Object.keys(gridGutterWidths).forEach(function (breakpoint) {
     var gutter = gridGutterWidths[breakpoint];
-    gutter = '' + index.rmUnit(gutter) / 2 + index.detectUnit(gutter);
+    gutter = '' + unitUtils$1.rmUnit(gutter) / 2 + unitUtils$1.detectUnit(gutter);
     var colReady = mediaBreakpointUp(breakpoint, gridGutterWidths, '\n      padding-right: ' + gutter + ';\n      padding-left:  ' + gutter + ';\n    ');
     colReadyList.push(colReady);
   });
@@ -2625,19 +2509,19 @@ function makeColReady() {
 }
 function makeCol(size) {
   var columns = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : defaultProps$13['$grid-columns'];
-  return '\n    flex: 0 0 ' + index.toPercent(size, columns) + ';\n    /* Add a \'max-width\' to ensure content within each column does not blow out */\n    /* the width of the column. Applies to IE10+ and Firefox. Chrome and Safari */\n    /* do not appear to require this. */\n    max-width: ' + index.toPercent(size, columns) + ';\n  ';
+  return '\n    flex: 0 0 ' + unitUtils$1.toPercent(size, columns) + ';\n    /* Add a \'max-width\' to ensure content within each column does not blow out */\n    /* the width of the column. Applies to IE10+ and Firefox. Chrome and Safari */\n    /* do not appear to require this. */\n    max-width: ' + unitUtils$1.toPercent(size, columns) + ';\n  ';
 }
 function makeColOffset($size) {
   var columns = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : defaultProps$13['$grid-columns'];
-  return '\n    margin-left: ' + index.toPercent($size, columns) + ';\n  ';
+  return '\n    margin-left: ' + unitUtils$1.toPercent($size, columns) + ';\n  ';
 }
 function makeColPush(size) {
   var columns = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : defaultProps$13['$grid-columns'];
-  return '\n    left: ' + (size > 0 ? index.toPercent(size, columns) : 'auto') + ';\n  ';
+  return '\n    left: ' + (size > 0 ? unitUtils$1.toPercent(size, columns) : 'auto') + ';\n  ';
 }
 function makeColPull(size) {
   var columns = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : defaultProps$13['$grid-columns'];
-  return '\n    right: ' + (size > 0 ? index.toPercent(size, columns) : 'auto') + ';\n  ';
+  return '\n    right: ' + (size > 0 ? unitUtils$1.toPercent(size, columns) : 'auto') + ';\n  ';
 }
 function makeColModifier(type, size, columns) {
   var TYPE = {
@@ -2929,7 +2813,7 @@ var defaultProps$20 = {
 function navDivider() {
   var spacerY = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : defaultProps$20['$spacer-y'];
   var dividerColor = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '#e5e5e5';
-  var marginY = '' + index.rmUnit(spacerY, index.UNIT.REM) / 2 + index.UNIT.REM;
+  var marginY = '' + unitUtils$1.rmUnit(spacerY, unitUtils$1.UNIT.REM) / 2 + unitUtils$1.UNIT.REM;
   return '\n    height: 1px;\n    margin: calc(' + marginY + ' / 2) 0;\n    overflow: hidden;\n    background-color: ' + dividerColor + ';\n  ';
 }
 var navDivider$1 = {
@@ -2943,8 +2827,8 @@ var defaultProps$21 = {
 function navbarVerticalAlign() {
   var navbarHeight = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : defaultProps$21['$navbar-height'];
   var elementHeight = arguments[1];
-  var marginTop = '' + (index.rmUnit(navbarHeight, index.UNIT.PX) - index.rmUnit(elementHeight, index.UNIT.PX)) / 2 + index.UNIT.PX;
-  var marginBottom = '' + (index.rmUnit(navbarHeight, index.UNIT.PX) - index.rmUnit(elementHeight, index.UNIT.PX)) / 2 + index.UNIT.PX;
+  var marginTop = '' + (unitUtils$1.rmUnit(navbarHeight, unitUtils$1.UNIT.PX) - unitUtils$1.rmUnit(elementHeight, unitUtils$1.UNIT.PX)) / 2 + unitUtils$1.UNIT.PX;
+  var marginBottom = '' + (unitUtils$1.rmUnit(navbarHeight, unitUtils$1.UNIT.PX) - unitUtils$1.rmUnit(elementHeight, unitUtils$1.UNIT.PX)) / 2 + unitUtils$1.UNIT.PX;
   return '\n    margin-top: ' + marginTop + ';\n    margin-bottom: ' + marginBottom + ';  \n  ';
 }
 var navbarAlign = {
@@ -3162,12 +3046,12 @@ function assertAscending(map, mapName) {
   Object.keys(map).forEach(function (key) {
     var num = map[key];
     if (prevNum == null) {
-    } else if (!comparable(index.rmUnit(prevNum), index.rmUnit(num))) {
+    } else if (!comparable(unitUtils$1.rmUnit(prevNum), unitUtils$1.rmUnit(num))) {
       if (process.env.NODE !== 'test') {
         console.warn('Potentially invalid value for ' + mapName + ': This map must be in ascending order, but key \'' + key + '\' has value ' + num + ' whose unit makes it incomparable to ' + prevNum + ', the value of the previous key \'' + prevKey + '\' !');
       }
       asserted = false;
-    } else if (index.rmUnit(prevNum) >= index.rmUnit(num)) {
+    } else if (unitUtils$1.rmUnit(prevNum) >= unitUtils$1.rmUnit(num)) {
       if (process.env.NODE !== 'test') {
         console.warn('Invalid value for ' + mapName + ': This map must be in ascending order, but key \'' + key + '\' has value ' + num + ' which isn\'t greater than ' + prevNum + ', the value of the previous key \'' + prevKey + '\' !');
       }
@@ -3182,7 +3066,7 @@ function assertStartAtZero(map) {
   var values = Object.keys(map).map(function (key) {
     return map[key];
   });
-  var firstValue = index.rmUnit(values[0]);
+  var firstValue = unitUtils$1.rmUnit(values[0]);
   var asserted = true;
   if (firstValue !== 0) {
     if (process.env.NODE !== 'test') {
@@ -3660,6 +3544,45 @@ var spacing = {
   defaultProps: defaultProps$34,
   getSpacingUtilities: getSpacingUtilities
 };
+
+var parseTransition_1 = createCommonjsModule(function (module, exports) {
+'use strict';
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var parseTransition = function parseTransition(transitions) {
+  if (!transitions) {
+    return [];
+  }
+  var sample = transitions;
+  var RULE_DELIMITER = ',';
+  var PROPERTY_DELIMITER = ' ';
+  var MS_UNIT = 'ms';
+  var TMP_STR = 'TMP';
+  var DEFAULT_PROPERTY = 'all';
+  var DEFAULT_DURATION = 0;
+  var DEFAULT_TIMING_FUNCTION = 'ease';
+  var DEFAULT_DELAY = 0;
+  var BEZIER_REGEX = /cubic-bezier\([^\)]+\)/gi;
+  var cubicBezierList = transitions.match(BEZIER_REGEX);
+  if (cubicBezierList) {
+    sample = sample.replace(BEZIER_REGEX, TMP_STR);
+  }
+  var transitionList = sample.split(RULE_DELIMITER).map(function (rule) {
+    var properties = rule.trim().split(PROPERTY_DELIMITER);
+    return {
+      property: properties[0] || DEFAULT_PROPERTY,
+      duration: properties[1] && !(properties[1].indexOf(MS_UNIT) !== -1) ? parseFloat(properties[1]) * 1000 : parseFloat(properties[1]) || DEFAULT_DURATION,
+      timingFunction: properties[2] && properties[2] !== TMP_STR ? properties[2] : cubicBezierList ? cubicBezierList.shift() : DEFAULT_TIMING_FUNCTION,
+      delay: properties[3] && !(properties[3].indexOf(MS_UNIT) !== -1) ? parseFloat(properties[3]) * 1000 : parseFloat(properties[3]) || DEFAULT_DELAY
+    };
+  });
+  return transitionList;
+};
+exports.default = parseTransition;
+module.exports = exports['default'];
+});
+var parseTransition = unwrapExports(parseTransition_1);
 
 var defaultProps$35 = {
   '$enable-transitions': true,

@@ -1,4 +1,4 @@
-import { parseTransition } from 'bootstrap-styled-utils';
+import parseTransition from 'bootstrap-styled-utils/lib/parseTransition';
 import { transition as transitionMixin } from '../transition';
 
 export const defaultProps = {

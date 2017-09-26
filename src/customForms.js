@@ -1,4 +1,4 @@
-import { unitUtils } from 'bootstrap-styled-utils';
+import unitUtils from 'bootstrap-styled-utils/lib/unitUtils';
 import { boxShadow } from './box-shadow';
 import { borderRadius } from './border-radius';
 
