@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-styled-mixins",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Library bootstrap-styled-mixins description",
   "main": "lib/index.js",
   "jsnext:main": "dist/bootstrap-styled-mixins.es.js",
@@ -42,8 +42,8 @@
     "lib",
     "src"
   ],
-  "keywords": "",
-  "author": "",
+  "keywords": "bootstrap-styled",
+  "author": "Dimitri Kopriwa <dimitri.kopriwa@kopaxgroup.com>",
   "license": "UNLICENSED",
   "eslintConfig": {
     "parser": "babel-eslint",

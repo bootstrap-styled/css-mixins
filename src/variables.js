@@ -1,4 +1,4 @@
-import { unitUtils } from 'bootstrap-styled-utils';
+import unitUtils from 'bootstrap-styled-utils/lib/unitUtils';
 
 export function assertAscending(map, mapName) {
   let prevKey;

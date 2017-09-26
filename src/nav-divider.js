@@ -1,4 +1,4 @@
-import { unitUtils } from 'bootstrap-styled-utils';
+import unitUtils from 'bootstrap-styled-utils/lib/unitUtils';
 
 export const defaultProps = {
   '$spacer-y': '1rem',
