@@ -2,10 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.0] - 2017-09-26
+
+- Downgrade `color` to 1.0.3.
+
 ## [0.0.5] - 2017-09-25
 
 - Upgraded `bootstrap-styled-utils` from 0.0.4 to 0.0.6.
-
 
 ## [0.0.4] - 2017-09-25
 
