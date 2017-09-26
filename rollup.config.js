@@ -62,9 +62,9 @@ export default {
   input: 'src/index.js',
   sourcemap: true,
   name: pkg.name,
-  external: ['color', 'math-utils', 'bootstrap-styled-utils'],
+  external: [],
   exports: 'named',
   output,
   plugins,
-  globals: { color: 'color', 'bootstrap-styled-utils': 'bootstrap-styled-utils' },
+  globals: {},
 };
