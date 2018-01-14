@@ -40,13 +40,6 @@ hover.plainFocus = plainHoverFocus;
 hover.activeFocus = hoverFocusActive;
 
 var defaultProps = {
-  '$grid-breakpoints': {
-    xs: '0',
-    sm: '576px',
-    md: '768px',
-    lg: '992px',
-    xl: '1200px'
-  },
   '$link-color': '#0275d8',
   '$link-decoration': 'none',
   '$link-hover-color': '#014C8D',
