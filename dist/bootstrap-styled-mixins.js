@@ -66,7 +66,7 @@ var a$1 = {
 };
 
 function unwrapExports (x) {
-	return x && x.__esModule && Object.prototype.hasOwnProperty.call(x, 'default') ? x['default'] : x;
+	return x && x.__esModule ? x['default'] : x;
 }
 
 function createCommonjsModule(fn, module) {
@@ -1117,11 +1117,11 @@ convert.rgb.gray = function (rgb) {
 };
 });
 
+var models$1 = Object.keys(conversions);
 function buildGraph() {
 	var graph = {};
-	var models = Object.keys(conversions);
-	for (var len = models.length, i = 0; i < len; i++) {
-		graph[models[i]] = {
+	for (var len = models$1.length, i = 0; i < len; i++) {
+		graph[models$1[i]] = {
 			distance: -1,
 			parent: null
 		};
