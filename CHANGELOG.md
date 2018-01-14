@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.1] - 2018-xx-xx
+
+- Corrected mistaked in `defaultProps` of mixin `a`.
+
 ## [1.0.0] - 2017-09-26
 
 - Downgrade `color` to 1.0.3.

@@ -40,13 +40,6 @@ hover.plainFocus = plainHoverFocus;
 hover.activeFocus = hoverFocusActive;
 
 var defaultProps = {
-  '$grid-breakpoints': {
-    xs: '0',
-    sm: '576px',
-    md: '768px',
-    lg: '992px',
-    xl: '1200px'
-  },
   '$link-color': '#0275d8',
   '$link-decoration': 'none',
   '$link-hover-color': '#014C8D',
@@ -67,7 +60,7 @@ var a$1 = {
 };
 
 function unwrapExports (x) {
-	return x && x.__esModule ? x['default'] : x;
+	return x && x.__esModule && Object.prototype.hasOwnProperty.call(x, 'default') ? x['default'] : x;
 }
 
 function createCommonjsModule(fn, module) {
@@ -1118,11 +1111,11 @@ convert.rgb.gray = function (rgb) {
 };
 });
 
-var models$1 = Object.keys(conversions);
 function buildGraph() {
 	var graph = {};
-	for (var len = models$1.length, i = 0; i < len; i++) {
-		graph[models$1[i]] = {
+	var models = Object.keys(conversions);
+	for (var len = models.length, i = 0; i < len; i++) {
+		graph[models[i]] = {
 			distance: -1,
 			parent: null
 		};
