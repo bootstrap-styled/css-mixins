@@ -66,7 +66,7 @@ var a$1 = {
 };
 
 function unwrapExports (x) {
-	return x && x.__esModule && Object.prototype.hasOwnProperty.call(x, 'default') ? x['default'] : x;
+	return x && x.__esModule ? x['default'] : x;
 }
 
 function createCommonjsModule(fn, module) {
@@ -1117,11 +1117,11 @@ convert.rgb.gray = function (rgb) {
 };
 });
 
+var models$1 = Object.keys(conversions);
 function buildGraph() {
 	var graph = {};
-	var models = Object.keys(conversions);
-	for (var len = models.length, i = 0; i < len; i++) {
-		graph[models[i]] = {
+	for (var len = models$1.length, i = 0; i < len; i++) {
+		graph[models$1[i]] = {
 			distance: -1,
 			parent: null
 		};
@@ -3385,7 +3385,7 @@ var defaultProps$32 = {
   '$body-bg': '#fff'
 };
 function getGlobalStyles() {
-  return '\n    html {\n      ' + html() + '\n    }\n    *,\n    *::before,\n    *::after {\n      ' + boxSizing() + '\n    }\n    @-ms-viewport { \n      ' + ie10FixViewport() + ' \n    }\n  ';
+  return '\n    html {\n      ' + html() + '\n    }\n    *,\n    *::before,\n    *::after {\n      ' + boxSizing() + '\n    }\n    @-ms-viewport { \n      ' + ie10FixViewport() + ' \n    }\n    body {\n      ' + bodyUtils() + '\n    }\n  ';
 }
 function getGlobalStyleNoBootstrapProvider() {
   var fontFamilyBase = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : defaultProps$32['$font-family-base'];
@@ -3415,7 +3415,7 @@ function body() {
   return '\n    margin: 0;\n    font-family: ' + fontFamilyBase + ';\n    font-size: ' + fontSizeBase + ';\n    font-weight: ' + fontWeightBase + ';\n    line-height: ' + lineHeightBase + ';\n    color: ' + bodyColor + ';\n    background-color: ' + bodyBg + ';\n    \n    ' + bodyUtils() + '\n    \n    [tabindex="-1"]:focus {\n      ' + tabIndex() + '\n    }\n    svg:not(:root) {\n      ' + svg() + '\n    }\n    [hidden] {\n      ' + ie10FixHidden() + '\n    }\n    ::-webkit-file-upload-button {\n      ' + webkitFileUploadButton() + '\n    }\n  ';
 }
 function bodyUtils() {
-  return '\n    &.overflow {\n      overflow-x: hidden;\n    }\n  ';
+  return '\n    &.overflow {\n      overflow: hidden;\n    }\n  ';
 }
 function tabIndex() {
   return '\n    outline: none !important;\n  ';

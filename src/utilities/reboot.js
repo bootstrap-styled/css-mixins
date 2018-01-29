@@ -26,6 +26,9 @@ export function getGlobalStyles() {
     @-ms-viewport { 
       ${ie10FixViewport()} 
     }
+    body {
+      ${bodyUtils()}
+    }
   `;
 }
 
@@ -126,7 +129,7 @@ export function body(
 export function bodyUtils() {
   return `
     &.overflow {
-      overflow-x: hidden;
+      overflow: hidden;
     }
   `;
 }
