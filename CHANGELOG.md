@@ -2,9 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
-## [1.0.1] - 2018-xx-xx
+## [1.0.1] - 2018-02-19
 
 - Corrected mistaked in `defaultProps` of mixin `a`.
+- Added the `.overflow` class to `body` tag in `globalStyles`.
 
 ## [1.0.0] - 2017-09-26
 
