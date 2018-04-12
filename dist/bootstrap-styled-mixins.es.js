@@ -3479,7 +3479,6 @@ var defaultProps$34 = {
     lg: '992px',
     xl: '1200px'
   },
-  '$zindex-navbar-fixed': '1030',
   '$spacers': {
     0: {
       x: 0,
