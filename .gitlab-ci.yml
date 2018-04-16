@@ -56,7 +56,7 @@ stages:
   - build
   - test
   - release
-#  - publish
+  - publish
 
 # Job: Build
 build_dev:
