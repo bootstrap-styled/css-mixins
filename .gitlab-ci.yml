@@ -181,7 +181,7 @@ publish:
   stage: publish
   script:
     - git fetch --all
-    - git checkout ${PACKAGE_VERSION}
+    - git checkout ${PACKAGE_VERSION} || echo true
     - npm run ci-publish
   dependencies:
     - build
