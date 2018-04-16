@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## [?NEXT?] - ????-??-??
+## [v1.0.4] - 2018-04-16
 
 - Automatic changelog.
 
