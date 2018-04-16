@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [?NEXT?] - ????-??-??
+
+- Automatic changelog.
+
 ## [1.0.2] - 2018-04-12
 
 - Removed wrong attributed argument to function `getSpacingUtilities` in `utilities/spacing`.
