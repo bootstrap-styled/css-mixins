@@ -176,15 +176,16 @@ release:
   tags:
     - docker
 
-## Job: Publish
-#publish:
-#  stage: publish
-#  script:
-#    - git checkout -b v${PACKAGE_VERSION}
-#    - npm run ci-publish || true
-#  dependencies:
-#    - build
-#  only:
-#    - master
-#  tags:
-#    - docker
+# Job: Publish
+publish:
+  stage: publish
+  script:
+    - git fetch --all
+    - git checkout ${PACKAGE_VERSION}
+    - npm run ci-publish
+  dependencies:
+    - build
+  only:
+    - master
+  tags:
+    - docker

@@ -1,6 +1,6 @@
 # bootstrap-styled-mixins
 
-bootstrap-styled-mixins npm package.
+Bootstrap mixins and utilities in javascript for bootstrap-styled.
 
 **Master**
 
@@ -17,19 +17,17 @@ bootstrap-styled-mixins npm package.
   - [Installation](#installation)
   - [Changelog](#changelog)
   - [Mixins and Utilities](#mixins-and-utilities)
-  - [Reminders](#reminders)
   - [Quick start](#quick-start)
-  - [Release](#release)
   - [License](#license)
 
 ---
 
 ## Installation
 
-    npm install ssh://git@module.kopaxgroup.com:20024/styled-components/bootstrap-styled-mixins.git --save
+```bash
+$ npm install bootstrap-styled-mixins --save
+```
     
-*Don't forget to also install peer dependencies*
-
 ## Changelog
 
   - View [Changelog](CHANGELOG.md)
@@ -100,18 +98,6 @@ export { default as visibilityUtils } from './utilities/visibility';
 export { unitUtils } from 'math-utils';
 ```
 
-## Reminders
-
-**⚠️ When using this plugin, you must import in the first line of your application javascript entry file `babel-polyfill`: ⚠️**
-  
-    import "babel-polyfill";
-    
-To enable ES features in older browsers, you MUST include in the package.json
-
-    "browserslist": ["ie >= 9", "last 2 versions"]
-    // or
-    "browserslist": ["ie >= 10", "last 2 versions"]
-
 ## Quick start
 
 Clone project
@@ -156,18 +142,8 @@ If you wish to implement new functionalities you need to do a merge request incl
     git checkout $(whoami)-dev
     git push -u origin $(whoami)-dev 
 
-You can now start working on your branch. Don't forget to check `Delete branch when merged`.
-
-## Release
-
-Merge `dev` into `master` will release a new version and prepare a new version in `dev`.
-
-To release a new version, edit the [Changelog](CHANGELOG.md) and set the version in `package.json` and merge your change into `master`.
-
-**⚠️ if you are releasing on a git repository instead of a npm repository, **DO NOT** forget to remove `build`, and `dist` from the `.gitignore` ⚠️**
-
-    sed -i "/lib\|dist/d" .gitignore
-
 ## License
 
-Copyright (c) 2017 Kopax Ltd. For more information `contact@kopaxgroup.com`. Made with [rollup-umd](https://module.kopaxgroup.com/dev-tools/rollup-umd/tags/0.1.5) 0.1.5
+Licensed under the MIT License, Copyright © 2017-present Yeutech Company Limited.
+
+See [LICENSE](LICENSE.md) for more information.
