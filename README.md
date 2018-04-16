@@ -4,13 +4,13 @@ Bootstrap mixins and utilities in javascript for bootstrap-styled.
 
 **Master**
 
-[![build status](https://module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/badges/master/build.svg)](https://module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/commits/master)
-[![coverage report](https://module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/badges/master/coverage.svg)](https://module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/commits/master)
+[![build status](https://module.kopaxgroup.com/bootstrap-styled/bootstrap-styled-mixins/badges/master/build.svg)](https://module.kopaxgroup.com/bootstrap-styled/bootstrap-styled-mixins/commits/master)
+[![coverage report](https://module.kopaxgroup.com/bootstrap-styled/bootstrap-styled-mixins/badges/master/coverage.svg)](https://module.kopaxgroup.com/bootstrap-styled/bootstrap-styled-mixins/commits/master)
 
 **Dev**
 
-[![build status](https://module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/badges/dev/build.svg)](https://module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/commits/dev)
-[![coverage report](https://module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/badges/dev/coverage.svg)](https://module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/commits/dev)
+[![build status](https://module.kopaxgroup.com/bootstrap-styled/bootstrap-styled-mixins/badges/dev/build.svg)](https://module.kopaxgroup.com/bootstrap-styled/bootstrap-styled-mixins/commits/dev)
+[![coverage report](https://module.kopaxgroup.com/bootstrap-styled/bootstrap-styled-mixins/badges/dev/coverage.svg)](https://module.kopaxgroup.com/bootstrap-styled/bootstrap-styled-mixins/commits/dev)
 
 ## Table of Contents
 
