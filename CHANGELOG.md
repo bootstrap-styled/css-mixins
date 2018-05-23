@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [?NEXT?] - ????-??-??
 
+- TODO: write changelog before preparing next tag
+
+## [v1.0.4] - 2018-04-16
+
 - Automatic changelog.
 
 ## [1.0.2] - 2018-04-12
