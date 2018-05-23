@@ -112,6 +112,7 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "babel-preset-stage-3": "^6.24.1",
+    "cz-conventional-changelog": "^2.1.0",
     "eslint": "^4.6.1",
     "eslint-config-airbnb-base": "^12.0.0",
     "eslint-plugin-import": "^2.7.0",
@@ -175,5 +176,10 @@
   "dependencies": {
     "bootstrap-styled-utils": "git+ssh://git@module.kopaxgroup.com:20024/styled-components/bootstrap-styled-utils.git#v1.0.0",
     "color": "^1.0.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
