@@ -1,7 +1,7 @@
 {
   "name": "bootstrap-styled-mixins",
-  "version": "1.0.0",
-  "description": "Library bootstrap-styled-mixins description",
+  "version": "1.0.5",
+  "description": "Bootstrap mixins and utilities in javascript for bootstrap-styled.",
   "main": "lib/index.js",
   "jsnext:main": "dist/bootstrap-styled-mixins.es.js",
   "module": "dist/bootstrap-styled-mixins.es.js",
@@ -25,26 +25,37 @@
     "test:clean": "rimraf ./coverage",
     "test:watch": "npm run test -- --watch",
     "lint": "eslint src",
+    "ci-publish": "ci-publish",
     "prepublish": "npm run build",
     "lint-staged": "lint-staged",
     "rollup-umd": "node ./internal/rollup-umd --"
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@module.kopaxgroup.com:20024/styled-components/bootstrap-styled-mixins.git"
+    "url": "ssh://git@module.kopaxgroup.com:20024/bootstrap-styled/bootstrap-styled-mixins.git"
   },
   "bugs": {
-    "url": "https://module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/issues"
+    "url": "https://module.kopaxgroup.com/bootstrap-styled/bootstrap-styled-mixins/issues"
   },
   "files": [
-    "CODE_OF_CONDUCT.md",
+    "LICENSE.md",
     "dist",
     "lib",
     "src"
   ],
-  "keywords": "bootstrap-styled",
-  "author": "Dimitri Kopriwa <dimitri.kopriwa@kopaxgroup.com>",
-  "license": "UNLICENSED",
+  "keywords": [
+    "bootstrap",
+    "bootstrap-styled",
+    "styled",
+    "styled-components",
+    "react"
+  ],
+  "authors": [
+    "Dimitri Kopriwa <dimitri.kopriwa@yeutech.com>",
+    "Alexander Janet <alexander.janet@yeutech.com>",
+    "Adrien Gadaud <adrien.gadaud@yeutech.com>"
+  ],
+  "license": "MIT",
   "eslintConfig": {
     "parser": "babel-eslint",
     "extends": "airbnb-base",
@@ -112,6 +123,8 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "babel-preset-stage-3": "^6.24.1",
+    "cz-conventional-changelog": "^2.1.0",
+    "ci-publish": "^1.3.1",
     "eslint": "^4.6.1",
     "eslint-config-airbnb-base": "^12.0.0",
     "eslint-plugin-import": "^2.7.0",
@@ -173,7 +186,12 @@
     "lint-staged"
   ],
   "dependencies": {
-    "bootstrap-styled-utils": "git+ssh://git@module.kopaxgroup.com:20024/styled-components/bootstrap-styled-utils.git#v1.0.0",
+    "bootstrap-styled-utils": "^1.0.2",
     "color": "^1.0.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

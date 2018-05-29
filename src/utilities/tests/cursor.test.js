@@ -1,7 +1,5 @@
 import { fromJS } from 'immutable';
-import {
-  getCursorUtilities,
-} from '../cursor';
+import { getCursorUtilities } from '../cursor';
 
 describe('bootstrap cursor utility', () => {
   it('getCursorUtilities should return a list of cursor css utility', () => {

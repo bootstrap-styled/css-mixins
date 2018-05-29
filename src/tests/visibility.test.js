@@ -1,7 +1,5 @@
 import { fromJS } from 'immutable';
-import {
-  invisible,
-} from '../visibility';
+import { invisible } from '../visibility';
 
 describe('bootstrap visibility mixins', () => {
   it('invisible should have arguments', () => {
