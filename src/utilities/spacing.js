@@ -8,7 +8,6 @@ export const defaultProps = {
     lg: '992px',
     xl: '1200px',
   },
-  '$zindex-navbar-fixed': '1030',
   '$spacers': { // eslint-disable-line quote-props
     0: {
       x: 0,

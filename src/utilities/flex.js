@@ -43,6 +43,7 @@ export function getFlexUtilities(gridBreakpoints = defaultProps['$grid-breakpoin
         .justify-content${infix}-center  { justify-content: center !important; }
         .justify-content${infix}-between { justify-content: space-between !important; }
         .justify-content${infix}-around  { justify-content: space-around !important; }
+        .justify-content${infix}-evenly  { justify-content: space-evenly !important; }
       `)}
       /* Flex align-items */ 
       ${mediaBreakpointUp(breakpoint, gridBreakpoints, `

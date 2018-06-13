@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file.
 
+## [?NEXT?] - ????-??-??
+
+- TODO: write changelog before preparing next tag
+
+## [v1.0.4] - 2018-04-16
+
+- Automatic changelog.
+
+## [1.0.2] - 2018-04-12
+
+- Removed wrong attributed argument to function `getSpacingUtilities` in `utilities/spacing`.
+
+## [1.0.1] - 2018-02-19
+
+- Corrected mistaked in `defaultProps` of mixin `a`.
+- Added the `.overflow` class to `body` tag in `globalStyles`.
+
 ## [1.0.0] - 2017-09-26
 
 - Downgrade `color` to 1.0.3.
