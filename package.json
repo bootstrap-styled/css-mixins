@@ -32,10 +32,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@module.kopaxgroup.com:20024/bootstrap-styled/@bootstrap-styled/mixins.git"
+    "url": "ssh://git@module.kopaxgroup.com:20024/bootstrap-styled/bootstrap-styled/mixins.git"
   },
   "bugs": {
-    "url": "https://module.kopaxgroup.com/bootstrap-styled/@bootstrap-styled/mixins/issues"
+    "url": "https://module.kopaxgroup.com/bootstrap-styled/bootstrap-styled/mixins/issues"
   },
   "files": [
     "LICENSE.md",
