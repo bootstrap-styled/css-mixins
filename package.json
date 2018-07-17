@@ -1,10 +1,10 @@
 {
-  "name": "bootstrap-styled-mixins",
+  "name": "@bootstrap-styled/mixins",
   "version": "1.0.5",
   "description": "Bootstrap mixins and utilities in javascript for bootstrap-styled.",
   "main": "lib/index.js",
-  "jsnext:main": "dist/bootstrap-styled-mixins.es.js",
-  "module": "dist/bootstrap-styled-mixins.es.js",
+  "jsnext:main": "dist/@bootstrap-styled/mixins.es.js",
+  "module": "dist/@bootstrap-styled/mixins.es.js",
   "browserslist": [
     "IE >= 9",
     "last 2 versions"
@@ -32,10 +32,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@module.kopaxgroup.com:20024/bootstrap-styled/bootstrap-styled-mixins.git"
+    "url": "ssh://git@module.kopaxgroup.com:20024/bootstrap-styled/@bootstrap-styled/mixins.git"
   },
   "bugs": {
-    "url": "https://module.kopaxgroup.com/bootstrap-styled/bootstrap-styled-mixins/issues"
+    "url": "https://module.kopaxgroup.com/bootstrap-styled/@bootstrap-styled/mixins/issues"
   },
   "files": [
     "LICENSE.md",
