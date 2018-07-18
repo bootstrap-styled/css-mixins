@@ -1,9 +1,3 @@
-(function (global, factory) {
-	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
-	typeof define === 'function' && define.amd ? define(['exports'], factory) :
-	(factory((global['bootstrap-styled-mixins'] = {})));
-}(this, (function (exports) { 'use strict';
-
 function tabFocus() {
   return "\n    /* WebKit-specific. Other browsers will keep their default outline style. */\n    /* (Initially tried to also force default via 'outline: initial', */\n    /* but that seems to erroneously remove the outline in Firefox altogether.) */\n    outline: 5px auto -webkit-focus-ring-color;\n    outline-offset: -2px;\n  ";
 }
@@ -3671,71 +3665,5 @@ var visibility$1 = {
   getVisibilityUtilities: getVisibilityUtilities
 };
 
-exports.aMixins = a$1;
-exports.alertMixins = alert;
-exports.backgroundVariantMixins = backgroundVariant;
-exports.badgeMixins = badge;
-exports.radius = borderRadius$1;
-exports.boxShadow = boxShadow;
-exports.bp = breakpoints;
-exports.buttonsMixins = buttons;
-exports.buttonGroupMixins = buttonGroup$1;
-exports.cardsMixins = cards;
-exports.clearfix = clearfix;
-exports.ifElse = ifElse;
-exports.ifThen = ifThen;
-exports.floatMixins = float;
-exports.formsMixins = forms;
-exports.customformsMixins = customForms$1;
-exports.gradient = gradients;
-exports.gridMixins = grid;
-exports.gridFrameworkMixins = gridFramework;
-exports.hover = hover;
-exports.listGroupMixins = listGroup;
-exports.listsMixins = lists;
-exports.navMixins = nav$1;
-exports.navbarMixins = navbar$1;
-exports.navDividerMixins = navDivider$1;
-exports.navbarAlignMixins = navbarAlign;
-exports.navbarToggleableMixins = navbarToggleable$1;
-exports.paginationsMixins = paginations;
-exports.progressMixins = progress;
-exports.resetFilterMixins = resetFilter$1;
-exports.resetTextMixins = resetText$1;
-exports.resizeMixins = resize;
-exports.srOnly = srOnly;
-exports.srOnlyFocusable = srOnlyFocusable;
-exports.size = size;
-exports.tabFocusMixins = tabFocus$1;
-exports.tableRowMixins = tableRow;
-exports.textEmphasisMixins = textEmphasis;
-exports.textHideMixins = textHide$1;
-exports.textTruncate = textTruncate;
-exports.transition = transition;
-exports.typographyMixins = typography$1;
-exports.variablesMixins = variables;
-exports.invisible = invisible;
-exports.alignUtils = align;
-exports.backgroundUtils = background;
-exports.bordersUtils = borders;
-exports.clearfixUtils = clearfix$2;
-exports.cursorUtils = cursor;
-exports.displayUtils = display;
-exports.flexUtils = flex;
-exports.floatUtils = float$1;
-exports.positionUtils = position;
-exports.rebootUtils = reboot;
-exports.getGlobalStyleNoBootstrapProvider = getGlobalStyleNoBootstrapProvider;
-exports.getGlobalStyles = getGlobalStyles;
-exports.screenreadersUtils = screenreaders;
-exports.sizingUtils = sizing;
-exports.spacingUtils = spacing;
-exports.transitionUtils = transition$2;
-exports.textUtils = text;
-exports.visibilityUtils = visibility$1;
-exports.unit = unitUtils$1;
-
-Object.defineProperty(exports, '__esModule', { value: true });
-
-})));
-//# sourceMappingURL=bootstrap-styled-mixins.js.map
+export { a$1 as aMixins, alert as alertMixins, backgroundVariant as backgroundVariantMixins, badge as badgeMixins, borderRadius$1 as radius, boxShadow, breakpoints as bp, buttons as buttonsMixins, buttonGroup$1 as buttonGroupMixins, cards as cardsMixins, clearfix, ifElse, ifThen, float as floatMixins, forms as formsMixins, customForms$1 as customformsMixins, gradients as gradient, grid as gridMixins, gridFramework as gridFrameworkMixins, hover, listGroup as listGroupMixins, lists as listsMixins, nav$1 as navMixins, navbar$1 as navbarMixins, navDivider$1 as navDividerMixins, navbarAlign as navbarAlignMixins, navbarToggleable$1 as navbarToggleableMixins, paginations as paginationsMixins, progress as progressMixins, resetFilter$1 as resetFilterMixins, resetText$1 as resetTextMixins, resize as resizeMixins, srOnly, srOnlyFocusable, size, tabFocus$1 as tabFocusMixins, tableRow as tableRowMixins, textEmphasis as textEmphasisMixins, textHide$1 as textHideMixins, textTruncate, transition, typography$1 as typographyMixins, variables as variablesMixins, invisible, align as alignUtils, background as backgroundUtils, borders as bordersUtils, clearfix$2 as clearfixUtils, cursor as cursorUtils, display as displayUtils, flex as flexUtils, float$1 as floatUtils, position as positionUtils, reboot as rebootUtils, getGlobalStyleNoBootstrapProvider, getGlobalStyles, screenreaders as screenreadersUtils, sizing as sizingUtils, spacing as spacingUtils, transition$2 as transitionUtils, text as textUtils, visibility$1 as visibilityUtils, unitUtils$1 as unit };
+//# sourceMappingURL=mixins.es.js.map
