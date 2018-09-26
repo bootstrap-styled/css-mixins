@@ -1,4 +1,4 @@
-import unitUtils from 'bootstrap-styled-utils/lib/unitUtils';
+import unitUtils from '@bootstrap-styled/utils/lib/unitUtils';
 import { mediaBreakpointUp } from './breakpoints';
 
 export const defaultProps = {

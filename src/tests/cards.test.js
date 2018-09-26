@@ -48,8 +48,6 @@ describe('bootstrap cards mixins', () => {
       defaultProps['$card-border-width'],
       defaultProps['$card-border-color'],
       defaultProps['$card-border-radius'],
-      defaultProps['$card-margin-y-halved'],
-      defaultProps['$card-margin-x-halved'],
       defaultProps['$card-cap-bg'],
       defaultProps['$card-border-radius-inner'],
       defaultProps['$brand-primary'],

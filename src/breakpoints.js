@@ -1,4 +1,4 @@
-import unitUtils from 'bootstrap-styled-utils/lib/unitUtils';
+import unitUtils from '@bootstrap-styled/utils/lib/unitUtils';
 
 export const defaultProps = {
   '$grid-breakpoints': {

@@ -1,3 +1,18 @@
+[![build status]($CI_PROJECT_URL/badges/v$PACKAGE_VERSION/build.svg)]($CI_PROJECT_URL/commits/v$PACKAGE_VERSION)
+[![coverage report]($CI_PROJECT_URL/badges/v$PACKAGE_VERSION/coverage.svg)]($CI_PROJECT_URL/commits/v$PACKAGE_VERSION)
+
+![image](https://img.shields.io/badge/version-$PACKAGE_VERSION-green.svg)
+![image](https://img.shields.io/badge/node-$NODE_VERSION-brightgreen.svg)
+![image](https://img.shields.io/badge/npm-$NPM_VERSION-red.svg)
+![image](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
+![image]($IMG_SHIELD_PUBLISHING)
+
+```html
+<strong>Contribute to improve our documentation, it support HTML, React and Markdown!</strong>
+```
+## Mixins and Utilities
+
+```jsx harmony
 // mixins
 export { default as aMixins } from './a';
 export { default as alertMixins } from './alert';
@@ -41,6 +56,22 @@ export { transition } from './transition';
 export { default as typographyMixins } from './typography';
 export { default as variablesMixins } from './variables';
 export { invisible } from './visibility';
-
-// extra
-export { default as unit } from '@bootstrap-styled/utils/lib/unitUtils';
+// utilities
+export { default as alignUtils } from './utilities/align';
+export { default as backgroundUtils } from './utilities/background';
+export { default as bordersUtils } from './utilities/borders';
+export { default as clearfixUtils } from './utilities/clearfix';
+export { default as cursorUtils } from './utilities/cursor';
+export { default as displayUtils } from './utilities/display';
+export { default as flexUtils } from './utilities/flex';
+export { default as floatUtils } from './utilities/float';
+export { default as positionUtils } from './utilities/position';
+export { default as rebootUtils } from './utilities/reboot';
+export { default as screenreadersUtils } from './utilities/screenreaders';
+export { default as sizingUtils } from './utilities/sizing';
+export { default as spacingUtils } from './utilities/spacing';
+export { default as transitionUtils } from './utilities/transition';
+export { default as textUtils } from './utilities/text';
+export { default as visibilityUtils } from './utilities/visibility';
+export { unitUtils } from 'math-utils';
+```

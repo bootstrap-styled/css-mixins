@@ -1,0 +1,1 @@
+/* Ignored components needed to be used in example */

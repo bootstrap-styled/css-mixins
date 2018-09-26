@@ -1,5 +1,9 @@
+import unitUtils from '@bootstrap-styled/utils/lib/unitUtils';
+
 import { hover, hoverFocus } from './hover';
 import { borderRadius, borderTopRadius, borderBottomRadius } from './border-radius';
+
+const { detectUnit, rmUnit } = unitUtils;
 
 export const defaultProps = {
   '$enable-rounded': true,
@@ -10,8 +14,6 @@ export const defaultProps = {
   '$card-border-width': '1px',
   '$card-border-color': 'rgba(0, 0, 0, 0.125)',
   '$card-border-radius': '.25rem',
-  '$card-margin-y-halved': '0.375rem',
-  '$card-margin-x-halved': '0.625rem',
   '$card-cap-bg': '#f7f7f9',
   '$card-border-radius-inner': 'calc(.25rem - 1px)',
   '$brand-primary': '#0275d8',
@@ -84,8 +86,6 @@ export function card(
   $cardBorderWidth = defaultProps['$card-border-width'],
   $cardBorderColor = defaultProps['$card-border-color'],
   $cardBorderRadius = defaultProps['$card-border-radius'],
-  $cardMarginYHalved = defaultProps['$card-margin-y-halved'],
-  $cardMarginXHalved = defaultProps['$card-margin-x-halved'],
   $cardCapBg = defaultProps['$card-cap-bg'],
   $cardBorderRadiusInner = defaultProps['$card-border-radius-inner'],
   $brandPrimary = defaultProps['$brand-primary'],
@@ -123,7 +123,7 @@ export function card(
     }
     
     & .card-subtitle {
-      margin-top: -${$cardMarginYHalved};
+      margin-top: -${((rmUnit($cardSpacerY, detectUnit($cardSpacerY)) / 2) + detectUnit($cardSpacerY))};
       margin-bottom: 0;
     }
     
@@ -175,15 +175,15 @@ export function card(
     }
 
     & .card-header-tabs {
-      margin-right: -${$cardMarginXHalved};
+      margin-right: -${((rmUnit($cardSpacerX, detectUnit($cardSpacerX)) / 2) + detectUnit($cardSpacerX))};
       margin-bottom: -${$cardSpacerY};
-      margin-left: -${$cardMarginXHalved};
+      margin-left: -${((rmUnit($cardSpacerX, detectUnit($cardSpacerX)) / 2) + detectUnit($cardSpacerX))};
       border-bottom: 0;
     }
     
     & .card-header-pills {
-      margin-right: -${$cardMarginXHalved};
-      margin-left: -${$cardMarginXHalved};
+      margin-right: -${((rmUnit($cardSpacerX, detectUnit($cardSpacerX)) / 2) + detectUnit($cardSpacerX))};
+      margin-left: -${((rmUnit($cardSpacerX, detectUnit($cardSpacerX)) / 2) + detectUnit($cardSpacerX))};
     }
     
     & .card-primary {
