@@ -1,4 +1,4 @@
-import unitUtils from 'bootstrap-styled-utils/lib/unitUtils';
+import unitUtils from '@bootstrap-styled/utils/lib/unitUtils';
 
 import { hover, hoverFocus } from './hover';
 import { borderRadius, borderTopRadius, borderBottomRadius } from './border-radius';

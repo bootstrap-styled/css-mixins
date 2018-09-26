@@ -41,22 +41,6 @@ export { transition } from './transition';
 export { default as typographyMixins } from './typography';
 export { default as variablesMixins } from './variables';
 export { invisible } from './visibility';
-// utilities
-export { default as alignUtils } from './utilities/align';
-export { default as backgroundUtils } from './utilities/background';
-export { default as bordersUtils } from './utilities/borders';
-export { default as clearfixUtils } from './utilities/clearfix';
-export { default as cursorUtils } from './utilities/cursor';
-export { default as displayUtils } from './utilities/display';
-export { default as flexUtils } from './utilities/flex';
-export { default as floatUtils } from './utilities/float';
-export { default as positionUtils } from './utilities/position';
-export { default as rebootUtils, getGlobalStyleNoBootstrapProvider, getGlobalStyles } from './utilities/reboot';
-export { default as screenreadersUtils } from './utilities/screenreaders';
-export { default as sizingUtils } from './utilities/sizing';
-export { default as spacingUtils } from './utilities/spacing';
-export { default as transitionUtils } from './utilities/transition';
-export { default as textUtils } from './utilities/text';
-export { default as visibilityUtils } from './utilities/visibility';
+
 // extra
-export { default as unit } from 'bootstrap-styled-utils/lib/unitUtils';
+export { default as unit } from '@bootstrap-styled/utils/lib/unitUtils';

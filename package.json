@@ -117,7 +117,6 @@
     "@semantic-release/gitlab": "^2.1.4",
     "@semantic-release/npm": "^4.0.0",
     "@yeutech-lab/rollup-umd-documentation": "^2.3.18",
-    "@yeutech/rollup-documentation": "^2.3.4",
     "@yeutech/rollup-umd-ci-build": "^1.0.5",
     "@yeutech/rollup-umd-ci-deploy": "^1.0.7",
     "@yeutech/rollup-umd-ci-release": "^1.0.5",
@@ -192,10 +191,10 @@
     ],
     "coverageThreshold": {
       "global": {
-        "statements": 99,
+        "statements": 98,
         "branches": 97,
         "functions": 99,
-        "lines": 99
+        "lines": 98
       }
     },
     "moduleDirectories": [
@@ -216,7 +215,7 @@
     "lint-staged"
   ],
   "dependencies": {
-    "bootstrap-styled-utils": "^1.0.2",
+    "@bootstrap-styled/utils": "^1.0.2",
     "color": "^1.0.3"
   },
   "publishConfig": {
