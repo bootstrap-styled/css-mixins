@@ -1,0 +1,1001 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/navbar.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">All files</a> / <a href="index.html">src</a> navbar.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>2/2</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>28/28</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>1/1</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>2/2</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+283
+284
+285
+286
+287
+288
+289
+290
+291
+292
+293
+294
+295
+296
+297
+298
+299
+300
+301
+302
+303
+304
+305
+306
+307
+308
+309
+310
+311
+312
+313</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { hoverFocus } from './hover';
+import { mediaBreakpointUp } from './breakpoints';
+import { borderRadius } from './border-radius';
+import { navbarToggleable } from './navbar-toggleable';
+&nbsp;
+export const defaultProps = {
+  '$grid-breakpoints': {
+    xs: '0',
+    sm: '576px',
+    md: '768px',
+    lg: '992px',
+    xl: '1200px',
+  },
+  '$enable-rounded': true,
+  '$enable-hover-media-query': false,
+  '$navbar-padding-y': '0.5rem',
+  '$navbar-padding-x': '1rem',
+  '$zindex-navbar': '1000',
+  '$zindex-navbar-fixed': '1030',
+  '$zindex-navbar-sticky': '1030',
+  '$navbar-brand-padding-y': '.25rem',
+  '$font-size-lg': '1.25rem',
+  '$navbar-divider-padding-y': '.425rem',
+  '$navbar-toggler-padding-y': '.5rem',
+  '$navbar-toggler-padding-x': '.75rem',
+  '$navbar-toggler-font-size': '1.25rem',
+  '$border-width': '1px',
+  '$navbar-toggler-border-radius': '.25rem',
+  '$navbar-light-active-color': 'rgba(0,0,0,.9)',
+  '$navbar-light-color': 'rgba(0,0,0,.5)',
+  '$navbar-light-hover-color': 'rgba(0,0,0,.7)',
+  '$navbar-light-toggler-border': 'rgba(0,0,0,.1)',
+  '$navbar-light-toggler-bg': 'url(\'data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba(0,0,0,.5)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E\')',
+  '$navbar-light-disabled-color': 'rgba(0, 0, 0, 0.3)',
+  '$navbar-inverse-active-color': 'rgba(255,255,255,1)',
+  '$navbar-inverse-color': 'rgba(255,255,255,.5)',
+  '$navbar-inverse-hover-color': 'rgba(255,255,255,.75)',
+  '$navbar-inverse-toggler-border': 'rgba(255,255,255,.1)',
+  '$navbar-inverse-toggler-bg': 'url(\'data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba(255,255,255,.5)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E\')',
+  '$navbar-inverse-disabled-color': 'rgba(255, 255, 255, 0.25)',
+};
+&nbsp;
+export function navbar(
+  $gridBreakpoints = defaultProps['$grid-breakpoints'],
+  $enableRounded = defaultProps['$enable-rounded'],
+  $enableHoverMediaQuery = defaultProps['$enable-hover-media-query'],
+  $navbarPaddingY = defaultProps['$navbar-padding-y'],
+  $navbarPaddingX = defaultProps['$navbar-padding-x'],
+  $zindexNavbar = defaultProps['$zindex-navbar'],
+  $zindexNavbarFixed = defaultProps['$zindex-navbar-fixed'],
+  $zindexNavbarSticky = defaultProps['$zindex-navbar-sticky'],
+  $navbarBrandPaddingY = defaultProps['$navbar-brand-padding-y'],
+  $fontSizeLg = defaultProps['$font-size-lg'],
+  $navbarDividerPaddingY = defaultProps['$navbar-divider-padding-y'],
+  $navbarTogglerPaddingY = defaultProps['$navbar-toggler-padding-y'],
+  $navbarTogglerPaddingX = defaultProps['$navbar-toggler-padding-x'],
+  $navbarTogglerFontSize = defaultProps['$navbar-toggler-font-size'],
+  $borderWidth = defaultProps['$border-width'],
+  $navbarTogglerBorderRadius = defaultProps['$navbar-toggler-border-radius'],
+  $navbarLightActiveColor = defaultProps['$navbar-light-active-color'],
+  $navbarLightColor = defaultProps['$navbar-light-color'],
+  $navbarLightHoverColor = defaultProps['$navbar-light-hover-color'],
+  $navbarLightTogglerBorder = defaultProps['$navbar-light-toggler-border'],
+  $navbarLightDisabledColor = defaultProps['$navbar-light-disabled-color'],
+  $navbarLightTogglerBg = defaultProps['$navbar-light-toggler-bg'],
+  $navbarInverseActiveColor = defaultProps['$navbar-inverse-active-color'],
+  $navbarInverseColor = defaultProps['$navbar-inverse-color'],
+  $navbarInverseHoverColor = defaultProps['$navbar-inverse-hover-color'],
+  $navbarInverseTogglerBorder = defaultProps['$navbar-inverse-toggler-border'],
+  $navbarInverseTogglerBg = defaultProps['$navbar-inverse-toggler-bg'],
+  $navbarInverseDisabledColor = defaultProps['$navbar-inverse-disabled-color']
+) {
+  return `
+    /* Wrapper and base class
+&nbsp;
+     Provide a static navbar from which we expand to create full-width, fixed, and
+     other navbar variations.
+    */
+&nbsp;
+    &amp;.navbar {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      padding: ${$navbarPaddingY} ${$navbarPaddingX};
+    }
+    
+    /*
+     Brand/project name
+    */
+&nbsp;
+    &amp; .navbar-brand {
+      display: inline-block;
+      padding-top: ${$navbarBrandPaddingY};
+      padding-bottom: ${$navbarBrandPaddingY};
+      margin-right: ${$navbarPaddingX};
+      font-size: ${$fontSizeLg};
+      line-height: inherit;
+      white-space: nowrap;
+      ${hoverFocus($enableHoverMediaQuery, 'text-decoration: none;')}
+    }
+    
+    /* Navigation
+&nbsp;
+     Custom navbar navigation built on the base .nav styles.
+    */
+&nbsp;
+    &amp;.navbar-nav,
+    &amp; .navbar-nav {
+      display: flex;
+      flex-direction: column; /* cannot use inherit to get the .navbars value */
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style: none;
+    
+      .nav-link {
+        padding-right: 0;
+        padding-left: 0;
+      }
+    }
+    
+    /* Navbar text  */
+&nbsp;
+    &amp; .navbar-text {
+      display: inline-block;
+      padding-top:    .425rem;
+      padding-bottom: .425rem;
+    }
+&nbsp;
+&nbsp;
+    /* Navbar toggle
+&nbsp;
+     Custom button for toggling the .navbar-collapse, powered by the collapse
+     Bootstrap JavaScript plugin.
+    */
+&nbsp;
+    &amp; .navbar-toggler {
+      align-self: flex-start; 
+      padding: ${$navbarTogglerPaddingY} ${$navbarTogglerPaddingX};
+      font-size: ${$navbarTogglerFontSize};
+      line-height: 1;
+      background: transparent;
+      border: ${$borderWidth} solid transparent;
+      ${borderRadius($enableRounded, $navbarTogglerBorderRadius)}
+      ${hoverFocus($enableHoverMediaQuery, 'text-decoration: none;')}
+    }
+    
+    /* Keep as a separate element so folks can easily override it with another icon or image file as needed. */
+    &amp; .navbar-toggler-icon {
+      display: inline-block;
+      width: 1.5em;
+      height: 1.5em;
+      vertical-align: middle;
+      content: "";
+      background: no-repeat center center;
+      background-size: 100% 100%;
+    }
+    
+    /* Use position on the toggler to prevent it from being auto placed as a flex item and allow easy placement. */
+    &amp; .navbar-toggler-left {
+      position: absolute;
+      left: ${$navbarPaddingX};
+    }
+    &amp; .navbar-toggler-right {
+      position: absolute;
+      right: ${$navbarPaddingX};
+    }
+&nbsp;
+    /* Dark links against a light background */
+    &amp;.navbar-light {
+      .navbar-brand,
+      .navbar-toggler {
+        color: ${$navbarLightActiveColor};
+&nbsp;
+        ${hoverFocus($enableHoverMediaQuery, `color: ${$navbarLightActiveColor};`)}
+      }
+&nbsp;
+      .navbar-nav {
+        .nav-link {
+          color: ${$navbarLightColor};
+          ${hoverFocus($enableHoverMediaQuery, `color: ${$navbarLightHoverColor};`)}
+          &amp;.disabled {
+            color: ${$navbarLightDisabledColor};
+          }
+        }
+&nbsp;
+        .open &gt; .nav-link,
+        .active &gt; .nav-link,
+        .nav-link.open,
+        .nav-link.active {
+          color: ${$navbarLightActiveColor};
+        }
+      }
+&nbsp;
+      .navbar-toggler {
+        border-color: ${$navbarLightTogglerBorder};
+      }
+      .navbar-toggler-icon {
+        background-image: ${$navbarLightTogglerBg};
+      }
+  
+      .navbar-text {
+        color: ${$navbarLightColor};
+      }
+    }
+      
+&nbsp;
+    /* White links against a dark background */
+    &amp;.navbar-inverse {
+      .navbar-brand,
+      .navbar-toggler {
+        color: ${$navbarInverseActiveColor};
+        ${hoverFocus($enableHoverMediaQuery, `color: ${$navbarInverseActiveColor};`)}
+      }
+&nbsp;
+      .navbar-nav {
+        .nav-link {
+          color: ${$navbarInverseColor};
+          ${hoverFocus($enableHoverMediaQuery, `color: ${$navbarInverseHoverColor};`)}
+          &amp;.disabled {
+            color: ${$navbarInverseDisabledColor};
+          }
+        }
+&nbsp;
+        .open &gt; .nav-link,
+        .active &gt; .nav-link,
+        .nav-link.open,
+        .nav-link.active {
+          color: ${$navbarInverseActiveColor};
+        }
+      }
+&nbsp;
+      .navbar-toggler {
+        border-color: ${$navbarInverseTogglerBorder};
+      }
+      
+      .navbar-toggler-icon {
+        background-image: ${$navbarInverseTogglerBg};
+      }
+    
+      .navbar-text {
+        color: ${$navbarInverseColor};
+      }
+    }
+    
+&nbsp;
+    ${navbarToggleable($gridBreakpoints)}
+    
+    /* DELETED IN LATEST BOOTSTRAP VERSINO */
+    
+    /* Navbar alignment options
+&nbsp;
+     Display the navbar across the entirety of the page or fixed it to the top or
+     bottom of the page.
+    */
+&nbsp;
+    /* A static, full width modifier with no rounded corners. */
+    &amp;.navbar-full {
+      z-index: ${$zindexNavbar};
+      ${mediaBreakpointUp('sm', $gridBreakpoints, borderRadius($enableRounded, '0'))}
+    }
+&nbsp;
+      /* Fix the top/bottom navbars when screen real estate supports it */
+    &amp;.navbar-fixed-top,
+    &amp;.navbar-fixed-bottom {
+      position: fixed;
+      right: 0;
+      left: 0;
+      z-index: ${$zindexNavbarFixed};
+      /*  Undo the rounded corners */
+      ${mediaBreakpointUp('sm', $gridBreakpoints, borderRadius($enableRounded, '0'))}
+    }
+&nbsp;
+    &amp;.navbar-fixed-top {
+      top: 0;
+    }
+&nbsp;
+    &amp;.navbar-fixed-bottom {
+      bottom: 0;
+    }
+&nbsp;
+    /* position sticky does not seem to be working AJT*/
+&nbsp;
+    &amp;.navbar-sticky-top {
+      position: sticky;
+      top: 0;
+      z-index: ${$zindexNavbarSticky};
+      width: 100%;
+&nbsp;
+        /*  Undo the rounded corners */
+      ${mediaBreakpointUp('sm', $gridBreakpoints, borderRadius($enableRounded, '0'))}
+    }
+&nbsp;
+    &amp; .navbar-divider {
+      float: left;
+      width: ${$borderWidth};
+      padding-top: ${$navbarDividerPaddingY};
+      padding-bottom: ${$navbarDividerPaddingY};
+      margin-right: ${$navbarPaddingX};
+      margin-left:  ${$navbarPaddingX};
+      overflow: hidden;
+&nbsp;
+      &amp;::before {
+        content: '\00a0';
+      }
+    }
+  `;
+}
+&nbsp;
+export default {
+  defaultProps,
+  navbar,
+};
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Sep 17 2018 12:05:42 GMT+1200 (New Zealand Standard Time)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

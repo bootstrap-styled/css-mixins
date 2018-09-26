@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/tests/hover.test.js">
+    <testCase name="bootstrap hover mixins hover should return a css" duration="9"/>
+    <testCase name="bootstrap hover mixins hover should have arguments" duration="4"/>
+    <testCase name="bootstrap hover mixins hoverFocus should return a css without media query" duration="2"/>
+    <testCase name="bootstrap hover mixins hoverFocus should return a css with media query" duration="1"/>
+    <testCase name="bootstrap hover mixins hoverFocus should have arguments" duration="1"/>
+    <testCase name="bootstrap hover mixins hoverFocusActive should return a css without media query" duration="1"/>
+    <testCase name="bootstrap hover mixins hoverFocusActive should return a css with media query" duration="1"/>
+    <testCase name="bootstrap hover mixins hoverFocusActive should have arguments" duration="1"/>
+    <testCase name="bootstrap hover mixins plainHoverFocus should return a css without media query" duration="0"/>
+    <testCase name="bootstrap hover mixins plainHoverFocus should return a css with media query" duration="1"/>
+    <testCase name="bootstrap hover mixins plainHoverFocus should have arguments" duration="0"/>
+    <testCase name="bootstrap hover mixins hover should have hoverFocus" duration="1"/>
+    <testCase name="bootstrap hover mixins hover should have plainHoverFocus" duration="1"/>
+    <testCase name="bootstrap hover mixins hover should have hoverFocusActive" duration="0"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/utilities/tests/background.test.js">
+    <testCase name="bootstrap background utility getBackgroundUtilities should return a list of css utilities" duration="8"/>
+    <testCase name="bootstrap background utility getBackgroundUtilities should have arguments" duration="2"/>
+    <testCase name="bootstrap background utility bgFaded should return a css" duration="1"/>
+    <testCase name="bootstrap background utility bgPrimary should return a css" duration="1"/>
+    <testCase name="bootstrap background utility bgSuccess should return a css" duration="2"/>
+    <testCase name="bootstrap background utility bgInfo should return a css" duration="1"/>
+    <testCase name="bootstrap background utility bgWarning should return a css" duration="1"/>
+    <testCase name="bootstrap background utility bgDanger should return a css" duration="1"/>
+    <testCase name="bootstrap background utility bgInverse should return a css" duration="0"/>
+    <testCase name="bootstrap background utility bgFaded should have a parameter" duration="1"/>
+    <testCase name="bootstrap background utility bgFaded should have a parameter" duration="1"/>
+    <testCase name="bootstrap background utility bgFaded should have a parameter" duration="1"/>
+    <testCase name="bootstrap background utility bgFaded should have a parameter" duration="6"/>
+    <testCase name="bootstrap background utility bgFaded should have a parameter" duration="1"/>
+    <testCase name="bootstrap background utility bgFaded should have a parameter" duration="1"/>
+    <testCase name="bootstrap background utility bgFaded should have a parameter" duration="1"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/tests/list-group.test.js">
+    <testCase name="bootstrap list-group mixins listGroupItemVariant should return a css without hover media query" duration="19"/>
+    <testCase name="bootstrap list-group mixins listGroupItemVariant should return a css with hover media query" duration="4"/>
+    <testCase name="bootstrap list-group mixins listGroupItemVariant should return a css with hover media query" duration="1"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/tests/reset-text.test.js">
+    <testCase name="bootstrap reset-text mixins resetText should return a css" duration="2"/>
+    <testCase name="bootstrap reset-text mixins resetText should have arguments" duration="1"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/tests/index.test.js">
+    <testCase name="exports aMixins should be defined" duration="1"/>
+    <testCase name="exports alertMixins should be defined" duration="1"/>
+    <testCase name="exports backgroundVariantMixins should be defined" duration="1"/>
+    <testCase name="exports badgeMixins should be defined" duration="0"/>
+    <testCase name="exports radius should be defined" duration="1"/>
+    <testCase name="exports boxShadow should be defined" duration="0"/>
+    <testCase name="exports bp should be defined" duration="1"/>
+    <testCase name="exports buttonsMixins should be defined" duration="37"/>
+    <testCase name="exports buttonGroupMixins should be defined" duration="4"/>
+    <testCase name="exports cardsMixins should be defined" duration="0"/>
+    <testCase name="exports clearfix should be defined" duration="1"/>
+    <testCase name="exports ifElse should be defined" duration="0"/>
+    <testCase name="exports ifThen should be defined" duration="1"/>
+    <testCase name="exports floatMixins should be defined" duration="0"/>
+    <testCase name="exports formsMixins should be defined" duration="0"/>
+    <testCase name="exports customformsMixins should be defined" duration="0"/>
+    <testCase name="exports gradient should be defined" duration="0"/>
+    <testCase name="exports gridMixins should be defined" duration="0"/>
+    <testCase name="exports gridFrameworkMixins should be defined" duration="1"/>
+    <testCase name="exports hover should be defined" duration="2"/>
+    <testCase name="exports listGroupMixins should be defined" duration="0"/>
+    <testCase name="exports listsMixins should be defined" duration="2"/>
+    <testCase name="exports navMixins should be defined" duration="1"/>
+    <testCase name="exports navbarMixins should be defined" duration="0"/>
+    <testCase name="exports navDividerMixins should be defined" duration="0"/>
+    <testCase name="exports navbarAlignMixins should be defined" duration="1"/>
+    <testCase name="exports navbarToggleableMixins should be defined" duration="0"/>
+    <testCase name="exports paginationsMixins should be defined" duration="0"/>
+    <testCase name="exports progressMixins should be defined" duration="1"/>
+    <testCase name="exports resetFilterMixins should be defined" duration="0"/>
+    <testCase name="exports resetTextMixins should be defined" duration="0"/>
+    <testCase name="exports resizeMixins should be defined" duration="1"/>
+    <testCase name="exports srOnly should be defined" duration="0"/>
+    <testCase name="exports srOnlyFocusable should be defined" duration="1"/>
+    <testCase name="exports size should be defined" duration="0"/>
+    <testCase name="exports tabFocusMixins should be defined" duration="1"/>
+    <testCase name="exports tableRowMixins should be defined" duration="1"/>
+    <testCase name="exports textEmphasisMixins should be defined" duration="1"/>
+    <testCase name="exports textHideMixins should be defined" duration="0"/>
+    <testCase name="exports textTruncate should be defined" duration="0"/>
+    <testCase name="exports transition should be defined" duration="1"/>
+    <testCase name="exports typographyMixins should be defined" duration="0"/>
+    <testCase name="exports variablesMixins should be defined" duration="0"/>
+    <testCase name="exports invisible should be defined" duration="1"/>
+    <testCase name="exports alignUtils should be defined" duration="0"/>
+    <testCase name="exports backgroundUtils should be defined" duration="0"/>
+    <testCase name="exports bordersUtils should be defined" duration="1"/>
+    <testCase name="exports clearfixUtils should be defined" duration="0"/>
+    <testCase name="exports cursorUtils should be defined" duration="0"/>
+    <testCase name="exports displayUtils should be defined" duration="7"/>
+    <testCase name="exports flexUtils should be defined" duration="0"/>
+    <testCase name="exports floatUtils should be defined" duration="0"/>
+    <testCase name="exports positionUtils should be defined" duration="0"/>
+    <testCase name="exports rebootUtils should be defined" duration="0"/>
+    <testCase name="exports getGlobalStyleNoBootstrapProvider should be defined" duration="0"/>
+    <testCase name="exports getGlobalStyles should be defined" duration="1"/>
+    <testCase name="exports screenreadersUtils should be defined" duration="0"/>
+    <testCase name="exports sizingUtils should be defined" duration="0"/>
+    <testCase name="exports spacingUtils should be defined" duration="1"/>
+    <testCase name="exports transitionUtils should be defined" duration="0"/>
+    <testCase name="exports textUtils should be defined" duration="1"/>
+    <testCase name="exports visibilityUtils should be defined" duration="0"/>
+    <testCase name="exports unit should be defined" duration="0"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/tests/customForm.test.js">
+    <testCase name="bootstrap customForms mixin customForms should return a list of css mixin" duration="28"/>
+    <testCase name="bootstrap customForms mixin customForms should use default arguments" duration="2"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/tests/paginations.test.js">
+    <testCase name="bootstrap pagination mixins paginationSize should return a css with rounded" duration="16"/>
+    <testCase name="bootstrap pagination mixins paginationSize should return a css without rounded" duration="1"/>
+    <testCase name="bootstrap pagination mixins paginationSize should have arguments" duration="1"/>
+    <testCase name="bootstrap pagination mixins paginationSize should return a css with rounded" duration="9"/>
+    <testCase name="bootstrap pagination mixins paginationSize should return a css without rounded" duration="1"/>
+    <testCase name="bootstrap pagination mixins pagination should return a nav utility css" duration="3"/>
+    <testCase name="bootstrap pagination mixins pagination should parameters" duration="0"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/tests/size.test.js">
+    <testCase name="bootstrap size mixins size should return a css from a width" duration="11"/>
+    <testCase name="bootstrap size mixins size should return a css from a width and height" duration="8"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/tests/cards.test.js">
+    <testCase name="bootstrap cards mixins cardVariant should return a css" duration="59"/>
+    <testCase name="bootstrap cards mixins cardVariant should return a css by default" duration="1"/>
+    <testCase name="bootstrap cards mixins cardOutlineVariant should return a css" duration="1"/>
+    <testCase name="bootstrap cards mixins cardOutlineVariant should return a css by default" duration="1"/>
+    <testCase name="bootstrap cards mixins cardInverse should return a css without media query" duration="1"/>
+    <testCase name="bootstrap cards mixins cardInverse should return a css with media query" duration="1"/>
+    <testCase name="bootstrap cards mixins cardInverse should return a css by default" duration="7"/>
+    <testCase name="bootstrap cards mixins card should return a css with media query" duration="3"/>
+    <testCase name="bootstrap cards mixins card should return a css by default" duration="1"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/utilities/tests/text.test.js">
+    <testCase name="bootstrap text utility getTextUtilities should return a list of css utilities" duration="19"/>
+    <testCase name="bootstrap text utility getTextUtilities should have arguments" duration="2"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/tests/navbar-toggleable.test.js">
+    <testCase name="bootstrap toggleable mixins navbarToggleable should return a css without grtid-breakpoints" duration="3"/>
+    <testCase name="bootstrap toggleable mixins navbarToggleable should return a css" duration="4"/>
+    <testCase name="bootstrap toggleable mixins navbarToggleable should have arguments" duration="1"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/tests/media.test.js">
+    <testCase name="bootstrap media mixins media should return a css" duration="5"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/tests/conditional.test.js">
+    <testCase name="kopax conditional mixins ifElse should return the true value" duration="2"/>
+    <testCase name="kopax conditional mixins ifElse should return the false value" duration="1"/>
+    <testCase name="kopax conditional mixins ifThen should return the true value" duration="6"/>
+    <testCase name="kopax conditional mixins ifThen should return the false value" duration="0"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/utilities/tests/flex.test.js">
+    <testCase name="bootstrap flex utility getFlexUtilities should return a list of css utilities" duration="8"/>
+    <testCase name="bootstrap flex utility getFlexUtilities should have arguments" duration="1"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/tests/forms.test.js">
+    <testCase name="bootstrap forms mixins formControl should return a css without shadows" duration="11"/>
+    <testCase name="bootstrap forms mixins formControl should have parameters" duration="1"/>
+    <testCase name="bootstrap forms mixins formControlValidation should return a css without shadows" duration="6"/>
+    <testCase name="bootstrap forms mixins formControlValidation should return a css with shadows" duration="2"/>
+    <testCase name="bootstrap forms mixins formControlValidation should have arguments" duration="1"/>
+    <testCase name="bootstrap forms mixins formControlFocus should return a css without shadows" duration="1"/>
+    <testCase name="bootstrap forms mixins formControlFocus should return a css with shadows" duration="1"/>
+    <testCase name="bootstrap forms mixins formControlFocus should have arguments" duration="1"/>
+    <testCase name="bootstrap forms mixins inputSize should return a css with rounded" duration="1"/>
+    <testCase name="bootstrap forms mixins inputSize should return a css without rounded" duration="0"/>
+    <testCase name="bootstrap forms mixins inputSize should have arguments" duration="1"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/tests/clearfix.test.js">
+    <testCase name="bootstrap clearfix mixins clearfix should return a css" duration="2"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/tests/lists.test.js">
+    <testCase name="bootstrap lists mixins listUnstyled should return a css" duration="2"/>
+    <testCase name="bootstrap lists mixins listInlineItem should return a css" duration="1"/>
+    <testCase name="bootstrap lists mixins listInlineItem should have arguments" duration="2"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/tests/breakpoints.test.js">
+    <testCase name="bootstrap breakpoints mixins breakpointNext should return a css" duration="18"/>
+    <testCase name="bootstrap breakpoints mixins breakpointNext should return null if not arguments are passed" duration="1"/>
+    <testCase name="bootstrap breakpoints mixins breakpointMin should be null" duration="0"/>
+    <testCase name="bootstrap breakpoints mixins breakpointMin should be not null" duration="3"/>
+    <testCase name="bootstrap breakpoints mixins breakpointMin should return null if no arguments are passed" duration="1"/>
+    <testCase name="bootstrap breakpoints mixins breakpointMax should be not null" duration="0"/>
+    <testCase name="bootstrap breakpoints mixins breakpointMax should be null" duration="1"/>
+    <testCase name="bootstrap breakpoints mixins breakpointMax should return null if no arguments are passed" duration="0"/>
+    <testCase name="bootstrap breakpoints mixins mediaBreakpointInfix should return &quot;&quot;" duration="32"/>
+    <testCase name="bootstrap breakpoints mixins mediaBreakpointInfix should return null" duration="10"/>
+    <testCase name="bootstrap breakpoints mixins breakpointInfix should return null if no arguments are passed" duration="0"/>
+    <testCase name="bootstrap breakpoints mixins mediaBreakpointUp should return a media query" duration="8"/>
+    <testCase name="bootstrap breakpoints mixins mediaBreakpointUp should return null if no arguments are passed" duration="1"/>
+    <testCase name="bootstrap breakpoints mixins mediaBreakpointDown should return a media query" duration="0"/>
+    <testCase name="bootstrap breakpoints mixins mediaBreakpointDown should return null if no arguments are passed" duration="1"/>
+    <testCase name="bootstrap breakpoints mixins mediaBreakpointBetween should return a media query" duration="1"/>
+    <testCase name="bootstrap breakpoints mixins mediaBreakpointBetween should return a max media query" duration="0"/>
+    <testCase name="bootstrap breakpoints mixins mediaBreakpointBetween should return a min media query" duration="0"/>
+    <testCase name="bootstrap breakpoints mixins mediaBreakpointBetween should return null if no arguments are passed" duration="0"/>
+    <testCase name="bootstrap breakpoints mixins mediaBreakpointOnly should return a media query" duration="1"/>
+    <testCase name="bootstrap breakpoints mixins mediaBreakpointOnly should return null if no arguments are passed" duration="18"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/tests/alert.test.js">
+    <testCase name="bootstrap alert mixins alertVariant should return a css" duration="4"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/tests/float.test.js">
+    <testCase name="bootstrap float mixins floatLeft should return a css" duration="2"/>
+    <testCase name="bootstrap float mixins floatRight should return a css" duration="2"/>
+    <testCase name="bootstrap float mixins floatNone should return a css" duration="1"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/tests/variables.test.js">
+    <testCase name="bootstrap variables mixins assertAscending true" duration="3"/>
+    <testCase name="bootstrap variables mixins assertAscending false" duration="37"/>
+    <testCase name="bootstrap variables mixins comparable true" duration="1"/>
+    <testCase name="bootstrap variables mixins comparable false" duration="0"/>
+    <testCase name="bootstrap variables mixins comparable should have arguments" duration="1"/>
+    <testCase name="bootstrap variables mixins assertStartAtZero true" duration="1"/>
+    <testCase name="bootstrap variables mixins assertStartAtZero false" duration="9"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/utilities/tests/spacing.test.js">
+    <testCase name="bootstrap spacing utility getSpacingUtilities should return a list of css utilities" duration="25"/>
+    <testCase name="bootstrap spacing utility getSpacingUtilities should have arguments" duration="2"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/utilities/tests/screenreaders.test.js">
+    <testCase name="bootstrap screenreaders utility getScreenReadersUtilities should return a list of css utilities" duration="3"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/tests/progress.test.js">
+    <testCase name="bootstrap progress mixins progressVariant should return a css" duration="3"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/utilities/tests/position.test.js">
+    <testCase name="bootstrap position utility getPositionUtilities should return a list of css utilities" duration="3"/>
+    <testCase name="bootstrap position utility getPositionUtilities should have arguments" duration="2"/>
+    <testCase name="bootstrap position utility fixedTop should return class .fixed-top" duration="1"/>
+    <testCase name="bootstrap position utility fixedTop should have arguments" duration="1"/>
+    <testCase name="bootstrap position utility fixedBottom should return class .fixed-bottom" duration="1"/>
+    <testCase name="bootstrap position utility fixedBottom should have arguments" duration="1"/>
+    <testCase name="bootstrap position utility stickTop should return class .fixed-sticky" duration="0"/>
+    <testCase name="bootstrap position utility stickTop should have arguments" duration="1"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/utilities/tests/visibility.test.js">
+    <testCase name="bootstrap visibility utility getVisibilityUtilities should have arguments" duration="2"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/tests/text-emphasis.test.js">
+    <testCase name="bootstrap text-emphasis mixins textEmphasisVariant should return a css without hover media query" duration="10"/>
+    <testCase name="bootstrap text-emphasis mixins textEmphasisVariant should return a css with hover media query" duration="1"/>
+    <testCase name="bootstrap text-emphasis mixins textEmphasisVariant should have arguments" duration="1"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/tests/typography.test.js">
+    <testCase name="bootstrap typography utility nav should return a typography utility css" duration="7"/>
+    <testCase name="bootstrap typography utility nav should return a typography utility css with default" duration="7"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/tests/resize.test.js">
+    <testCase name="bootstrap resize mixins resizable should return a css" duration="3"/>
+    <testCase name="bootstrap resize mixins should throw error if wrong arguments are passed" duration="2"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/tests/a.test.js">
+    <testCase name="bootstrap a mixin should return a a mixin css" duration="5"/>
+    <testCase name="bootstrap a mixin should return a a utility css by default" duration="1"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/tests/background-variant.test.js">
+    <testCase name="bootstrap background-variant mixins bgVariant should return a css" duration="4"/>
+    <testCase name="bootstrap background-variant mixins bgVariant should have paramters" duration="2"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/tests/grid-framework.test.js">
+    <testCase name="bootstrap grid-framework mixins makeGridColumns should return an empty css" duration="3"/>
+    <testCase name="bootstrap grid-framework mixins makeGridColumns should return a css" duration="17"/>
+    <testCase name="bootstrap grid-framework mixins makeGridColumns should have arguments" duration="8"/>
+    <testCase name="bootstrap grid-framework mixins getGridColumn should return a css" duration="2"/>
+    <testCase name="bootstrap grid-framework mixins getGridColumn should have arguments" duration="0"/>
+    <testCase name="bootstrap grid-framework mixins getColumnGridColumn should return a css" duration="3"/>
+    <testCase name="bootstrap grid-framework mixins getColumnGridColumn should have arguments" duration="1"/>
+    <testCase name="bootstrap grid-framework mixins getMediaBreakpointUp should return a css" duration="1"/>
+    <testCase name="bootstrap grid-framework mixins getMediaBreakpointUp should have arguments" duration="1"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/tests/tab-focus.test.js">
+    <testCase name="bootstrap tab-focus mixins tabFocus should return a css" duration="2"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/tests/nav.test.js">
+    <testCase name="bootstrap nav utility nav should return a nav utility css" duration="7"/>
+    <testCase name="bootstrap nav utility nav should return a a css by default" duration="1"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/tests/nav-divider.test.js">
+    <testCase name="bootstrap nav-divider mixins navDivider should return a css" duration="2"/>
+    <testCase name="bootstrap nav-divider mixins navDivider should have arguments" duration="0"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/utilities/tests/align.test.js">
+    <testCase name="bootstrap align utility getAlignUtilities should return a list of css utilities" duration="23"/>
+    <testCase name="bootstrap align utility alignBaseline should return a css" duration="3"/>
+    <testCase name="bootstrap align utility alignTop should return a css" duration="2"/>
+    <testCase name="bootstrap align utility alignMiddle should return a css" duration="2"/>
+    <testCase name="bootstrap align utility alignBottom should return a css" duration="2"/>
+    <testCase name="bootstrap align utility alignTextBottom should return a css" duration="1"/>
+    <testCase name="bootstrap align utility alignTextTop should return a css" duration="0"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/utilities/tests/display.test.js">
+    <testCase name="bootstrap display utility getDisplayUtilities should return a list of css utilities" duration="3"/>
+    <testCase name="bootstrap display utility getDisplayUtilities should have arguments" duration="1"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/utilities/tests/transition.test.js">
+    <testCase name="bootstrap transition mixins getTransitionUtils should return a css utility" duration="4"/>
+    <testCase name="bootstrap transition mixins getTransitionUtils should have parameters" duration="2"/>
+    <testCase name="bootstrap transition mixins fade should return a css with defaultProps" duration="1"/>
+    <testCase name="bootstrap transition mixins fade should return a css with transition" duration="3"/>
+    <testCase name="bootstrap transition mixins fade should return a css without transition" duration="1"/>
+    <testCase name="bootstrap transition mixins collapse should return a css with defaultProps" duration="1"/>
+    <testCase name="bootstrap transition mixins collapse should return a css with transition" duration="1"/>
+    <testCase name="bootstrap transition mixins collapse should return a css without transition" duration="1"/>
+    <testCase name="bootstrap transition mixins getReactTransition should return a css with transition" duration="2"/>
+    <testCase name="bootstrap transition mixins getReactTransition should return a css without transition" duration="2"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/utilities/tests/reboot.test.js">
+    <testCase name="bootstrap reboot utility getGlobalStyleNoBootstrapProvider should return a set of global styles" duration="3"/>
+    <testCase name="bootstrap reboot utility getGlobalStyles should return a set of global styles" duration="1"/>
+    <testCase name="bootstrap reboot utility getGlobalStyles should return a set of global styles without params" duration="0"/>
+    <testCase name="bootstrap reboot utility body should return a css with default values" duration="2"/>
+    <testCase name="bootstrap reboot utility body should return a css with custom values" duration="1"/>
+    <testCase name="bootstrap reboot utility bodyUtils should return a css with default values" duration="1"/>
+    <testCase name="bootstrap reboot utility boxSizing should return a css" duration="1"/>
+    <testCase name="bootstrap reboot utility html should return a css" duration="1"/>
+    <testCase name="bootstrap reboot utility ie10FixHidden should return a css" duration="0"/>
+    <testCase name="bootstrap reboot utility ie10FixViewport should return a css" duration="1"/>
+    <testCase name="bootstrap reboot utility svg should return a css" duration="0"/>
+    <testCase name="bootstrap reboot utility tabIndex should return a css" duration="1"/>
+    <testCase name="bootstrap reboot utility webkitFileUploadButton should return a css" duration="0"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/tests/table-row.test.js">
+    <testCase name="bootstrap table-row mixins tableRowVariant should return a css active variant" duration="3"/>
+    <testCase name="bootstrap table-row mixins tableRowVariant should return a css success variant" duration="3"/>
+    <testCase name="bootstrap table-row mixins tableRowVariant should return a css info variant" duration="2"/>
+    <testCase name="bootstrap table-row mixins tableRowVariant should return a css warning variant" duration="1"/>
+    <testCase name="bootstrap table-row mixins tableRowVariant should return a css danger variant" duration="1"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/tests/border-radius.test.js">
+    <testCase name="bootstrap border-radius mixins borderRadius should return a css" duration="11"/>
+    <testCase name="bootstrap border-radius mixins borderRadius should have arguments" duration="15"/>
+    <testCase name="bootstrap border-radius mixins borderTopRadius should return a css" duration="20"/>
+    <testCase name="bootstrap border-radius mixins borderTopRadius should return a css by default" duration="1"/>
+    <testCase name="bootstrap border-radius mixins borderRightRadius should return a css" duration="1"/>
+    <testCase name="bootstrap border-radius mixins borderRightRadius should return a css by default" duration="1"/>
+    <testCase name="bootstrap border-radius mixins borderBottomRadius should return a css" duration="2"/>
+    <testCase name="bootstrap border-radius mixins borderBottomRadius should return a css by default" duration="10"/>
+    <testCase name="bootstrap border-radius mixins borderLeftRadius should return a css" duration="1"/>
+    <testCase name="bootstrap border-radius mixins borderLeftRadius should return a css by default" duration="0"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/utilities/tests/cursor.test.js">
+    <testCase name="bootstrap cursor utility getCursorUtilities should return a list of cursor css utility" duration="3"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/utilities/tests/clearfix.test.js">
+    <testCase name="bootstrap clearfix utility getClearfixUtilities should return a list of css utilities" duration="2"/>
+    <testCase name="bootstrap clearfix utility getClearfix should return a list of css utilities" duration="2"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/tests/screen-reader.test.js">
+    <testCase name="bootstrap screen-reader mixins srOnly should return a css" duration="7"/>
+    <testCase name="bootstrap screen-reader mixins srOnlyFocusable should return a css" duration="1"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/tests/transition.test.js">
+    <testCase name="bootstrap transition mixins transition should return a css with transitions" duration="8"/>
+    <testCase name="bootstrap transition mixins transition should return a css without transitions" duration="1"/>
+    <testCase name="bootstrap transition mixins transition should have arguments" duration="1"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/tests/navbar.test.js">
+    <testCase name="bootstrap navbar mixins navbar should return a css for navbar" duration="18"/>
+    <testCase name="bootstrap navbar mixins navbar should have arguments" duration="1"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/tests/visibility.test.js">
+    <testCase name="bootstrap visibility mixins invisible should have arguments" duration="2"/>
+    <testCase name="bootstrap visibility mixins invisible should return a css" duration="2"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/tests/buttons.test.js">
+    <testCase name="bootstrap button mixins buttonVariant should return a css without shadows" duration="9"/>
+    <testCase name="bootstrap button mixins buttonVariant should return a css with shadows" duration="3"/>
+    <testCase name="bootstrap button mixins buttonVariant should return a css by default" duration="4"/>
+    <testCase name="bootstrap button mixins buttonOutlineVariant should return a css" duration="3"/>
+    <testCase name="bootstrap button mixins buttonOutlineVariant should return a css by default" duration="1"/>
+    <testCase name="bootstrap button mixins buttonSize should return a css with rounded" duration="4"/>
+    <testCase name="bootstrap button mixins buttonSize should return a css without rounded" duration="1"/>
+    <testCase name="bootstrap button mixins buttonSize should return a css by default" duration="1"/>
+    <testCase name="bootstrap button mixins button should return a a css" duration="31"/>
+    <testCase name="bootstrap button mixins button should return a button utility by default" duration="14"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/tests/text-truncate.test.js">
+    <testCase name="bootstrap text-truncate mixins textTruncate should return a css" duration="8"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/utilities/tests/borders.test.js">
+    <testCase name="bootstrap borders utility getBordersUtilities should return a list of css utilities with rounded" duration="16"/>
+    <testCase name="bootstrap borders utility getBordersUtilities should return a list of css utilities without rounded" duration="7"/>
+    <testCase name="bootstrap borders utility getBordersUtilities should have arguments" duration="6"/>
+    <testCase name="bootstrap borders utility rounded should return a css with rounded" duration="1"/>
+    <testCase name="bootstrap borders utility rounded should return a css without rounded" duration="1"/>
+    <testCase name="bootstrap borders utility rounded should have arguments" duration="0"/>
+    <testCase name="bootstrap borders utility roundedBottom should return a css with rounded" duration="1"/>
+    <testCase name="bootstrap borders utility roundedBottom should return a css without rounded" duration="1"/>
+    <testCase name="bootstrap borders utility roundedBottom should have arguments" duration="6"/>
+    <testCase name="bootstrap borders utility roundedCircle should have arguments" duration="1"/>
+    <testCase name="bootstrap borders utility roundedLeft should return a css with rounded" duration="5"/>
+    <testCase name="bootstrap borders utility roundedLeft should return a css without rounded" duration="0"/>
+    <testCase name="bootstrap borders utility roundedLeft should have arguments" duration="0"/>
+    <testCase name="bootstrap borders utility roundedRight should return a css with rounded" duration="0"/>
+    <testCase name="bootstrap borders utility roundedRight should return a css without rounded" duration="3"/>
+    <testCase name="bootstrap borders utility roundedRight should have arguments" duration="0"/>
+    <testCase name="bootstrap borders utility roundedTop should return a css with rounded" duration="11"/>
+    <testCase name="bootstrap borders utility roundedTop should return a css without rounded" duration="1"/>
+    <testCase name="bootstrap borders utility roundedTop should have arguments" duration="0"/>
+    <testCase name="bootstrap borders utility roundedCircle should return an utility" duration="0"/>
+    <testCase name="bootstrap borders utility resetBorder should return an utility" duration="2"/>
+    <testCase name="bootstrap borders utility resetBorderTop should return an utility" duration="2"/>
+    <testCase name="bootstrap borders utility resetBorderRight should return an utility" duration="8"/>
+    <testCase name="bootstrap borders utility resetBorderBottom should return an utility" duration="1"/>
+    <testCase name="bootstrap borders utility resetBorderLeft should return an utility" duration="0"/>
+    <testCase name="bootstrap borders utility resetRounded should return an utility" duration="0"/>
+    <testCase name="bootstrap borders utility resetRoundedTop should return an utility" duration="0"/>
+    <testCase name="bootstrap borders utility resetRoundedRight should return an utility" duration="1"/>
+    <testCase name="bootstrap borders utility resetRoundedBottom should return an utility" duration="0"/>
+    <testCase name="bootstrap borders utility resetRoundedLeft should return an utility" duration="0"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/tests/box-shadow.test.js">
+    <testCase name="bootstrap box-shadow mixins boxShadow should return disable css" duration="2"/>
+    <testCase name="bootstrap box-shadow mixins boxShadow should return enable css" duration="2"/>
+    <testCase name="bootstrap box-shadow mixins boxShadow should return a css by default" duration="1"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/tests/grid.test.js">
+    <testCase name="bootstrap grid mixins makeContainer should return an empty css" duration="3"/>
+    <testCase name="bootstrap grid mixins makeContainer should return a css" duration="2"/>
+    <testCase name="bootstrap grid mixins makeContainer should have arguments" duration="1"/>
+    <testCase name="bootstrap grid mixins makeContainerMaxWidths should return a css" duration="6"/>
+    <testCase name="bootstrap grid mixins makeContainerMaxWidths should return an empty css" duration="1"/>
+    <testCase name="bootstrap grid mixins makeContainerMaxWidths should have arguments" duration="1"/>
+    <testCase name="bootstrap grid mixins makeGutters should return a css" duration="1"/>
+    <testCase name="bootstrap grid mixins makeGutters should have arguments" duration="1"/>
+    <testCase name="bootstrap grid mixins makeRow should return an empty css" duration="1"/>
+    <testCase name="bootstrap grid mixins makeRow should return an empty css" duration="0"/>
+    <testCase name="bootstrap grid mixins makeRow should return a css " duration="2"/>
+    <testCase name="bootstrap grid mixins makeRow should have arguments" duration="0"/>
+    <testCase name="bootstrap grid mixins makeColReady should return a css" duration="1"/>
+    <testCase name="bootstrap grid mixins makeColReady should have arguments" duration="1"/>
+    <testCase name="bootstrap grid mixins makeCol should return a css" duration="1"/>
+    <testCase name="bootstrap grid mixins makeCol should have arguments" duration="0"/>
+    <testCase name="bootstrap grid mixins makeColOffset should return a css" duration="2"/>
+    <testCase name="bootstrap grid mixins makeColOffset should have arguments" duration="1"/>
+    <testCase name="bootstrap grid mixins makeColPush should return a css" duration="0"/>
+    <testCase name="bootstrap grid mixins makeColPush should have arguments" duration="1"/>
+    <testCase name="bootstrap grid mixins makeColPull should return a css" duration="1"/>
+    <testCase name="bootstrap grid mixins makeColPull should have arguments" duration="0"/>
+    <testCase name="bootstrap grid mixins makeColModifier push should return a css" duration="1"/>
+    <testCase name="bootstrap grid mixins makeColModifier pull should return a css" duration="0"/>
+    <testCase name="bootstrap grid mixins makeColModifier offset should return a css" duration="1"/>
+    <testCase name="bootstrap grid mixins makeColModifier should have arguments" duration="0"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/utilities/tests/sizing.test.js">
+    <testCase name="bootstrap sizing utility getSizingUtilities should return a list of css utilities" duration="16"/>
+    <testCase name="bootstrap sizing utility getSizingUtilities should have arguments" duration="2"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/tests/badge.test.js">
+    <testCase name="bootstrap badge mixins badgeVariant should return css without hover media query " duration="3"/>
+    <testCase name="bootstrap badge mixins badgeVariant should return css with hover media query" duration="3"/>
+    <testCase name="bootstrap badge mixins badgeVariant should return css by default " duration="1"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/tests/reset-filter.test.js">
+    <testCase name="bootstrap reset-filter mixins resetFilter should return a css" duration="6"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/tests/text-hide.test.js">
+    <testCase name="bootstrap text-hide mixins textHide should return a css" duration="2"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/utilities/tests/float.test.js">
+    <testCase name="bootstrap float utility getFloatUtilities should return a list of css utilities" duration="4"/>
+    <testCase name="bootstrap float utility getFloatUtilities should have arguments" duration="1"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/tests/image.test.js">
+    <testCase name="bootstrap image mixins imgFluid should return a css" duration="4"/>
+    <testCase name="bootstrap image mixins imgRetina should return a css" duration="3"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/tests/buttonGroup.test.js">
+    <testCase name="bootstrap buttonGroup utility should return a buttonGroup utility css" duration="9"/>
+    <testCase name="bootstrap buttonGroup utility should return a buttonGroup utility css with default props" duration="6"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/tests/gradients.test.js">
+    <testCase name="bootstrap gradients mixins gradientX should return a css" duration="2"/>
+    <testCase name="bootstrap gradients mixins gradientY should return a css" duration="2"/>
+    <testCase name="bootstrap gradients mixins gradientDirectional should return a css" duration="1"/>
+    <testCase name="bootstrap gradients mixins gradientXThreeColors should return a css" duration="1"/>
+    <testCase name="bootstrap gradients mixins gradientYThreeColors should return a css" duration="1"/>
+    <testCase name="bootstrap gradients mixins gradientRadial should return a css" duration="0"/>
+    <testCase name="bootstrap gradients mixins gradientStriped should return a css" duration="1"/>
+  </file>
+  <file path="/home/ajt/workspace/module.kopaxgroup.com/styled-components/bootstrap-styled-mixins/src/tests/navbar-align.test.js">
+    <testCase name="bootstrap navbar-align mixins navbarVerticalAlign should return a css" duration="4"/>
+  </file>
+</testExecutions>

@@ -1,0 +1,1175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="54b03577-d067-4757-a9f4-d9e16f94dd6c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/sort-arrow-sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styleguide/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/bootstrap-styled-mixins.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bundle-stats.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/clover.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/coverage-final.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/base.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/prettify.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/prettify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/sorter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/a.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/alert.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/background-variant.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/badge.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/border-radius.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/box-shadow.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/breakpoints.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/buttonGroup.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/buttons.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/cards.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/clearfix.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/conditional.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/customForms.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/float.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/forms.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/gradients.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/grid-framework.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/grid.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/hover.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/image.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/index.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/list-group.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/lists.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/media.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/nav-divider.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/nav.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/navbar-align.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/navbar-toggleable.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/navbar.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/paginations.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/progress.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/reset-filter.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/reset-text.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/resize.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/screen-reader.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/size.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/tab-focus.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/table-row.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/text-emphasis.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/text-hide.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/text-truncate.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/transition.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/typography.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/utilities/align.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/utilities/background.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/utilities/borders.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/utilities/clearfix.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/utilities/cursor.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/utilities/display.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/utilities/flex.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/utilities/float.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/utilities/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/utilities/position.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/utilities/reboot.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/utilities/screenreaders.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/utilities/sizing.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/utilities/spacing.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/utilities/text.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/utilities/transition.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/utilities/visibility.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/variables.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/visibility.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage/lcov.info" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/declination.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/@bootstrap-styled/mixins.cjs.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/@bootstrap-styled/mixins.cjs.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/@bootstrap-styled/mixins.esm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/@bootstrap-styled/mixins.esm.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/branches.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/commands.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/configuration.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/contribute.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/faq.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/getting-started.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/installation.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/introduction.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/prerequisite.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/release.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/ui.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/internals/testing/test-bundler.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/JSONStream" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/acorn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/ansi-html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/atob" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/available" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/babel" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/babel-doctor" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/babel-external-helpers" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/babel-node" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/babylon" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/browserslist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/buble" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/cdl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/changed-log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/ci-publish" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/conventional-changelog-writer" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/conventional-commits-parser" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/cssesc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/cssmin" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/csso" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/detect" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/detect-port" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/errno" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/escodegen" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/esgenerate" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/eslint" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/esparse" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/esvalidate" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/findup" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/ggit" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/ggit-last" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/handlebars" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/import-local-fixture" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/internal-ip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/is-ci" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/jest" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/jest-runtime" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/js-yaml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/jsesc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/jsmin" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/lint-staged" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/loose-envify" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/marked" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/miller-rabin" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/mime" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/mkdirp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/multicast-dns" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/ncp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/nearley-railroad" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/nearley-test" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/nearley-unparse" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/nearleyc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/npm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/npm-path" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/npm-which" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/npx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/parse-github-url" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/rc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/react-docgen" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/regjsparser" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/releases" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/repo-url" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/rimraf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/rollup" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/rollup-umd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/rollup-umd-ci-build" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/rollup-umd-ci-deploy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/rollup-umd-ci-release" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/rollup-umd-ci-release-transitive" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/rollup-umd-ci-test" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/rollup-umd-scripts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/sane" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/semantic-release" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/semver" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/sha.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/shjs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/sshpk-conv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/sshpk-sign" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/sshpk-verify" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/strip-indent" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/styleguidist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/svgo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/toctoc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/uglifyjs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/user-home" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/uuid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/vers" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/versions" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/watch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/webpack" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/webpack-dev-server" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/which" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/window-size" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/reports/test-report.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styleguide.config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styleguide/prepare.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styleguide/setup.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styleguide/styleguide.ext.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test-report.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/@bootstrap-styled/mixins.es.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/@bootstrap-styled/mixins.es.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/@bootstrap-styled/mixins.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/@bootstrap-styled/mixins.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/internal/declination/create" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/internal/programs/appendBabelPreset.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/internal/programs/initPackage.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/internal/programs/installBabelPlugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/internal/programs/installEslint.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/internal/programs/installExternal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/internal/rollup-umd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/internal/templates/.gitlab-ci.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/internal/templates/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/internal/templates/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/internal/templates/sonar-project.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/internal/utils/babelrc.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/internal/utils/bash.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/internal/utils/git.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/internal/utils/npm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/internal/utils/parse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/internal/utils/rollupconfig.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.babelrc" afterPath="$PROJECT_DIR$/.babelrc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.npmignore" afterPath="$PROJECT_DIR$/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/@bootstrap-styled/mixins.min.js" afterPath="$PROJECT_DIR$/dist/@bootstrap-styled/mixins.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/@bootstrap-styled/mixins.min.js.map" afterPath="$PROJECT_DIR$/dist/@bootstrap-styled/mixins.min.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/cards.js" afterPath="$PROJECT_DIR$/lib/cards.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/tests/cards.test.js" afterPath="$PROJECT_DIR$/lib/tests/cards.test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rollup.config.js" afterPath="$PROJECT_DIR$/rollup.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sonar-project.properties" afterPath="$PROJECT_DIR$/sonar-project.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cards.js" afterPath="$PROJECT_DIR$/src/cards.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tests/cards.test.js" afterPath="$PROJECT_DIR$/src/tests/cards.test.js" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="154" column="36" lean-forward="true" selection-start-line="153" selection-start-column="26" selection-end-line="154" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="text.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/utilities/text.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="typography.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/typography.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="2" lean-forward="false" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="prepare.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/styleguide/prepare.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="visibility.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/visibility.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".eslintignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.eslintignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".babelrc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.babelrc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".npmignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.npmignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sonar-project.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sonar-project.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="74" lean-forward="false" selection-start-line="2" selection-start-column="74" selection-end-line="2" selection-end-column="74" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>getGlobalStyles</find>
+      <find>$input-padding-x</find>
+      <find>getGlobalStyleNoBootstrapProvider</find>
+      <find>body</find>
+      <find>getSpacingUtilities</find>
+      <find>zindex-navbar-fixed'</find>
+      <find>d-flex</find>
+      <find>zindex-navbar-fixed</find>
+      <find>fa</find>
+      <find>getMediaBreakpointUp</find>
+      <find>breakpointInfix</find>
+      <find>getColumnGridColumn</find>
+      <find>primary</find>
+      <find>box-sizing</find>
+      <find>rollup-umd</find>
+      <find>dete</find>
+      <find>$header-navbar-border-color</find>
+      <find>author</find>
+      <find>localStorage</find>
+      <find>test</find>
+      <find>testEnvironment</find>
+      <find>media</find>
+      <find>Mar</find>
+      <find>jest</find>
+      <find>bootstrap-styled-mix</find>
+      <find>eslint-con</find>
+      <find>mixins</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>css-mixins</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/src</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/buttonGroup.js" />
+        <option value="$PROJECT_DIR$/src/utilities/tests/reboot.test.js" />
+        <option value="$PROJECT_DIR$/src/tests/visibility.test.js" />
+        <option value="$PROJECT_DIR$/src/utilities/tests/cursor.test.js" />
+        <option value="$PROJECT_DIR$/src/a.js" />
+        <option value="$PROJECT_DIR$/src/utilities/spacing.js" />
+        <option value="$PROJECT_DIR$/src/utilities/flex.js" />
+        <option value="$PROJECT_DIR$/src/utilities/tests/flex.test.js" />
+        <option value="$PROJECT_DIR$/CHANGELOG.md" />
+        <option value="$PROJECT_DIR$/package-lock.json" />
+        <option value="$PROJECT_DIR$/.gitlab-ci.yml" />
+        <option value="$PROJECT_DIR$/src/utilities/reboot.js" />
+        <option value="$PROJECT_DIR$/src/navbar.js" />
+        <option value="$PROJECT_DIR$/src/utilities/borders.js" />
+        <option value="$PROJECT_DIR$/rollup.config.js" />
+        <option value="$PROJECT_DIR$/docs/introduction.md" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/cards.js" />
+        <option value="$PROJECT_DIR$/src/tests/a.test.js" />
+        <option value="$PROJECT_DIR$/src/tests/cards.test.js" />
+        <option value="$PROJECT_DIR$/sonar-project.properties" />
+        <option value="$PROJECT_DIR$/.babelrc" />
+        <option value="$PROJECT_DIR$/styleguide/prepare.sh" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/.npmignore" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1865" />
+    <option name="y" value="34" />
+    <option name="width" value="1594" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="bootstrap-styled-mixins" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bootstrap-styled-mixins" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bootstrap-styled-mixins" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bootstrap-styled-mixins" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bootstrap-styled-mixins" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bootstrap-styled-mixins" type="462c0819:PsiDirectoryNode" />
+              <item name="styleguide" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path" value="/usr/bin/node" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../bootstrap-styled/css-utils" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/jest-cli" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Jest.bootstrap cards mixins.card should return a css with media query">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="bootstrap a mixin (1)" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="$USER_HOME$/.nvm/versions/node/v10.10.0/bin/node" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/tests/a.test.js" />
+      <test-names>
+        <test-name value="bootstrap a mixin" />
+      </test-names>
+    </configuration>
+    <configuration name="bootstrap cards mixins.card should return a css with media query" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/tests/cards.test.js" />
+      <test-names>
+        <test-name value="bootstrap cards mixins" />
+        <test-name value="card should return a css with media query" />
+      </test-names>
+    </configuration>
+    <configuration name="bootstrap flex utility" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="$USER_HOME$/.nvm/versions/node/v10.0.0/bin/node" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/utilities/tests/flex.test.js" />
+      <test-names>
+        <test-name value="bootstrap flex utility" />
+      </test-names>
+    </configuration>
+    <configuration name="bootstrap spacing utility" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/utilities/tests/spacing.test.js" />
+      <test-names>
+        <test-name value="bootstrap spacing utility" />
+      </test-names>
+    </configuration>
+    <configuration name="bootstrap visibility utility" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/utilities/tests/visibility.test.js" />
+      <test-names>
+        <test-name value="bootstrap visibility utility" />
+      </test-names>
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Jest.bootstrap a mixin (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Jest.bootstrap visibility utility" />
+      <item index="2" class="java.lang.String" itemvalue="Jest.bootstrap spacing utility" />
+      <item index="3" class="java.lang.String" itemvalue="Jest.bootstrap flex utility" />
+      <item index="4" class="java.lang.String" itemvalue="Jest.bootstrap cards mixins.card should return a css with media query" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Jest.bootstrap cards mixins.card should return a css with media query" />
+        <item index="1" class="java.lang.String" itemvalue="Jest.bootstrap a mixin (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Jest.bootstrap flex utility" />
+        <item index="3" class="java.lang.String" itemvalue="Jest.bootstrap spacing utility" />
+        <item index="4" class="java.lang.String" itemvalue="Jest.bootstrap visibility utility" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="54b03577-d067-4757-a9f4-d9e16f94dd6c" name="Default" comment="" />
+      <created>1511383014696</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1511383014696</updated>
+      <workItem from="1511383016650" duration="657000" />
+      <workItem from="1512689379566" duration="1231000" />
+      <workItem from="1515970417048" duration="5577000" />
+      <workItem from="1517193451384" duration="5170000" />
+      <workItem from="1517259252791" duration="593000" />
+      <workItem from="1519001004231" duration="3087000" />
+      <workItem from="1519014654820" duration="1348000" />
+      <workItem from="1519607267655" duration="643000" />
+      <workItem from="1523493382845" duration="5836000" />
+      <workItem from="1526425710395" duration="884000" />
+      <workItem from="1527035837599" duration="3878000" />
+      <workItem from="1527062186476" duration="754000" />
+      <workItem from="1527635898394" duration="2113000" />
+      <workItem from="1528423629822" duration="934000" />
+      <workItem from="1528670665209" duration="1622000" />
+      <workItem from="1528927006227" duration="3443000" />
+      <workItem from="1530172212783" duration="2448000" />
+      <workItem from="1530223762734" duration="598000" />
+      <workItem from="1530230087094" duration="30000" />
+      <workItem from="1530568494474" duration="915000" />
+      <workItem from="1531870668744" duration="4512000" />
+      <workItem from="1531882705115" duration="251000" />
+      <workItem from="1531910095687" duration="2388000" />
+      <workItem from="1531957245337" duration="2247000" />
+      <workItem from="1531963942075" duration="1380000" />
+      <workItem from="1532032865079" duration="1206000" />
+      <workItem from="1532045427690" duration="658000" />
+      <workItem from="1536876317907" duration="1687000" />
+      <workItem from="1537135363676" duration="4958000" />
+      <workItem from="1537145171037" duration="2718000" />
+      <workItem from="1537217639887" duration="4936000" />
+      <workItem from="1537258765824" duration="10000" />
+      <workItem from="1537303900169" duration="583000" />
+      <workItem from="1537489222223" duration="573000" />
+      <workItem from="1537577006730" duration="578000" />
+      <workItem from="1537732575495" duration="1810000" />
+      <workItem from="1537845306281" duration="650000" />
+      <workItem from="1537920461798" duration="842000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="bootstrap_a_mixin_(1) - 2018.01.15 at 12h 05m 21s.xml">
+      <configuration name="bootstrap a mixin (1)" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="bootstrap_a_mixin_(1) - 2018.01.15 at 12h 05m 32s.xml">
+      <configuration name="bootstrap a mixin (1)" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="bootstrap_a_mixin_(1) - 2018.01.15 at 12h 06m 25s.xml">
+      <configuration name="bootstrap a mixin (1)" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="bootstrap_flex_utility - 2018.05.23 at 12h 45m 41s.xml">
+      <configuration name="bootstrap flex utility" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="bootstrap_flex_utility - 2018.05.23 at 12h 47m 49s.xml">
+      <configuration name="bootstrap flex utility" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="bootstrap_flex_utility - 2018.05.23 at 12h 48m 10s.xml">
+      <configuration name="bootstrap flex utility" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="bootstrap_spacing_utility - 2018.04.12 at 12h 56m 02s.xml">
+      <configuration name="bootstrap spacing utility" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="bootstrap_spacing_utility - 2018.04.12 at 12h 56m 27s.xml">
+      <configuration name="bootstrap spacing utility" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="bootstrap_visibility_mixins - 2018.02.19 at 13h 52m 45s.xml">
+      <configuration name="bootstrap visibility mixins" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="bootstrap_visibility_utility - 2018.02.19 at 13h 52m 50s.xml">
+      <configuration name="bootstrap visibility utility" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="73748000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1599" y="0" width="1682" height="1025" extended-state="6" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32639793" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2578125" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22380953" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39955357" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="345">
+            <caret line="23" column="29" lean-forward="false" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utilities/tests/flex.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json" />
+    <entry file="file://$PROJECT_DIR$/src/grid-framework.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="59" lean-forward="false" selection-start-line="1" selection-start-column="59" selection-end-line="1" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/a.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/box-shadow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utilities/visibility.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utilities/transition.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background-variant.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gradients.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utilities/reboot.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="2" lean-forward="false" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/navbar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4425">
+          <caret line="298" column="20" lean-forward="false" selection-start-line="298" selection-start-column="20" selection-end-line="298" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/buttons.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="205" column="4" lean-forward="false" selection-start-line="205" selection-start-column="4" selection-end-line="205" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/border-radius.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utilities/spacing.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utilities/sizing.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="11" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utilities/clearfix.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utilities/align.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="14" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utilities/background.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utilities/cursor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utilities/display.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="9" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utilities/flex.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="9" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utilities/borders.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="65" column="4" lean-forward="false" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styleguide/setup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/introduction.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1155">
+            <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.editorconfig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styleguide/styleguide.ext.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styleguide/favicon.ico">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/internals/testing/test-bundler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitlab-ci.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styleguide.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="450">
+            <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/bootstrap-styled-utils/lib/unitUtils/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="21" column="10" lean-forward="false" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rollup.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/alert.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/a.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="45" lean-forward="false" selection-start-line="8" selection-start-column="40" selection-end-line="9" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cards.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/declination.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/cards.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="17" column="38" lean-forward="false" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/breakpoints.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="66" column="31" lean-forward="false" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/visibility.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.eslintignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.babelrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bundle-stats.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sonar-project.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="74" lean-forward="false" selection-start-line="2" selection-start-column="74" selection-end-line="2" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styleguide/prepare.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utilities/text.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/typography.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="2" lean-forward="false" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="154" column="36" lean-forward="true" selection-start-line="153" selection-start-column="26" selection-end-line="154" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.npmignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

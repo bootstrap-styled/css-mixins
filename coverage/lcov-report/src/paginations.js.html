@@ -1,0 +1,584 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/paginations.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">All files</a> / <a href="index.html">src</a> paginations.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>4/4</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>31/31</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>2/2</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>3/3</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { hoverFocus } from './hover';
+import { borderLeftRadius, borderRightRadius, borderRadius } from './border-radius';
+&nbsp;
+export const defaultProps = {
+  '$enable-rounded': true,
+  '$enable-hover-media-query': false,
+  '$border-radius': '.25rem',
+  '$pagination-active-color': '#fff',
+  '$pagination-active-bg': '#0275d8',
+  '$pagination-active-border': '#0275d8',
+  '$pagination-disabled-color': '#636c72',
+  '$cursor-disabled': 'not-allowed',
+  '$pagination-disabled-bg': '#fff',
+  '$pagination-disabled-border': '#ddd',
+  '$pagination-padding-y': '.5rem',
+  '$pagination-padding-x': '.75rem',
+  '$pagination-line-height': '1.25',
+  '$pagination-color': '#0275d8',
+  '$pagination-bg': '#fff',
+  '$pagination-border-width': '1px',
+  '$pagination-border-color': '#ddd',
+  '$pagination-hover-color': 'hsl(207.79999999999995, 98.2%, 27.8%)',
+  '$pagination-hover-bg': '#eceeef',
+  '$pagination-hover-border': '#ddd',
+  '$pagination-padding-y-lg': '.75rem',
+  '$pagination-padding-x-lg': '1.5rem',
+  '$font-size-lg': '1.25rem',
+  '$line-height-lg': '1.3',
+  '$border-radius-lg': '.3rem',
+  '$pagination-padding-y-sm': '.25rem',
+  '$pagination-padding-x-sm': '.5rem',
+  '$font-size-sm': '.875rem',
+  '$line-height-sm': '1.5',
+  '$border-radius-sm': '.2rem',
+};
+&nbsp;
+export const paginationSize = (enableRounded = defaultProps['$enable-rounded'], paddingY, paddingX, fontSize, borderRadiusPagination) =&gt; `
+  .page-link {
+    padding: ${paddingY} ${paddingX};
+    font-size: ${fontSize};
+  }
+&nbsp;
+  .page-item {
+    &amp;:first-child {
+      .page-link {
+        ${borderLeftRadius(enableRounded, borderRadiusPagination)}
+      }
+    }
+    &amp;:last-child {
+      .page-link {
+        ${borderRightRadius(enableRounded, borderRadiusPagination)}
+      }
+    }
+  }
+`;
+&nbsp;
+export function pagination(
+  $enableRounded = defaultProps['$enable-rounded'],
+  $enableHoverMediaQuery = defaultProps['$enable-hover-media-query'],
+  $borderRadius = defaultProps['$border-radius'],
+  $paginationActiveColor = defaultProps['$pagination-active-color'],
+  $paginationActiveBg = defaultProps['$pagination-active-bg'],
+  $paginationActiveBorder = defaultProps['$pagination-active-border'],
+  $paginationDisabledColor = defaultProps['$pagination-disabled-color'],
+  $cursorDisabled = defaultProps['$cursor-disabled'],
+  $paginationDisabledBg = defaultProps['$pagination-disabled-bg'],
+  $paginationDisabledBorder = defaultProps['$pagination-disabled-border'],
+  $paginationPaddingY = defaultProps['$pagination-padding-y'],
+  $paginationPaddingX = defaultProps['$pagination-padding-x'],
+  $paginationLineHeight = defaultProps['$pagination-line-height'],
+  $paginationColor = defaultProps['$pagination-color'],
+  $paginationBg = defaultProps['$pagination-bg'],
+  $paginationBorderWidth = defaultProps['$pagination-border-width'],
+  $paginationBorderColor = defaultProps['$pagination-border-color'],
+  $paginationHoverColor = defaultProps['$pagination-hover-color'],
+  $paginationHoverBg = defaultProps['$pagination-hover-bg'],
+  $paginationHoverBorder = defaultProps['$pagination-hover-border'],
+  $paginationPaddingYLg = defaultProps['$pagination-padding-y-lg'],
+  $paginationPaddingXLg = defaultProps['$pagination-padding-x-lg'],
+  $fontSizeLg = defaultProps['$font-size-lg'],
+  $lineHeightLg = defaultProps['$line-height-lg'],
+  $borderRadiusLg = defaultProps['$border-radius-lg'],
+  $paginationPaddingYSm = defaultProps['$pagination-padding-y-sm'],
+  $paginationPaddingXSm = defaultProps['$pagination-padding-x-sm'],
+  $fontSizeSm = defaultProps['$font-size-sm'],
+  $lineHeightSm = defaultProps['$line-height-sm'],
+  $borderRadiusSm = defaultProps['$border-radius-sm'],
+) {
+  return `
+  &amp;.pagination {
+    display: flex;
+    padding-left: 0;
+    list-style: none; 
+    ${borderRadius($enableRounded)}
+  }
+  
+  &amp; .page-item {
+    &amp;:first-child {
+      .page-link {
+        margin-left: 0;
+        ${borderLeftRadius($enableRounded, $borderRadius)}
+      }
+    }
+    &amp;:last-child {
+      .page-link {
+      ${borderRightRadius($enableRounded, $borderRadius)}
+      }
+    }
+  
+    &amp;.active .page-link {
+      z-index: 2;
+      color: ${$paginationActiveColor};
+      background-color: ${$paginationActiveBg};
+      border-color: ${$paginationActiveBorder};
+    }
+  
+    &amp;.disabled .page-link {
+      color: ${$paginationDisabledColor};
+      pointer-events: none;
+      cursor: ${$cursorDisabled};
+      background-color: ${$paginationDisabledBg};
+      border-color: ${$paginationDisabledBorder};
+    }
+  }
+  
+  &amp; .page-link {
+    position: relative;
+    display: block;
+    padding: ${$paginationPaddingY} ${$paginationPaddingX};
+    margin-left: -1px;
+    line-height: ${$paginationLineHeight};
+    color: ${$paginationColor};
+    background-color: ${$paginationBg};
+    border: ${$paginationBorderWidth} solid ${$paginationBorderColor};
+    
+    ${hoverFocus($enableHoverMediaQuery, `
+      color: ${$paginationHoverColor};
+      text-decoration: none;
+      background-color: ${$paginationHoverBg};
+      border-color: ${$paginationHoverBorder};
+    `)}
+  }
+  
+  /* Sizing */
+  &amp;.pagination-lg {
+  ${paginationSize(
+    $enableRounded,
+    $paginationPaddingYLg,
+    $paginationPaddingXLg,
+    $fontSizeLg,
+    $lineHeightLg,
+    $borderRadiusLg
+  )}
+  }
+  
+  &amp;.pagination-sm {
+  ${paginationSize(
+    $enableRounded,
+    $paginationPaddingYSm,
+    $paginationPaddingXSm,
+    $fontSizeSm,
+    $lineHeightSm,
+    $borderRadiusSm
+  )}
+  }
+  `;
+}
+&nbsp;
+export default {
+  defaultProps,
+  paginationSize,
+  pagination,
+};
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Sep 17 2018 12:05:42 GMT+1200 (New Zealand Standard Time)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>
