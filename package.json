@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "jsnext:main": "dist/@bootstrap-styled/css-mixins.es.js",
   "module": "dist/@bootstrap-styled/css-mixins.es.js",
-  "homepage": "https://bootstrap-styled.github.io/css-mixins",
+  "homepage": "https://bootstrap-styled.yeutech.com/css-mixins",
   "browserslist": [
     "IE >= 9",
     "last 2 versions"
@@ -116,13 +116,6 @@
     "@semantic-release/git": "^7.0.0",
     "@semantic-release/gitlab": "^2.1.4",
     "@semantic-release/npm": "^4.0.0",
-    "@yeutech-lab/rollup-umd-documentation": "^2.3.18",
-    "@yeutech/rollup-umd-ci-build": "^1.0.5",
-    "@yeutech/rollup-umd-ci-deploy": "^1.0.7",
-    "@yeutech/rollup-umd-ci-release": "^1.0.5",
-    "@yeutech/rollup-umd-ci-release-transitive": "^1.1.6",
-    "@yeutech/rollup-umd-ci-test": "^1.0.6",
-    "@yeutech/rollup-umd-scripts": "^0.15.22",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^7.2.3",
@@ -215,19 +208,17 @@
     "lint-staged"
   ],
   "dependencies": {
-    "@bootstrap-styled/utils": "^1.0.2",
+    "@bootstrap-styled/utils": "^1.0.4",
     "color": "^1.0.3"
   },
   "publishConfig": {
     "tag": "latest",
-    "registry": "https://npm.kopaxgroup.com"
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
   },
   "private": false,
   "release": {
     "branch": "master",
-    "publishConfig": {
-      "access": "public"
-    },
     "success": false,
     "fail": false,
     "npmPublish": true,
