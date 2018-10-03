@@ -1,3 +1,23 @@
+# 1.0.0 (2018-10-03)
+
+
+### Bug Fixes
+
+* **.gitignore:** following new standard ([0019f64](https://module.kopaxgroup.com/bootstrap-styled/css-mixins/commit/0019f64))
+* **.npmignore:** following tnew starndard ([70eac97](https://module.kopaxgroup.com/bootstrap-styled/css-mixins/commit/70eac97))
+* fix CI ([41ac827](https://module.kopaxgroup.com/bootstrap-styled/css-mixins/commit/41ac827))
+* **CI:** tryign to fix ci ([d213199](https://module.kopaxgroup.com/bootstrap-styled/css-mixins/commit/d213199))
+* **gitlab-ci.yml:** Updated image link. ([4fb39f2](https://module.kopaxgroup.com/bootstrap-styled/css-mixins/commit/4fb39f2))
+* **package.json:** added scope [@bootstrap-styled](https://module.kopaxgroup.com/bootstrap-styled) and renamed [@bootstrap-styled](https://module.kopaxgroup.com/bootstrap-styled)/mixins ([3d2cd7b](https://module.kopaxgroup.com/bootstrap-styled/css-mixins/commit/3d2cd7b))
+* **package.json:** added scope [@bootstrap-styled](https://module.kopaxgroup.com/bootstrap-styled) and renamed [@bootstrap-styled](https://module.kopaxgroup.com/bootstrap-styled)/mixins ([68b4d68](https://module.kopaxgroup.com/bootstrap-styled/css-mixins/commit/68b4d68))
+* **package.json:** added webpack ([b023cba](https://module.kopaxgroup.com/bootstrap-styled/css-mixins/commit/b023cba))
+
+
+### Features
+
+* **commitizen:** initialized project as commitizen and added badge in README ([61507c5](https://module.kopaxgroup.com/bootstrap-styled/css-mixins/commit/61507c5))
+* **flex:** added justify-content-evenly ([c382535](https://module.kopaxgroup.com/bootstrap-styled/css-mixins/commit/c382535))
+
 # Changelog
 
 All notable changes to this project will be documented in this file.
