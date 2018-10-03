@@ -135,7 +135,6 @@
     "cz-conventional-changelog": "^2.1.0",
     "enzyme": "^3.0.0",
     "enzyme-adapter-react-16": "^1.0.0",
-    "ci-publish": "^1.3.1",
     "eslint": "^5.6.0",
     "eslint-config-airbnb": "^15.0.1",
     "eslint-config-airbnb-base": "^13.1.0",
@@ -148,6 +147,8 @@
     "lint-staged": "^4.1.3",
     "pre-commit": "^1.2.2",
     "rimraf": "^2.6.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
     "react-styleguidist": "7.1.0",
     "rollup": "^0.57.1",
     "rollup-plugin-babel": "^3.0.3",
@@ -208,7 +209,7 @@
     "lint-staged"
   ],
   "dependencies": {
-    "@bootstrap-styled/utils": "^1.0.4",
+    "@bootstrap-styled/utils": "^1.0.5",
     "color": "^1.0.3"
   },
   "publishConfig": {
@@ -246,8 +247,7 @@
         "path": "@semantic-release/git",
         "assets": [
           "package.json",
-          "dist/**/*.{js|es}",
-          "lib/**/*.js",
+          "src/**",
           "CHANGELOG.md",
           "README.md",
           "LICENSE.md"
