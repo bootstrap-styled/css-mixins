@@ -271,5 +271,24 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "transitive": {
+    "name": "css-mixins",
+    "scope": "bootstrap-styled",
+    "scopedName": "@bootstrap-styled/css-mixins",
+    "jsnext:main": "dist/@bootstrap-styled/css-mixins.es.js",
+    "module": "dist/@bootstrap-styled/css-mixins.es.js",
+    "homepage": "https://bootstrap-styled.github.io/css-mixins",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/bootstrap-styled/css-mixins.git"
+    },
+    "bugs": {
+      "url": "https://github.com/bootstrap-styled/css-mixins/issues"
+    },
+    "publishConfig": {
+      "access": "public",
+      "registry": "https://registry.npmjs.org"
+    }
   }
 }
