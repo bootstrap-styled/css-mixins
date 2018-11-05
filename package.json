@@ -1,6 +1,6 @@
 {
   "name": "@bootstrap-styled/css-mixins",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Bootstrap mixins and utilities in javascript for bootstrap-styled.",
   "main": "lib/index.js",
   "jsnext:main": "dist/@bootstrap-styled/css-mixins.es.js",
@@ -30,7 +30,8 @@
     "prepublish": "npm run build",
     "lint-staged": "lint-staged",
     "styleguide": "styleguidist server",
-    "styleguide:build": "styleguidist build"
+    "styleguide:build": "styleguidist build",
+    "postinstall": "node -e \"console.log('\\u001b[31m@bootstrap-styled/css-mixins is deprecated, use @bootstrap-styled/css-mixins instead.')\" || exit 0"
   },
   "repository": {
     "type": "git",

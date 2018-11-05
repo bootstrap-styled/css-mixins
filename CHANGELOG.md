@@ -1,3 +1,10 @@
+## [1.0.1](https://module.kopaxgroup.com/bootstrap-styled/css-mixins/compare/v1.0.0...v1.0.1) (2018-11-05)
+
+
+### Bug Fixes
+
+* **publish:** release to gh ([55dea0d](https://module.kopaxgroup.com/bootstrap-styled/css-mixins/commit/55dea0d))
+
 # 1.0.0 (2018-10-03)
 
 
