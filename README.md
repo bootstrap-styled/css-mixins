@@ -1,7 +1,7 @@
 # css-mixins
 
-[![Build Status](https://travis-ci.org/@bootstrap-styled/css-mixins.svg?branch=master)](https://travis-ci.org/@bootstrap-styled/css-mixins) [![npm Version](https://img.shields.io/npm/v/@bootstrap-styled/css-mixins.svg?style=flat)](https://www.npmjs.com/package/@bootstrap-styled/css-mixins) [![License](https://img.shields.io/npm/l/@bootstrap-styled/css-mixins.svg?style=flat)](https://www.npmjs.com/package/@bootstrap-styled/css-mixins) [![NPM monthly downloads](https://img.shields.io/npm/dm/@bootstrap-styled/css-mixins.svg?style=flat)](https://npmjs.org/package/@bootstrap-styled/css-mixins) [![NPM total downloads](https://img.shields.io/npm/dt/@bootstrap-styled/css-mixins.svg?style=flat)](https://npmjs.org/package/@bootstrap-styled/css-mixins) [![npm Version](https://img.shields.io/node/v/@bootstrap-styled/css-mixins.svg?style=flat)](https://www.npmjs.com/package/@bootstrap-styled/css-mixins) [![Module formats](https://img.shields.io/badge/module%20formats-umd%2C%20cjs%2C%20esm-green.svg?style=flat)](https://www.npmjs.com/package/@bootstrap-styled/css-mixins)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=com.github.bootstrap-styled.css-mixins&metric=coverage)](https://sonarcloud.io/api/project_badges/measure?project=com.github.bootstrap-styled.css-mixins&metric=coverage) [![Quality gate status](https://sonarcloud.io/api/project_badges/measure?project=com.github.bootstrap-styled.css-mixins&metric=alert_status)](https://sonarcloud.io/api/project_badges/measure?project=com.github.bootstrap-styled.css-mixins&metric=alert_status)
+[![Build Status](https://travis-ci.org/bootstrap-styled/css-mixins.svg?branch=master)](https://travis-ci.org/bootstrap-styled/css-mixins) [![npm Version](https://img.shields.io/npm/v/@bootstrap-styled/css-mixins.svg?style=flat)](https://www.npmjs.com/package/@bootstrap-styled/css-mixins) [![License](https://img.shields.io/npm/l/@bootstrap-styled/css-mixins.svg?style=flat)](https://www.npmjs.com/package/@bootstrap-styled/css-mixins) [![NPM monthly downloads](https://img.shields.io/npm/dm/@bootstrap-styled/css-mixins.svg?style=flat)](https://npmjs.org/package/@bootstrap-styled/css-mixins) [![NPM total downloads](https://img.shields.io/npm/dt/@bootstrap-styled/css-mixins.svg?style=flat)](https://npmjs.org/package/@bootstrap-styled/css-mixins) [![npm Version](https://img.shields.io/node/v/@bootstrap-styled/css-mixins.svg?style=flat)](https://www.npmjs.com/package/@bootstrap-styled/css-mixins) [![Module formats](https://img.shields.io/badge/module%20formats-umd%2C%20cjs%2C%20esm-green.svg?style=flat)](https://www.npmjs.com/package/@bootstrap-styled/css-mixins)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=com.github.bootstrap-styled.css-mixins&metric=coverage)](https://sonarcloud.io/dashboard?id=com.github.bootstrap-styled.css-mixins) [![Quality gate status](https://sonarcloud.io/api/project_badges/measure?project=com.github.bootstrap-styled.css-mixins&metric=alert_status)](https://sonarcloud.io/dashboard?id=com.github.bootstrap-styled.css-mixins)
 
 Bootstrap mixins and utilities in javascript for bootstrap-styled.
 
@@ -29,7 +29,7 @@ Please also note that all repositories under the bootstrap-styled organization f
 
 The MIT License
 
-Copyright (c) 2017-2018 Yeutech Company Limited. https://bootstrap-styled.yeutech.com
+Copyright (c) 2017-2018 Yeutech Company Limited. https://bootstrap-styled.github.io
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
