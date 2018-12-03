@@ -1,3 +1,13 @@
+## [1.1.1](https://github.com/bootstrap-styled/css-mixins/compare/v1.1.0...v1.1.1) (2018-12-03)
+
+
+### Bug Fixes
+
+* **button:** changed to allow gradient colors as background. ([3c579d1](https://github.com/bootstrap-styled/css-mixins/commit/3c579d1))
+* **linter:** added stylelint to improve css linting. ([a0406b5](https://github.com/bootstrap-styled/css-mixins/commit/a0406b5))
+* **merge:** resolv. ([492103d](https://github.com/bootstrap-styled/css-mixins/commit/492103d))
+* **variables utils:** deleted and moved to more appropriate package [@bootstrap-styled](https://github.com/bootstrap-styled)/bootstrap-styled ([374f3c7](https://github.com/bootstrap-styled/css-mixins/commit/374f3c7))
+
 # [1.1.0](https://github.com/bootstrap-styled/css-mixins/compare/v1.0.2...v1.1.0) (2018-11-14)
 
 
