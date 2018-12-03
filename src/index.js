@@ -39,7 +39,6 @@ export { default as textHideMixins } from './text-hide';
 export { textTruncate } from './text-truncate';
 export { transition } from './transition';
 export { default as typographyMixins } from './typography';
-export { default as variablesMixins } from './variables';
 export { invisible } from './visibility';
 
 // extra

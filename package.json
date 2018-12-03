@@ -22,11 +22,12 @@
     "build:readme": "toctoc README.md -w",
     "build:dist:watch": "rollup -c --watch",
     "build:lib:watch": "npm run build:lib -- --watch",
-    "test": "npm run lint && npm run test:web",
+    "test": "npm run lint && npm run lint:css && npm run test:web",
     "test:web": "NODE_ENV=test TEST_REPORT_PATH=reports jest --coverage",
     "test:clean": "rimraf ./coverage",
     "test:watch": "npm run test -- --watch",
     "lint": "eslint src",
+    "lint:css": "stylelint './src/**/*.js'",
     "prepublish": "npm run build",
     "lint-staged": "lint-staged",
     "styleguide": "styleguidist server",
@@ -58,64 +59,12 @@
     "Adrien Gadaud <adrien.gadaud@yeutech.vn>"
   ],
   "license": "MIT",
-  "eslintConfig": {
-    "parser": "babel-eslint",
-    "extends": "airbnb-base",
-    "env": {
-      "browser": true,
-      "node": true,
-      "jest": true,
-      "es6": true
-    },
-    "parserOptions": {
-      "ecmaVersion": 6,
-      "sourceType": "module"
-    },
-    "rules": {
-      "arrow-parens": [
-        "error",
-        "always"
-      ],
-      "arrow-body-style": [
-        2,
-        "as-needed"
-      ],
-      "comma-dangle": [
-        2,
-        "always-multiline"
-      ],
-      "import/imports-first": 0,
-      "import/newline-after-import": 0,
-      "import/no-dynamic-require": 0,
-      "import/no-extraneous-dependencies": 0,
-      "import/no-named-as-default": 0,
-      "import/no-unresolved": 2,
-      "import/prefer-default-export": 0,
-      "indent": [
-        2,
-        2,
-        {
-          "SwitchCase": 1
-        }
-      ],
-      "max-len": 0,
-      "newline-per-chained-call": 0,
-      "no-confusing-arrow": 0,
-      "no-console": 1,
-      "no-else-return": 0,
-      "no-use-before-define": 0,
-      "object-curly-newline": 0,
-      "prefer-template": 2,
-      "class-methods-use-this": 0,
-      "require-yield": 0
-    }
-  },
   "devDependencies": {
     "@semantic-release/changelog": "^3.0.0",
     "@semantic-release/git": "^7.0.5",
     "@semantic-release/github": "^5.2.1",
     "@semantic-release/npm": "^4.0.0",
-    "@yeutech-lab/rollup-umd-documentation": "^2.4.3",
+    "@yeutech-lab/rollup-umd-documentation": "^2.4.6",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^7.2.3",
@@ -164,6 +113,10 @@
     "rollup-watch": "^4.3.1",
     "semantic-release": "^15.8.0",
     "sinon": "^3.3.0",
+    "stylelint": "^9.8.0",
+    "stylelint-config-recommended": "^2.1.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.5.1",
     "toctoc": "^0.3.2",
     "webpack": "^4.16.1"
   },
@@ -210,7 +163,7 @@
     "lint-staged"
   ],
   "dependencies": {
-    "@bootstrap-styled/utils": "^1.0.5",
+    "@bootstrap-styled/utils": "^1.6.1",
     "color": "^1.0.3"
   },
   "publishConfig": {
