@@ -64,7 +64,7 @@
     "@semantic-release/git": "^7.0.5",
     "@semantic-release/github": "^5.2.1",
     "@semantic-release/npm": "^4.0.0",
-    "@yeutech-lab/rollup-umd-documentation": "^2.4.4",
+    "@yeutech-lab/rollup-umd-documentation": "^2.4.6",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^7.2.3",
@@ -163,7 +163,7 @@
     "lint-staged"
   ],
   "dependencies": {
-    "@bootstrap-styled/utils": "^1.0.5",
+    "@bootstrap-styled/utils": "^1.6.1",
     "color": "^1.0.3"
   },
   "publishConfig": {

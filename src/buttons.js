@@ -64,12 +64,11 @@ export function buttonVariant(
   btnActiveBoxShadow = defaultProps['$btn-active-box-shadow'],
   btnBoxShadow = defaultProps['$btn-box-shadow']
 ) {
-  const activeBackground = color(background).darken(0.2).toString();
+  const activeBackground = background && background.includes('gradient') ? background : color(background).darken(0.2).toString();
   const activeBorder = color(border).darken(0.12).toString();
-
   return `
     color: ${buttonColor};
-    background-color: ${background};
+    background: ${background};
     border-color: ${border};
     ${boxShadow(enableShadows, btnBoxShadow)}
   

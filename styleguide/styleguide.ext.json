@@ -5,6 +5,7 @@
     "**/*.spec.{js,jsx,ts,tsx}",
     "**/*.d.ts"
   ],
+  "pagePerSection": true,
   "sections": [
     {
       "name": "Introduction",
@@ -29,8 +30,19 @@
       ]
     },
     {
-      "name": "UI",
-      "content": "docs/ui.md"
+      "name": "Mixins",
+      "content": "docs/css-mixins.md",
+      "sections": [
+        {
+          "name": "Installation",
+          "content": "docs/installation.md"
+        },
+        {
+          "name": "Configuration",
+          "content": "docs/configuration.md"
+        }
+      ],
+      "sectionDepth": 0
     },
     {
       "name": "FAQ",
