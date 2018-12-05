@@ -1,3 +1,8 @@
+/**
+ * @public
+ * @description Basic css helper for Media components.
+ * @returns {string}
+ */
 export function media() {
   return `
    &.media {

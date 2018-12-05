@@ -1,4 +1,8 @@
-// CSS image replacement
+/**
+ * @public
+ * @description Hides text.
+ * @returns {string}
+ */
 export function textHide() {
   return `
     font: 0/0 a;

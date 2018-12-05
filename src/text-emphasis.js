@@ -5,7 +5,14 @@ export const defaultProps = {
   '$enable-hover-media-query': false,
 };
 
-// Typography
+/**
+ * @public
+ * @description Forces text color and hovering from a parent component.
+ * @param {boolean} enableHoverMediaQuery
+ * @param {string} parent
+ * @param {string} textColor
+ * @returns {string}
+ */
 export function textEmphasisVariant(enableHoverMediaQuery = defaultProps['$enable-hover-media-query'], parent, textColor) {
   return `
   ${parent} {
