@@ -5,6 +5,14 @@ export const defaultProps = {
   '$enable-hover-media-query': false,
 };
 
+/**
+ * @public
+ * @description Css helper for component backgrounds.
+ * @param {bool} enableHoverMediaQuery Toggles hovering coloring if anchor is present.
+ * @param {string} selector
+ * @param {string} bgColor
+ * @returns {string}
+ */
 export function bgVariant(enableHoverMediaQuery = defaultProps['$enable-hover-media-query'], selector, bgColor) {
   return `
     ${selector} {

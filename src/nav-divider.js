@@ -7,6 +7,13 @@ export const defaultProps = {
 // Horizontal dividers
 //
 // Dividers (basically an hr) within dropdowns and nav lists
+/**
+ * @public
+ * @description Dividers for certain components (Dropdown, Nav, List, ...).
+ * @param {string} spacerY
+ * @param {string} dividerColor
+ * @returns {string}
+ */
 export function navDivider(spacerY = defaultProps['$spacer-y'], dividerColor = '#e5e5e5') {
   const marginY = `${unitUtils.rmUnit(spacerY, unitUtils.UNIT.REM) / 2}${unitUtils.UNIT.REM}`;
   return `

@@ -2,6 +2,12 @@ export const defaultProps = {
   '$enable-hover-media-query': false,
 };
 
+/**
+ * @public Css helper for hovering.
+ * @description
+ * @param {string} content
+ * @returns {string}
+ */
 export function hover(content) {
 // TODO: re-enable along with mq4-hover-shim
 //  @if $enable-hover-media-query {
@@ -17,6 +23,13 @@ export function hover(content) {
   `;
 }
 
+/**
+ * @public Css helper for focus and hovering.
+ * @description
+ * @param {boolean} enableHoverMediaQuery
+ * @param {string} content
+ * @returns {string}
+ */
 export function hoverFocus(enableHoverMediaQuery = defaultProps['$enable-hover-media-query'], content) {
   if (enableHoverMediaQuery) {
     return ` 
@@ -32,6 +45,13 @@ export function hoverFocus(enableHoverMediaQuery = defaultProps['$enable-hover-m
   `;
 }
 
+/**
+ * @public Css helper for plain focus and hovering.
+ * @description
+ * @param {boolean} enableHoverMediaQuery
+ * @param {string} content
+ * @returns {string}
+ */
 export function plainHoverFocus(enableHoverMediaQuery = defaultProps['$enable-hover-media-query'], content) {
   if (enableHoverMediaQuery) {
     return `
@@ -48,6 +68,13 @@ export function plainHoverFocus(enableHoverMediaQuery = defaultProps['$enable-ho
   `;
 }
 
+/**
+ * @public Css helper for focus and active.
+ * @description
+ * @param {boolean} enableHoverMediaQuery
+ * @param {string} content
+ * @returns {string}
+ */
 export function hoverFocusActive(enableHoverMediaQuery = defaultProps['$enable-hover-media-query'], content) {
   if (enableHoverMediaQuery) {
     return `

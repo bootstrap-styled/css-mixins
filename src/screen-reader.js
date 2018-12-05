@@ -1,7 +1,8 @@
-// Only display content to screen readers
-//
-// See: http://a11yproject.com/posts/how-to-hide-content
-
+/**
+ * @public
+ * @description Only display content to screen readers. See: http://a11yproject.com/posts/how-to-hide-content
+ * @returns {string}
+ */
 export function srOnly() {
   return `
     position: absolute !important;
@@ -21,6 +22,11 @@ export function srOnly() {
 //
 // Credit: HTML5 Boilerplate
 
+/**
+ * @public
+ * @description Use in conjunction with .sr-only to only display content when it's focused. Useful for 'Skip to main content' links; see https://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/G1
+ * @returns {string}
+ */
 export function srOnlyFocusable() {
   return `
     &:active,

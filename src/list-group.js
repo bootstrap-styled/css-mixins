@@ -5,6 +5,15 @@ export const defaultProps = {
   '$enable-hover-media-query': false,
 };
 
+/**
+ * @public
+ * @description Basic css helper for different colored ListGroupItem components.
+ * @param {bool} enableHoverMediaQuery
+ * @param {string} state
+ * @param {string} background
+ * @param {string} listColor
+ * @returns {string}
+ */
 export function listGroupItemVariant(enableHoverMediaQuery = defaultProps['$enable-hover-media-query'], state, background, listColor) {
   return `
     & .list-group-item-${state} {

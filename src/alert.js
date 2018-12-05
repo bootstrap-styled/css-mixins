@@ -1,5 +1,13 @@
 import color from 'color';
 
+/**
+ * @public
+ * @description Basic css helper for different colored Alert components.
+ * @param {string} background
+ * @param {string} border
+ * @param {string} bodyColor
+ * @returns {string}
+ */
 export function alertVariant(background, border, bodyColor) {
   return `
     background-color: ${background};

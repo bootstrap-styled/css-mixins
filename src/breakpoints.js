@@ -9,6 +9,15 @@ export const defaultProps = {
     xl: '1200px',
   },
 };
+
+/**
+ * @private
+ * @description Name of the next breakpoint, or null for the last breakpoint.
+ * @param {string} name
+ * @param {object} breakpoints
+ * @param {array} breakpointNames
+ * @returns {*}
+ */
 // Breakpoint viewport sizes and media queries.
 //
 // Breakpoints are defined as a map of (name: minimum width), order from small to large:
@@ -37,6 +46,13 @@ export function breakpointNext(name, breakpoints = defaultProps['$grid-breakpoin
 //
 //    >> breakpoint-min(sm, (xs: 0, sm: 544px, md: 768px))
 //    544px
+/**
+ * @private
+ * @description Minimum breakpoint width. Null for the smallest (first) breakpoint.
+ * @param {string} name
+ * @param {object} breakpoints
+ * @returns {*}
+ */
 export function breakpointMin(name, breakpoints = defaultProps['$grid-breakpoints']) {
   const min = breakpoints[name];
   return min !== '0' ? min : null;
@@ -47,6 +63,13 @@ export function breakpointMin(name, breakpoints = defaultProps['$grid-breakpoint
 //
 //    >> breakpoint-max(sm, (xs: 0, sm: 544px, md: 768px))
 //    767px
+/**
+ * @private
+ * @description Maximum breakpoint width. Null for the largest (last) breakpoint.
+ * @param {string} name
+ * @param {object} breakpoints
+ * @returns {*}
+ */
 export function breakpointMax(name, breakpoints = defaultProps['$grid-breakpoints']) {
   const next = breakpointNext(name, breakpoints);
   if (next) {
@@ -64,12 +87,25 @@ export function breakpointMax(name, breakpoints = defaultProps['$grid-breakpoint
 //    ""  (Returns a blank string)
 //    >> breakpoint-infix(sm, (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px))
 //    "-sm"
+/**
+ * @private
+ * @description Returns a blank string if smallest breakpoint, otherwise returns the name with a dash infront.
+ * @param {string} name
+ * @param {object} breakpoints
+ * @returns {*}
+ */
 export function breakpointInfix(name, breakpoints = defaultProps['$grid-breakpoints']) {
   return breakpointMin(name, breakpoints) == null ? '' : `-${name}`;
 }
 
-// Media of at least the minimum breakpoint width. No query for the smallest breakpoint.
-// Makes the @content apply to the given breakpoint and wider.
+/**
+ * @public
+ * @description Media of at least the minimum breakpoint width. No query for the smallest breakpoint. Makes the @content apply to the given breakpoint and wider.
+ * @param {string} name
+ * @param {object} breakpoints
+ * @param {string} content
+ * @returns {string}
+ */
 export function mediaBreakpointUp(name, breakpoints = defaultProps['$grid-breakpoints'], content) {
   const min = breakpointMin(name, breakpoints);
   if (min) {
@@ -84,8 +120,14 @@ export function mediaBreakpointUp(name, breakpoints = defaultProps['$grid-breakp
   `;
 }
 
-// Media of at most the maximum breakpoint width. No query for the largest breakpoint.
-// Makes the @content apply to the given breakpoint and narrower.
+/**
+ * @public
+ * @description Media of at most the maximum breakpoint width. No query for the largest breakpoint. MMakes the @content apply to the given breakpoint and narrower.
+ * @param {string} name
+ * @param {object} breakpoints
+ * @param {string} content
+ * @returns {string}
+ */
 export function mediaBreakpointDown(name, breakpoints = defaultProps['$grid-breakpoints'], content) {
   const max = breakpointMax(name, breakpoints);
   if (max) {
@@ -100,11 +142,16 @@ export function mediaBreakpointDown(name, breakpoints = defaultProps['$grid-brea
   `;
 }
 
-// // Media that spans multiple breakpoint widths.
-// // Makes the @content apply between the min and max breakpoints
-// export function mediaBreakpointBetween(lower, upper, breakpoints = defaultProps['$grid-breakpoints'], content) {
-//   return mediaBreakpointUp(lower, breakpoints, mediaBreakpointDown(upper, breakpoints, content));
-// }
+
+/**
+ * @public
+ * @description Media that spans multiple breakpoint widths. Makes the @content apply between the min and max breakpoints.
+ * @param {string} lower
+ * @param {string} upper
+ * @param {object} breakpoints
+ * @param {string} content
+ * @returns {string}
+ */
 export function mediaBreakpointBetween(lower, upper, breakpoints = defaultProps['$grid-breakpoints'], content) {
   const min = breakpointMin(lower, breakpoints);
   const max = breakpointMax(upper, breakpoints);
@@ -136,6 +183,14 @@ export function mediaBreakpointBetween(lower, upper, breakpoints = defaultProps[
 // Media between the breakpoint's minimum and maximum widths.
 // No minimum for the smallest breakpoint, and no maximum for the largest one.
 // Makes the @content apply only to the given breakpoint, not viewports any wider or narrower.
+/**
+ * @public
+ * @description Media between the breakpoint's minimum and maximum widths. Makes the @content apply only to the given breakpoint, not viewports any wider or narrower.
+ * @param {string} name
+ * @param {object} breakpoints
+ * @param {string} content
+ * @returns {string}
+ */
 export function mediaBreakpointOnly(name, breakpoints = defaultProps['$grid-breakpoints'], content) {
   return mediaBreakpointBetween(name, name, breakpoints, content);
 }

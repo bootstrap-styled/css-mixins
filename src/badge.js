@@ -5,6 +5,13 @@ export const defaultProps = {
   '$enable-hover-mediaQuery': false,
 };
 
+/**
+ * @public
+ * @description Basic css helper for Badge components background.
+ * @param enableHoverMediaQuery
+ * @param badgeColor
+ * @returns {string}
+ */
 export function badgeVariant(enableHoverMediaQuery = defaultProps['$enable-hover-mediaQuery'], badgeColor) {
   return `
     background-color: ${badgeColor};

@@ -30,19 +30,116 @@
       ]
     },
     {
-      "name": "Mixins",
-      "content": "docs/css-mixins.md",
+      "name": "Component specific",
       "sections": [
         {
-          "name": "Installation",
-          "content": "docs/installation.md"
+          "name": "Anchor",
+          "content": "docs/componentSpecific/a.md"
         },
         {
-          "name": "Configuration",
-          "content": "docs/configuration.md"
+          "name": "Alert",
+          "content": "docs/componentSpecific/alert.md"
+        },
+        {
+          "name": "Badge",
+          "content": "docs/componentSpecific/badge.md"
+        },
+        {
+          "name": "ListGroup",
+          "content": "docs/componentSpecific/list-group.md"
+        },
+        {
+          "name": "Media",
+          "content": "docs/componentSpecific/media.md"
+        },
+        {
+          "name": "Navbar align",
+          "content": "docs/componentSpecific/navbar-align.md"
         }
       ],
       "sectionDepth": 0
+    },
+    {
+      "name": "Css helpers",
+      "sections": [
+        {
+          "name": "Background-variant",
+          "content": "docs/cssHelpers/background-variant.md"
+        },
+        {
+          "name": "Border-radius",
+          "content": "docs/cssHelpers/border-radius.md"
+        },
+        {
+          "name": "Grid breakpoints",
+          "content": "docs/cssHelpers/gridbreakpoints.md"
+        },
+        {
+          "name": "Clearfix",
+          "content": "docs/cssHelpers/clearfix.md"
+        },
+        {
+          "name": "Float",
+          "content": "docs/cssHelpers/float.md"
+        },
+        {
+          "name": "Gradients",
+          "content": "docs/cssHelpers/gradients.md"
+        },
+        {
+          "name": "Lists",
+          "content": "docs/cssHelpers/lists.md"
+        },
+        {
+          "name": "Nav divider",
+          "content": "docs/cssHelpers/nav-divider.md"
+        },
+        {
+          "name": "Screen reader",
+          "content": "docs/cssHelpers/screen-reader.md"
+        },
+        {
+          "name": "Size",
+          "content": "docs/cssHelpers/size.md"
+        },
+        {
+          "name": "Text emphasis",
+          "content": "docs/cssHelpers/text-emphasis.md"
+        },
+        {
+          "name": "Text hide",
+          "content": "docs/cssHelpers/text-hide.md"
+        },
+        {
+          "name": "Text truncate",
+          "content": "docs/cssHelpers/text-truncate.md"
+        },
+        {
+          "name": "Visibility",
+          "content": "docs/cssHelpers/visibility.md"
+        }
+      ]
+    },
+    {
+      "name": "Conditionals",
+      "sections": [
+        {
+          "name": "Box-shadow",
+          "content": "docs/conditionals/box-shadow.md"
+        },
+        {
+          "name": "Conditional",
+          "content": "docs/conditionals/conditional.md"
+        },
+        {
+          "name": "Hover",
+          "content": "docs/conditionals/hover.md"
+        },
+        {
+          "name": "Transition",
+          "content": "docs/conditionals/transition.md"
+        }
+      ]
     },
     {
       "name": "FAQ",

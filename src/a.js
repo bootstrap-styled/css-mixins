@@ -9,6 +9,16 @@ export const defaultProps = {
   '$enable-hover-media-query': false,
 };
 
+/**
+ * @public
+ * @description Basic css for Anchor component.
+ * @param {string} $linkColor
+ * @param {string} $linkDecoration
+ * @param {string} $linkHoverColor
+ * @param {string} $linkHoverDecoration
+ * @param {string} $enableHoverMediaQuery
+ * @returns {string}
+ */
 export function a(
   $linkColor = defaultProps['$link-color'],
   $linkDecoration = defaultProps['$link-decoration'],
