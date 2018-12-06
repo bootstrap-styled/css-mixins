@@ -1,4 +1,4 @@
-import color from 'color';
+import color from '@bootstrap-styled/color';
 import { borderRadius } from './border-radius';
 import { hover, hoverFocus } from './hover';
 import { boxShadow } from './box-shadow';

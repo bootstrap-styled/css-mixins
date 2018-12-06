@@ -1,5 +1,7 @@
 import { fromJS } from 'immutable';
-import { defaultProps, cardVariant, cardOutlineVariant, cardInverse, card } from '../cards';
+import {
+  defaultProps, cardVariant, cardOutlineVariant, cardInverse, card,
+} from '../cards';
 
 describe('bootstrap cards mixins', () => {
   it('cardVariant should return a css', () => {
