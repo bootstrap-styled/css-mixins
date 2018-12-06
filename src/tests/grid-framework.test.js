@@ -1,5 +1,7 @@
 import { fromJS } from 'immutable';
-import { defaultProps, makeGridColumns, getMediaBreakpointUp, getGridColumn, getColumnGridColumn } from '../grid-framework';
+import {
+  defaultProps, makeGridColumns, getMediaBreakpointUp, getGridColumn, getColumnGridColumn,
+} from '../grid-framework';
 
 describe('bootstrap grid-framework mixins', () => {
   it('makeGridColumns should return an empty css', () => {

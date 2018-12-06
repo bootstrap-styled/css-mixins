@@ -1,5 +1,7 @@
 import { fromJS } from 'immutable';
-import { defaultProps, formControl, formControlValidation, formControlFocus, inputSize } from '../forms';
+import {
+  defaultProps, formControl, formControlValidation, formControlFocus, inputSize,
+} from '../forms';
 
 describe('bootstrap forms mixins', () => {
   it('formControl should return a css without shadows', () => {

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+set -e
 npm run jsdoc-documentation src/a.js docs/componentSpecific/a.md
 npm run jsdoc-documentation src/alert.js docs/componentSpecific/alert.md
 npm run jsdoc-documentation src/badge.js docs/componentSpecific/badge.md

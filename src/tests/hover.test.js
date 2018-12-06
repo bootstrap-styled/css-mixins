@@ -1,6 +1,8 @@
 import { fromJS } from 'immutable';
 
-import { defaultProps, hover, hoverFocus, hoverFocusActive, plainHoverFocus } from '../hover';
+import {
+  defaultProps, hover, hoverFocus, hoverFocusActive, plainHoverFocus,
+} from '../hover';
 
 describe('bootstrap hover mixins', () => {
   it('hover should return a css', () => {

@@ -1,4 +1,6 @@
-import { breakpointNext, mediaBreakpointDown, mediaBreakpointUp, breakpointInfix } from './breakpoints';
+import {
+  breakpointNext, mediaBreakpointDown, mediaBreakpointUp, breakpointInfix,
+} from './breakpoints';
 
 export const defaultProps = {
   '$grid-breakpoints': {

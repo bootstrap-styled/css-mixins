@@ -1,6 +1,8 @@
 import unitUtils from '@bootstrap-styled/utils/lib/unitUtils';
 import { hover } from './hover';
-import { borderRightRadius, borderLeftRadius, borderBottomRadius, borderTopRadius } from './border-radius';
+import {
+  borderRightRadius, borderLeftRadius, borderBottomRadius, borderTopRadius,
+} from './border-radius';
 import { boxShadow } from './box-shadow';
 import { buttonSize } from './buttons';
 

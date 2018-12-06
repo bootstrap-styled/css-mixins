@@ -65,7 +65,7 @@ const plugins = [
     process: processShim,
   }),
   babel({
-    plugins: ['external-helpers'],
+    babelrc: false,
     exclude: 'node_modules/**',
   }),
   json(),
