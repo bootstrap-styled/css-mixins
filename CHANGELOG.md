@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/bootstrap-styled/css-mixins/compare/v1.1.2...v1.2.0) (2018-12-07)
+
+
+### Features
+
+* **babel:** upgrade to babel 7, upgrade many dependencies, using [@bootstrap-styled](https://github.com/bootstrap-styled)/color ([a16fabe](https://github.com/bootstrap-styled/css-mixins/commit/a16fabe))
+
 ## [1.1.2](https://github.com/bootstrap-styled/css-mixins/compare/v1.1.1...v1.1.2) (2018-12-05)
 
 
