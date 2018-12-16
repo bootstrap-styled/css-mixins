@@ -1,3 +1,18 @@
+# [1.2.0](https://github.com/bootstrap-styled/css-mixins/compare/v1.1.2...v1.2.0) (2018-12-07)
+
+
+### Features
+
+* **babel:** upgrade to babel 7, upgrade many dependencies, using [@bootstrap-styled](https://github.com/bootstrap-styled)/color ([a16fabe](https://github.com/bootstrap-styled/css-mixins/commit/a16fabe))
+
+## [1.1.2](https://github.com/bootstrap-styled/css-mixins/compare/v1.1.1...v1.1.2) (2018-12-05)
+
+
+### Bug Fixes
+
+* **documentation:** added new doc dependencies and improved documentation. ([aae9ee3](https://github.com/bootstrap-styled/css-mixins/commit/aae9ee3))
+* **documentation:** corrected typo in introduction ribbon. ([8a14b7c](https://github.com/bootstrap-styled/css-mixins/commit/8a14b7c))
+
 ## [1.1.1](https://github.com/bootstrap-styled/css-mixins/compare/v1.1.0...v1.1.1) (2018-12-03)
 
 
