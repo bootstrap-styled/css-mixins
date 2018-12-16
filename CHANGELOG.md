@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/bootstrap-styled/css-mixins/compare/v1.2.0...v1.3.0) (2018-12-16)
+
+
+### Features
+
+* **rollup:** updated rollup and added greenkeeper ([6d513fb](https://github.com/bootstrap-styled/css-mixins/commit/6d513fb))
+
 # [1.2.0](https://github.com/bootstrap-styled/css-mixins/compare/v1.1.2...v1.2.0) (2018-12-07)
 
 
