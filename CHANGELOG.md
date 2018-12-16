@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/bootstrap-styled/css-mixins/compare/v1.3.0...v1.3.1) (2018-12-16)
+
+
+### Bug Fixes
+
+* **greenkeeper:** fix sonar running on greenkeeper test ([ce21fda](https://github.com/bootstrap-styled/css-mixins/commit/ce21fda))
+
 # [1.3.0](https://github.com/bootstrap-styled/css-mixins/compare/v1.2.0...v1.3.0) (2018-12-16)
 
 
