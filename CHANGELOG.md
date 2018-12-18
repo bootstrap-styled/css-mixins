@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/bootstrap-styled/css-mixins/compare/v1.3.1...v1.3.2) (2018-12-18)
+
+
+### Bug Fixes
+
+* **button:** fix some css from https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_buttons.scss#L17 for https://github.com/bootstrap-styled/bootstrap-styled/issues/50 ([fae688f](https://github.com/bootstrap-styled/css-mixins/commit/fae688f)), closes [/github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_buttons.scss#L17](https://github.com//github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_buttons.scss/issues/L17)
+
 ## [1.3.1](https://github.com/bootstrap-styled/css-mixins/compare/v1.3.0...v1.3.1) (2018-12-16)
 
 
