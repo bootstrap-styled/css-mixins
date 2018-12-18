@@ -80,7 +80,7 @@ export function buttonVariant(
   
     &:focus,
     &.focus {
-      ${ifElse(`
+      ${ifElse(enableShadows, `
         box-shadow: ${btnBoxShadow}, 0 0 0 2px ${color(border).alpha(0.5).toString()};
       `, `
         box-shadow: 0 0 0 2px ${color(border).alpha(0.5).toString()};
@@ -222,6 +222,7 @@ export function button(
         box-shadow: ${$btnFocusBoxShadow};
       }
 
+      /* Disabled comes first so active can properly restyle */
       &.disabled,
       &:disabled {
         cursor: ${$cursorDisabled};
@@ -229,10 +230,17 @@ export function button(
         ${boxShadow($enableShadows, 'none')}
       }  
 
-      &:active,
-      &.active {
-        background-image: none;
-        ${boxShadow($enableShadows, $btnFocusBoxShadow, $btnActiveBoxShadow)}
+      // Opinionated: add "hand" cursor to non-disabled .btn elements
+      &:not(:disabled):not(.disabled) {
+        cursor: pointer;
+      }
+      &:not(:disabled):not(.disabled):active,
+      &:not(:disabled):not(.disabled).active {
+        ${boxShadow($enableShadows, $btnActiveBoxShadow)}
+    
+        &:focus {
+          ${boxShadow($enableShadows, $btnFocusBoxShadow, $btnActiveBoxShadow)}
+        }
       }
     }
     
