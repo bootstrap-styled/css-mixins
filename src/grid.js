@@ -42,7 +42,7 @@ export function makeContainer(enableGridClasses = defaultProps['$enable-grid-cla
       columns.push(column);
     });
     return `
-      position: relative;
+      width: 100%;
       margin-left: auto;
       margin-right: auto;    
       ${columns.join('\n')}

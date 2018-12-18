@@ -25,11 +25,11 @@ describe('bootstrap grid mixins', () => {
     const css = makeContainer(defaultProps['$enable-grid-classes'], defaultProps['$grid-gutter-widths']);
     expect(css).not.toContain('undefined');
     expect(css).not.toContain('null');
-    expect(fromJS({ css }).hashCode()).toEqual(-438283730);
+    expect(fromJS({ css }).hashCode()).toEqual(184581265);
   });
   it('makeContainer should have arguments', () => {
     const css = makeContainer();
-    expect(fromJS({ css }).hashCode()).toEqual(-438283730);
+    expect(fromJS({ css }).hashCode()).toEqual(184581265);
   });
   it('makeContainerMaxWidths should return a css', () => {
     const css = makeContainerMaxWidths(defaultProps['$enable-grid-classes'], defaultProps['$container-max-widths'], defaultProps['$grid-breakpoints']);
