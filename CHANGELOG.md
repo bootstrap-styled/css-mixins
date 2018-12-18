@@ -1,3 +1,10 @@
+## [1.3.3](https://github.com/bootstrap-styled/css-mixins/compare/v1.3.2...v1.3.3) (2018-12-18)
+
+
+### Bug Fixes
+
+* **makeContainer:** respect the makeContainer https://github.com/twbs/bootstrap/blob/502b6c8ed6088fa99192f3068b22457fb57af67d/scss/mixins/_grid.scss#L8 and does not add position: relative to <Col /> by default ([7a61d83](https://github.com/bootstrap-styled/css-mixins/commit/7a61d83)), closes [/github.com/twbs/bootstrap/blob/502b6c8ed6088fa99192f3068b22457fb57af67d/scss/mixins/_grid.scss#L8](https://github.com//github.com/twbs/bootstrap/blob/502b6c8ed6088fa99192f3068b22457fb57af67d/scss/mixins/_grid.scss/issues/L8)
+
 ## [1.3.2](https://github.com/bootstrap-styled/css-mixins/compare/v1.3.1...v1.3.2) (2018-12-18)
 
 
