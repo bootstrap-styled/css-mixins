@@ -16,7 +16,7 @@ Media of at least the minimum breakpoint width. No query for the smallest breakp
     }`)
 -   `content` **[string][1]** css (optional, default `""`)
 
-Returns **[string][1]** 
+Returns **[string][1]** media css rules
 
 ## mediaBreakpointDown
 
