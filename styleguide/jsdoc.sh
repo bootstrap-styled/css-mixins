@@ -9,6 +9,7 @@ npm run jsdoc-documentation src/navbar-align.js docs/componentSpecific/navbar-al
 
 npm run jsdoc-documentation src/background-variant.js docs/cssHelpers/background-variant.md
 npm run jsdoc-documentation src/border-radius.js docs/cssHelpers/border-radius.md
+npm run jsdoc-documentation src/breakpoints.js docs/cssHelpers/breakpoints.md
 npm run jsdoc-documentation src/gridbreakpoints.js docs/cssHelpers/gridbreakpoints.md
 npm run jsdoc-documentation src/clearfix.js docs/cssHelpers/clearfix.md
 npm run jsdoc-documentation src/float.js docs/cssHelpers/float.md
