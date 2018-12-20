@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/bootstrap-styled/css-mixins/compare/v2.0.0...v2.0.1) (2018-12-20)
+
+
+### Bug Fixes
+
+* **grid:** fix grid framework ([4968348](https://github.com/bootstrap-styled/css-mixins/commit/4968348))
+
 # [2.0.0](https://github.com/bootstrap-styled/css-mixins/compare/v1.3.3...v2.0.0) (2018-12-20)
 
 
