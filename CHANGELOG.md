@@ -1,3 +1,18 @@
+# [2.0.0](https://github.com/bootstrap-styled/css-mixins/compare/v1.3.3...v2.0.0) (2018-12-20)
+
+
+### Bug Fixes
+
+* **grid:** Update grid breakpoint to reflect v4.1.3 of bootstrap v4 ([37ae5c9](https://github.com/bootstrap-styled/css-mixins/commit/37ae5c9)), closes [#16](https://github.com/bootstrap-styled/css-mixins/issues/16)
+* **grid:** Update grid breakpoint to reflect v4.1.3 of bootstrap v4 ([830912f](https://github.com/bootstrap-styled/css-mixins/commit/830912f)), closes [#16](https://github.com/bootstrap-styled/css-mixins/issues/16)
+
+
+### BREAKING CHANGES
+
+* **grid:** `$grid-gutter-widths` was replaced with `$grid-gutter-width`. `pull` and `push`
+modified have been modified with `order-$infix-$i` and `order-$infix-last` according to
+https://getbootstrap.com/docs/4.1/layout/grid/#order-classes
+
 ## [1.3.3](https://github.com/bootstrap-styled/css-mixins/compare/v1.3.2...v1.3.3) (2018-12-18)
 
 
