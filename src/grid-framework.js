@@ -3,7 +3,7 @@
 // Used only by Bootstrap to generate the correct number of grid classes given
 // any value of `$grid-columns`.
 
-import { makeColOffset, defaultProps } from './grid';
+import { makeCol, makeColOffset, defaultProps } from './grid';
 import { mediaBreakpointUp, breakpointInfix } from './breakpoints';
 
 /**
@@ -64,6 +64,13 @@ export function makeGridColumns(
           width: auto;
           max-width: none; // reset earlier grid tiers
         }
+        
+        ${Array.from({ length: columns }, (_, i) => `
+          &.col${infix}-${i},
+          & .col${infix}-${i} {
+            ${makeCol(i, columns)}
+          }
+        `)}
         
         &.order${infix}-first,
         & .order${infix}-first { order: -1; }
