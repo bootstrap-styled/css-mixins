@@ -1,155 +1,114 @@
-import { fromJS } from 'immutable';
-
 import {
   defaultProps,
   makeContainer,
   makeContainerMaxWidths,
-  makeGutters,
   makeRow,
   makeColReady,
   makeCol,
   makeColOffset,
-  makeColPush,
-  makeColPull,
-  makeColModifier,
 } from '../grid';
 
 describe('bootstrap grid mixins', () => {
   it('makeContainer should return an empty css', () => {
-    const css = makeContainer(!defaultProps['$enable-grid-classes'], defaultProps['$grid-gutter-widths']);
-    expect(css).not.toContain('undefined');
-    expect(css).not.toContain('null');
+    const css = makeContainer(!defaultProps['$enable-grid-classes'], defaultProps['$grid-gutter-width']);
     expect(css).toEqual('');
   });
   it('makeContainer should return a css', () => {
-    const css = makeContainer(defaultProps['$enable-grid-classes'], defaultProps['$grid-gutter-widths']);
-    expect(css).not.toContain('undefined');
-    expect(css).not.toContain('null');
-    expect(fromJS({ css }).hashCode()).toEqual(184581265);
+    const css = makeContainer(defaultProps['$enable-grid-classes'], defaultProps['$grid-gutter-width']);
+    expect(css).toContain('width: 100%;');
+    expect(css).toContain('padding-right: calc(30px / 2);');
+    expect(css).toContain('padding-left: calc(30px / 2);');
+    expect(css).toContain('margin-right: auto;');
+    expect(css).toContain('margin-left: auto;');
   });
   it('makeContainer should have arguments', () => {
     const css = makeContainer();
-    expect(fromJS({ css }).hashCode()).toEqual(184581265);
+    expect(css).toContain('width: 100%;');
+    expect(css).toContain('padding-right: calc(30px / 2);');
+    expect(css).toContain('padding-left: calc(30px / 2);');
+    expect(css).toContain('margin-right: auto;');
+    expect(css).toContain('margin-left: auto;');
   });
   it('makeContainerMaxWidths should return a css', () => {
     const css = makeContainerMaxWidths(defaultProps['$enable-grid-classes'], defaultProps['$container-max-widths'], defaultProps['$grid-breakpoints']);
-    expect(css).not.toContain('undefined');
-    expect(css).not.toContain('null');
-    expect(fromJS({ css }).hashCode()).toEqual(-68081336);
+    expect(css).toContain('@media (min-width: 576px) {');
+    expect(css).toContain('max-width: 540px');
+    expect(css).toContain('@media (min-width: 768px) {');
+    expect(css).toContain('max-width: 720px');
+    expect(css).toContain('@media (min-width: 992px) {');
+    expect(css).toContain('max-width: 960px');
+    expect(css).toContain('@media (min-width: 1200px) {');
+    expect(css).toContain('max-width: 1140px');
   });
   it('makeContainerMaxWidths should return an empty css', () => {
     const css = makeContainerMaxWidths(!defaultProps['$enable-grid-classes'], defaultProps['$container-max-widths'], defaultProps['$grid-breakpoints']);
-    expect(css).not.toContain('undefined');
-    expect(css).not.toContain('null');
     expect(css).toEqual('');
   });
-  it('makeContainerMaxWidths should have arguments', () => {
+  it('makeContainerMaxWidths should work with default arguments', () => {
     const css = makeContainerMaxWidths();
-    expect(fromJS({ css }).hashCode()).toEqual(-68081336);
-  });
-  it('makeGutters should return a css', () => {
-    const css = makeGutters(defaultProps['$grid-gutter-widths']);
-    expect(css).not.toContain('undefined');
-    expect(css).not.toContain('null');
-    expect(fromJS({ css }).hashCode()).toEqual(-927179453);
-  });
-  it('makeGutters should have arguments', () => {
-    const css = makeGutters();
-    expect(fromJS({ css }).hashCode()).toEqual(-927179453);
+    expect(css).toContain('@media (min-width: 576px) {');
+    expect(css).toContain('max-width: 540px');
+    expect(css).toContain('@media (min-width: 768px) {');
+    expect(css).toContain('max-width: 720px');
+    expect(css).toContain('@media (min-width: 992px) {');
+    expect(css).toContain('max-width: 960px');
+    expect(css).toContain('@media (min-width: 1200px) {');
+    expect(css).toContain('max-width: 1140px');
   });
   it('makeRow should return an empty css', () => {
-    const css = makeRow(!defaultProps['$enable-grid-classes'], defaultProps['$grid-gutter-widths']);
-    expect(css).not.toContain('undefined');
-    expect(css).not.toContain('null');
+    const css = makeRow(!defaultProps['$enable-grid-classes'], defaultProps['$grid-gutter-width']);
     expect(css).toEqual('');
   });
   it('makeRow should return an empty css', () => {
-    const css = makeRow(!defaultProps['$enable-grid-classes'], defaultProps['$grid-gutter-widths']);
-    expect(css).not.toContain('undefined');
-    expect(css).not.toContain('null');
-    expect(fromJS({ css }).hashCode()).toEqual(788434458);
+    const css = makeRow(!defaultProps['$enable-grid-classes'], defaultProps['$grid-gutter-width']);
+    expect(css).toEqual('');
   });
   it('makeRow should return a css ', () => {
-    const css = makeRow(defaultProps['$enable-grid-classes'], defaultProps['$grid-gutter-widths']);
-    expect(css).not.toContain('undefined');
-    expect(css).not.toContain('null');
-    expect(fromJS({ css }).hashCode()).toEqual(311684628);
+    const css = makeRow(defaultProps['$enable-grid-classes'], defaultProps['$grid-gutter-width']);
+    expect(css).toContain('display: flex;');
+    expect(css).toContain('flex-wrap: wrap;');
+    expect(css).toContain('margin-right: calc(30px / -2);');
+    expect(css).toContain('margin-left: calc(30px / -2);');
   });
   it('makeRow should have arguments', () => {
     const css = makeRow();
-    expect(fromJS({ css }).hashCode()).toEqual(311684628);
+    expect(css).toContain('display: flex;');
+    expect(css).toContain('flex-wrap: wrap;');
+    expect(css).toContain('margin-right: calc(30px / -2);');
+    expect(css).toContain('margin-left: calc(30px / -2);');
   });
   it('makeColReady should return a css', () => {
-    const css = makeColReady(!defaultProps['$grid-gutter-widths']);
-    expect(css).not.toContain('undefined');
-    expect(css).not.toContain('null');
-    expect(fromJS({ css }).hashCode()).toEqual(1013690543);
+    const css = makeColReady(defaultProps['$grid-gutter-width']);
+    expect(css).toContain('position: relative;');
+    expect(css).toContain('width: 100%;');
+    expect(css).toContain('min-height: 1px; // Prevent collapsing');
+    expect(css).toContain('padding-right: calc(30px / 2);');
+    expect(css).toContain('padding-left: calc(30px / 2);');
   });
   it('makeColReady should have arguments', () => {
     const css = makeColReady();
-    expect(fromJS({ css }).hashCode()).toEqual(-547471871);
+    expect(css).toContain('position: relative;');
+    expect(css).toContain('width: 100%;');
+    expect(css).toContain('min-height: 1px;');
+    expect(css).toContain('padding-right: calc(30px / 2);');
+    expect(css).toContain('padding-left: calc(30px / 2);');
   });
   it('makeCol should return a css', () => {
-    const css = makeCol(!2, defaultProps['$grid-columns']);
-    expect(css).not.toContain('undefined');
-    expect(css).not.toContain('null');
-    expect(fromJS({ css }).hashCode()).toEqual(15593872);
+    const css = makeCol(2, defaultProps['$grid-columns']);
+    expect(css).toContain('flex: 0 0 16.66%;');
+    expect(css).toContain('max-width: 16.66%;');
   });
   it('makeCol should have arguments', () => {
     const css = makeCol();
-    expect(fromJS({ css }).hashCode()).toEqual(-938181064);
+    expect(css).toContain('flex: 0 0 0%;');
+    expect(css).toContain('max-width: 0%;');
   });
-
   it('makeColOffset should return a css', () => {
     const css = makeColOffset(3, defaultProps['$grid-columns']);
-    expect(css).not.toContain('undefined');
-    expect(css).not.toContain('null');
-    expect(fromJS({ css }).hashCode()).toEqual(-711001918);
+    expect(css).toEqual('margin-left: 25%;');
   });
   it('makeColOffset should have arguments', () => {
     const css = makeColOffset();
-    expect(fromJS({ css }).hashCode()).toEqual(-709540557);
-  });
-  it('makeColPush should return a css', () => {
-    const css = makeColPush(2, defaultProps['$grid-columns']);
-    expect(css).not.toContain('undefined');
-    expect(css).not.toContain('null');
-    expect(fromJS({ css }).hashCode()).toEqual(-465879009);
-  });
-  it('makeColPush should have arguments', () => {
-    const css = makeColPush();
-    expect(fromJS({ css }).hashCode()).toEqual(750159885);
-  });
-  it('makeColPull should return a css', () => {
-    const css = makeColPull(6, defaultProps['$grid-columns']);
-    expect(css).not.toContain('undefined');
-    expect(css).not.toContain('null');
-    expect(fromJS({ css }).hashCode()).toEqual(-555876077);
-  });
-  it('makeColPull should have arguments', () => {
-    const css = makeColPull();
-    expect(fromJS({ css }).hashCode()).toEqual(483314966);
-  });
-  it('makeColModifier push should return a css', () => {
-    const css = makeColModifier('push', 3, defaultProps['$grid-columns']);
-    expect(css).not.toContain('undefined');
-    expect(css).not.toContain('null');
-    expect(fromJS({ css }).hashCode()).toEqual(-696272246);
-  });
-  it('makeColModifier pull should return a css', () => {
-    const css = makeColModifier('pull', 4, defaultProps['$grid-columns']);
-    expect(css).not.toContain('undefined');
-    expect(css).not.toContain('null');
-    expect(fromJS({ css }).hashCode()).toEqual(582715448);
-  });
-  it('makeColModifier offset should return a css', () => {
-    const css = makeColModifier('offset', 5, defaultProps['$grid-columns']);
-    expect(css).not.toContain('undefined');
-    expect(css).not.toContain('null');
-    expect(fromJS({ css }).hashCode()).toEqual(-731720480);
-  });
-  it('makeColModifier should have arguments', () => {
-    const css = makeColModifier();
-    expect(fromJS({ css }).hashCode()).toEqual(421143662);
+    expect(css).toEqual('margin-left: 0%;');
   });
 });
