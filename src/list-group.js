@@ -8,7 +8,7 @@ export const defaultProps = {
 /**
  * @public
  * @description Basic css helper for different colored ListGroupItem components.
- * @param {bool} enableHoverMediaQuery
+ * @param {boolean} enableHoverMediaQuery
  * @param {string} state
  * @param {string} background
  * @param {string} listColor

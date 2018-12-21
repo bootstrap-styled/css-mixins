@@ -91,10 +91,10 @@ describe('bootstrap pagination mixins', () => {
     );
     expect(css).not.toContain('undefined');
     expect(css).not.toContain('null');
-    expect(fromJS({ css }).hashCode()).toEqual(-290508639);
+    expect(fromJS({ css }).hashCode()).toEqual(288894014);
   });
   it('pagination should parameters', () => {
     const css = pagination();
-    expect(fromJS({ css }).hashCode()).toEqual(-290508639);
+    expect(fromJS({ css }).hashCode()).toEqual(288894014);
   });
 });
