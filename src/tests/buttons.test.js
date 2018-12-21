@@ -8,33 +8,33 @@ describe('bootstrap button mixins', () => {
     const css = buttonVariant(defaultProps['$enable-shadows'], '#f00', '#0f0', '#0ff', defaultProps['$btn-active-box-shadow'], defaultProps['$btn-box-shadow']);
     expect(css).not.toContain('undefined');
     expect(css).not.toContain('null');
-    expect(fromJS({ css }).hashCode()).toEqual(518982793);
+    expect(fromJS({ css }).hashCode()).toEqual(-424631168);
   });
   it('buttonVariant should return a css with shadows', () => {
     const css = buttonVariant(!defaultProps['$enable-shadows'], '#f00', '#0f0', '#0ff', defaultProps['$btn-active-box-shadow'], defaultProps['$btn-box-shadow']);
     expect(css).not.toContain('undefined');
     expect(css).not.toContain('null');
-    expect(fromJS({ css }).hashCode()).toEqual(-776477355);
+    expect(fromJS({ css }).hashCode()).toEqual(-48880908);
   });
   it('buttonVariant should return a css with gradient colors', () => {
     const css = buttonVariant(!defaultProps['$enable-shadows'], '#f00', 'linear-gradient(#B21255, #790A68)', '#0ff', defaultProps['$btn-active-box-shadow'], false);
     expect(css).not.toContain('undefined');
     expect(css).not.toContain('null');
-    expect(fromJS({ css }).hashCode()).toEqual(-154276796);
+    expect(fromJS({ css }).hashCode()).toEqual(-638788514);
   });
   it('buttonVariant should return a css by default', () => {
     const css = buttonVariant();
-    expect(fromJS({ css }).hashCode()).toEqual(-756231999);
+    expect(fromJS({ css }).hashCode()).toEqual(-308962518);
   });
   it('buttonOutlineVariant should return a css', () => {
     const css = buttonOutlineVariant('#f00', '#0f0');
     expect(css).not.toContain('undefined');
     expect(css).not.toContain('null');
-    expect(fromJS({ css }).hashCode()).toEqual(741338911);
+    expect(fromJS({ css }).hashCode()).toEqual(-580680997);
   });
   it('buttonOutlineVariant should return a css by default', () => {
     const css = buttonOutlineVariant();
-    expect(fromJS({ css }).hashCode()).toEqual(-716049729);
+    expect(fromJS({ css }).hashCode()).toEqual(57374718);
   });
   it('buttonSize should return a css with rounded', () => {
     const css = buttonSize(defaultProps['$enable-rounded'], '#f00', '#00f', '#eee', '3px');
@@ -102,12 +102,12 @@ describe('bootstrap button mixins', () => {
     );
     expect(css).not.toContain('undefined');
     expect(css).not.toContain('null');
-    expect(fromJS({ css }).hashCode()).toEqual(-730594097);
+    expect(fromJS({ css }).hashCode()).toEqual(903504300);
   });
   it('button should return a button utility by default', () => {
     const css = button();
     expect(css).not.toContain('undefined');
     expect(css).not.toContain('null');
-    expect(fromJS({ css }).hashCode()).toEqual(533898997);
+    expect(fromJS({ css }).hashCode()).toEqual(513674365);
   });
 });

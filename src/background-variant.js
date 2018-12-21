@@ -8,7 +8,7 @@ export const defaultProps = {
 /**
  * @public
  * @description Css helper for component backgrounds.
- * @param {bool} enableHoverMediaQuery Toggles hovering coloring if anchor is present.
+ * @param {boolean} enableHoverMediaQuery Toggles hovering coloring if anchor is present.
  * @param {string} selector
  * @param {string} bgColor
  * @returns {string}

@@ -1,3 +1,5 @@
+import MixinError from './MixinError';
+
 export const defaultProps = {
   '$enable-hover-media-query': false,
 };
@@ -9,18 +11,17 @@ export const defaultProps = {
  * @returns {string}
  */
 export function hover(content) {
-// TODO: re-enable along with mq4-hover-shim
-//  @if $enable-hover-media-query {
-//    // See Media Queries Level 4: https://drafts.csswg.org/mediaqueries/#hover
-//    // Currently shimmed by https://github.com/twbs/mq4-hover-shim
-//    @media (hover: hover) {
-//      &:hover { @content }
-//    }
-//  }
-//  @else {
-  return `
-    &:hover { ${content} }
-  `;
+  if (!content) throw new MixinError('content is required');
+  // TODO: re-enable along with mq4-hover-shim
+  //  @if $enable-hover-media-query {
+  //    // See Media Queries Level 4: https://drafts.csswg.org/mediaqueries/#hover
+  //    // Currently shimmed by https://github.com/twbs/mq4-hover-shim
+  //    @media (hover: hover) {
+  //      &:hover { @content }
+  //    }
+  //  }
+  //  @else {
+  return `&:hover, &.hover { ${content} }`;
 }
 
 /**
@@ -33,13 +34,15 @@ export function hover(content) {
 export function hoverFocus(enableHoverMediaQuery = defaultProps['$enable-hover-media-query'], content) {
   if (enableHoverMediaQuery) {
     return ` 
-      &:focus { ${content} }
+      &:focus, &.focus { ${content} }
       ${hover(content)}
     `;
   }
   return `
     &:focus,
-    &:hover {
+    &.focus,
+    &:hover,
+    &.hover {
       ${content}
     }
   `;
@@ -55,14 +58,20 @@ export function hoverFocus(enableHoverMediaQuery = defaultProps['$enable-hover-m
 export function plainHoverFocus(enableHoverMediaQuery = defaultProps['$enable-hover-media-query'], content) {
   if (enableHoverMediaQuery) {
     return `
-      &, &:focus {
+      &, 
+      &:focus, 
+      &.focus {
         ${content}
       }
       ${hover(content)}
     `;
   }
   return ` 
-    &, &:focus, &:hover {
+    &, 
+    &:focus, 
+    &.focus, 
+    &:hover, 
+    &.hover {
       ${content}
     }
   `;
@@ -79,14 +88,21 @@ export function hoverFocusActive(enableHoverMediaQuery = defaultProps['$enable-h
   if (enableHoverMediaQuery) {
     return `
       &:focus,
-      &:active {
+      &.focus,
+      &:active,
+      &.active {
         ${content}
       }
       ${hover(content)}
     `;
   }
   return `
-    &:focus, &:active, &:hover {
+    &:focus, 
+    &.focus, 
+    &:active, 
+    &.active,
+    &:hover,
+    &.hover {
      ${content}
     }
   `;

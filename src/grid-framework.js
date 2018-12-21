@@ -79,17 +79,17 @@ export function makeGridColumns(
         & .order${infix}-last { order: ${columns + 1}; }
         
         ${Array.from({ length: columns }, (_, i) => `
-          &.order${infix}-${i + 1},
-          & .order${infix}-${i + 1} { 
-            order: ${i + 1}; 
+          &.order${infix}-${i},
+          & .order${infix}-${i} { 
+            order: ${i}; 
           }
         `).join('\n')}
         
         ${// `$columns - 1` because offsetting by the width of an entire row isn't possible
   Array.from({ length: columns - 1 }, (_, i) => `
-          &.offset${infix}-${i + 1},
-          & .offset${infix}-${i + 1} {
-            ${makeColOffset(i + 1, columns)}
+          &.offset${infix}-${i},
+          & .offset${infix}-${i} {
+            ${makeColOffset(i, columns)}
           }
         `).join('\n')}
       `)}

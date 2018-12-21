@@ -3,6 +3,7 @@ import { fromJS } from 'immutable';
 import {
   defaultProps, hover, hoverFocus, hoverFocusActive, plainHoverFocus,
 } from '../hover';
+import MixinError from '../MixinError';
 
 describe('bootstrap hover mixins', () => {
   it('hover should return a css', () => {
@@ -12,11 +13,13 @@ describe('bootstrap hover mixins', () => {
     `);
     expect(css).not.toContain('undefined');
     expect(css).not.toContain('null');
-    expect(css).toEqual('\n    &:hover { \n      cursor: pointer;\n      opacity: .5;\n     }\n  ');
+    expect(css).toContain('&:hover, &.hover { ');
+    expect(css).toContain('cursor: pointer;');
+    expect(css).toContain('opacity: .5;');
+    expect(css).toContain('}');
   });
   it('hover should have arguments', () => {
-    const css = hover();
-    expect(fromJS({ css }).hashCode()).toEqual(-158700174);
+    expect(hover).toThrowError(new MixinError('content is required'));
   });
   it('hoverFocus should return a css without media query', () => {
     const css = hoverFocus(
@@ -26,7 +29,13 @@ describe('bootstrap hover mixins', () => {
     );
     expect(css).not.toContain('undefined');
     expect(css).not.toContain('null');
-    expect(css).toEqual('\n    &:focus,\n    &:hover {\n      cursor: pointer;\n      opacity: .5;\n    }\n  ');
+    expect(css).toContain('&:focus,');
+    expect(css).toContain('&.focus,');
+    expect(css).toContain('&:hover,');
+    expect(css).toContain('&.hover {');
+    expect(css).toContain('cursor: pointer;');
+    expect(css).toContain('opacity: .5;');
+    expect(css).toContain('}');
   });
   it('hoverFocus should return a css with media query', () => {
     const css = hoverFocus(
@@ -36,11 +45,19 @@ describe('bootstrap hover mixins', () => {
     );
     expect(css).not.toContain('undefined');
     expect(css).not.toContain('null');
-    expect(css).toEqual(' \n      &:focus { cursor: pointer;\n      opacity: .5; }\n      \n    &:hover { cursor: pointer;\n      opacity: .5; }\n  \n    ');
+    expect(css).toContain('&:focus, &.focus { cursor: pointer;');
+    expect(css).toContain('opacity: .5; }');
+    expect(css).toContain('&:hover, &.hover { cursor: pointer;');
+    expect(css).toContain('opacity: .5; }');
   });
   it('hoverFocus should have arguments', () => {
     const css = hoverFocus();
-    expect(fromJS({ css }).hashCode()).toEqual(-736658684);
+    expect(css).toContain('&:focus,');
+    expect(css).toContain('&.focus,');
+    expect(css).toContain('&:hover,');
+    expect(css).toContain('&.hover {');
+    expect(css).toContain('undefined');
+    expect(css).toContain('}');
   });
   it('hoverFocusActive should return a css without media query', () => {
     const css = hoverFocusActive(
@@ -50,7 +67,15 @@ describe('bootstrap hover mixins', () => {
     );
     expect(css).not.toContain('undefined');
     expect(css).not.toContain('null');
-    expect(css).toEqual('\n    &:focus, &:active, &:hover {\n     cursor: pointer;\n      opacity: .5;\n    }\n  ');
+    expect(css).toContain('&:focus, ');
+    expect(css).toContain('&.focus, ');
+    expect(css).toContain('&:active, ');
+    expect(css).toContain('&.active,');
+    expect(css).toContain('&:hover,');
+    expect(css).toContain('&.hover {');
+    expect(css).toContain('cursor: pointer;');
+    expect(css).toContain('opacity: .5;');
+    expect(css).toContain('}');
   });
   it('hoverFocusActive should return a css with media query', () => {
     const css = hoverFocusActive(
@@ -60,11 +85,26 @@ describe('bootstrap hover mixins', () => {
     );
     expect(css).not.toContain('undefined');
     expect(css).not.toContain('null');
-    expect(css).toEqual('\n      &:focus,\n      &:active {\n        cursor: pointer;\n      opacity: .5;\n      }\n      \n    &:hover { cursor: pointer;\n      opacity: .5; }\n  \n    ');
+    expect(css).toContain('&:focus,');
+    expect(css).toContain('&.focus,');
+    expect(css).toContain('&:active,');
+    expect(css).toContain('&.active {');
+    expect(css).toContain('cursor: pointer;');
+    expect(css).toContain('opacity: .5;');
+    expect(css).toContain('}');
+    expect(css).toContain('&:hover, &.hover { cursor: pointer;');
+    expect(css).toContain('opacity: .5; }');
   });
   it('hoverFocusActive should have arguments', () => {
     const css = hoverFocusActive();
-    expect(fromJS({ css }).hashCode()).toEqual(-149322241);
+    expect(css).toContain('&:focus, ');
+    expect(css).toContain('&.focus, ');
+    expect(css).toContain('&:active, ');
+    expect(css).toContain('&.active,');
+    expect(css).toContain('&:hover,');
+    expect(css).toContain('&.hover {');
+    expect(css).toContain(' undefined');
+    expect(css).toContain('}');
   });
   it('plainHoverFocus should return a css without media query', () => {
     const css = plainHoverFocus(
@@ -74,7 +114,14 @@ describe('bootstrap hover mixins', () => {
     );
     expect(css).not.toContain('undefined');
     expect(css).not.toContain('null');
-    expect(css).toEqual(' \n    &, &:focus, &:hover {\n      cursor: pointer;\n      opacity: .5;\n    }\n  ');
+    expect(css).toContain('&,');
+    expect(css).toContain('&:focus, ');
+    expect(css).toContain('&.focus, ');
+    expect(css).toContain('&:hover, ');
+    expect(css).toContain('&.hover {');
+    expect(css).toContain('cursor: pointer;');
+    expect(css).toContain('opacity: .5;');
+    expect(css).toContain('}');
   });
   it('plainHoverFocus should return a css with media query', () => {
     const css = plainHoverFocus(
@@ -84,11 +131,18 @@ describe('bootstrap hover mixins', () => {
     );
     expect(css).not.toContain('undefined');
     expect(css).not.toContain('null');
-    expect(css).toEqual('\n      &, &:focus {\n        cursor: pointer;\n      opacity: .5;\n      }\n      \n    &:hover { cursor: pointer;\n      opacity: .5; }\n  \n    ');
+    expect(css).toContain('&,');
+    expect(css).toContain('&:focus, ');
+    expect(css).toContain('&.focus {');
+    expect(css).toContain('cursor: pointer;');
+    expect(css).toContain('opacity: .5;');
+    expect(css).toContain('}');
+    expect(css).toContain('&:hover, &.hover { cursor: pointer;');
+    expect(css).toContain('opacity: .5; }');
   });
   it('plainHoverFocus should have arguments', () => {
     const css = plainHoverFocus();
-    expect(fromJS({ css }).hashCode()).toEqual(-1020241862);
+    expect(fromJS({ css }).hashCode()).toEqual(-136472967);
   });
   it('hover should have hoverFocus', () => {
     const css = hover.focus(
@@ -96,7 +150,7 @@ describe('bootstrap hover mixins', () => {
       `cursor: pointer;
       opacity: .5;`
     );
-    expect(fromJS({ css }).hashCode()).toEqual(-75696186);
+    expect(fromJS({ css }).hashCode()).toEqual(1054832218);
   });
   it('hover should have plainHoverFocus', () => {
     const css = hover.plainFocus(
@@ -104,7 +158,7 @@ describe('bootstrap hover mixins', () => {
       `cursor: pointer;
       opacity: .5;`
     );
-    expect(fromJS({ css }).hashCode()).toEqual(507113767);
+    expect(fromJS({ css }).hashCode()).toEqual(1058096530);
   });
   it('hover should have hoverFocusActive', () => {
     const css = hover.activeFocus(
@@ -112,6 +166,6 @@ describe('bootstrap hover mixins', () => {
       `cursor: pointer;
       opacity: .5;`
     );
-    expect(fromJS({ css }).hashCode()).toEqual(313791295);
+    expect(fromJS({ css }).hashCode()).toEqual(268514486);
   });
 });

@@ -7,7 +7,6 @@
 
 Bootstrap mixins and utilities in javascript for bootstrap-styled.
 
-
 ## Table of Contents
 
   - [Documentation](#documentation)
