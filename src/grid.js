@@ -63,7 +63,7 @@ export function makeContainer(enableGridClasses = defaultProps['$enable-grid-cla
  */
 export function makeContainerMaxWidths(enableGridClasses = defaultProps['$enable-grid-classes'], maxWidths = defaultProps['$container-max-widths'], breakpoints = defaultProps['$grid-breakpoints']) {
   return enableGridClasses ? Object.keys(breakpoints)
-    .map((bp) => maxWidths[bp] ? mediaBreakpointUp(bp, breakpoints, `max-width: ${maxWidths[bp]}`) : '')
+    .map((bp) => maxWidths[bp] ? mediaBreakpointUp(bp, breakpoints, `max-width: ${maxWidths[bp]};`) : '')
     .join('\n') : '';
 }
 

@@ -66,9 +66,9 @@ export function makeGridColumns(
         }
         
         ${Array.from({ length: columns }, (_, i) => `
-          &.col${infix}-${i},
-          & .col${infix}-${i} {
-            ${makeCol(i, columns)}
+          &.col${infix}-${i + 1},
+          & .col${infix}-${i + 1} {
+            ${makeCol(i + 1, columns)}
           }
         `)}
         
