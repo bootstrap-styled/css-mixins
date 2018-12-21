@@ -1,3 +1,53 @@
+## [2.0.1](https://github.com/bootstrap-styled/css-mixins/compare/v2.0.0...v2.0.1) (2018-12-20)
+
+
+### Bug Fixes
+
+* **grid:** fix grid framework ([4968348](https://github.com/bootstrap-styled/css-mixins/commit/4968348))
+
+# [2.0.0](https://github.com/bootstrap-styled/css-mixins/compare/v1.3.3...v2.0.0) (2018-12-20)
+
+
+### Bug Fixes
+
+* **grid:** Update grid breakpoint to reflect v4.1.3 of bootstrap v4 ([37ae5c9](https://github.com/bootstrap-styled/css-mixins/commit/37ae5c9)), closes [#16](https://github.com/bootstrap-styled/css-mixins/issues/16)
+* **grid:** Update grid breakpoint to reflect v4.1.3 of bootstrap v4 ([830912f](https://github.com/bootstrap-styled/css-mixins/commit/830912f)), closes [#16](https://github.com/bootstrap-styled/css-mixins/issues/16)
+
+
+### BREAKING CHANGES
+
+* **grid:** `$grid-gutter-widths` was replaced with `$grid-gutter-width`. `pull` and `push`
+modified have been modified with `order-$infix-$i` and `order-$infix-last` according to
+https://getbootstrap.com/docs/4.1/layout/grid/#order-classes
+
+## [1.3.3](https://github.com/bootstrap-styled/css-mixins/compare/v1.3.2...v1.3.3) (2018-12-18)
+
+
+### Bug Fixes
+
+* **makeContainer:** respect the makeContainer https://github.com/twbs/bootstrap/blob/502b6c8ed6088fa99192f3068b22457fb57af67d/scss/mixins/_grid.scss#L8 and does not add position: relative to <Col /> by default ([7a61d83](https://github.com/bootstrap-styled/css-mixins/commit/7a61d83)), closes [/github.com/twbs/bootstrap/blob/502b6c8ed6088fa99192f3068b22457fb57af67d/scss/mixins/_grid.scss#L8](https://github.com//github.com/twbs/bootstrap/blob/502b6c8ed6088fa99192f3068b22457fb57af67d/scss/mixins/_grid.scss/issues/L8)
+
+## [1.3.2](https://github.com/bootstrap-styled/css-mixins/compare/v1.3.1...v1.3.2) (2018-12-18)
+
+
+### Bug Fixes
+
+* **button:** fix some css from https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_buttons.scss#L17 for https://github.com/bootstrap-styled/bootstrap-styled/issues/50 ([fae688f](https://github.com/bootstrap-styled/css-mixins/commit/fae688f)), closes [/github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_buttons.scss#L17](https://github.com//github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_buttons.scss/issues/L17)
+
+## [1.3.1](https://github.com/bootstrap-styled/css-mixins/compare/v1.3.0...v1.3.1) (2018-12-16)
+
+
+### Bug Fixes
+
+* **greenkeeper:** fix sonar running on greenkeeper test ([ce21fda](https://github.com/bootstrap-styled/css-mixins/commit/ce21fda))
+
+# [1.3.0](https://github.com/bootstrap-styled/css-mixins/compare/v1.2.0...v1.3.0) (2018-12-16)
+
+
+### Features
+
+* **rollup:** updated rollup and added greenkeeper ([6d513fb](https://github.com/bootstrap-styled/css-mixins/commit/6d513fb))
+
 # [1.2.0](https://github.com/bootstrap-styled/css-mixins/compare/v1.1.2...v1.2.0) (2018-12-07)
 
 
