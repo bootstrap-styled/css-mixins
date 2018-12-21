@@ -1,3 +1,10 @@
+## [2.0.2](https://github.com/bootstrap-styled/css-mixins/compare/v2.0.1...v2.0.2) (2018-12-21)
+
+
+### Bug Fixes
+
+* **hover:** added .active, .focus class to hover mixins. Improve many test without immutable ([2344363](https://github.com/bootstrap-styled/css-mixins/commit/2344363))
+
 ## [2.0.1](https://github.com/bootstrap-styled/css-mixins/compare/v2.0.0...v2.0.1) (2018-12-20)
 
 
