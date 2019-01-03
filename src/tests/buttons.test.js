@@ -8,23 +8,23 @@ describe('bootstrap button mixins', () => {
     const css = buttonVariant(defaultProps['$enable-shadows'], '#f00', '#0f0', '#0ff', defaultProps['$btn-active-box-shadow'], defaultProps['$btn-box-shadow']);
     expect(css).not.toContain('undefined');
     expect(css).not.toContain('null');
-    expect(fromJS({ css }).hashCode()).toEqual(271168360);
+    expect(fromJS({ css }).hashCode()).toEqual(657616858);
   });
   it('buttonVariant should return a css with shadows', () => {
     const css = buttonVariant(!defaultProps['$enable-shadows'], '#f00', '#0f0', '#0ff', defaultProps['$btn-active-box-shadow'], defaultProps['$btn-box-shadow']);
     expect(css).not.toContain('undefined');
     expect(css).not.toContain('null');
-    expect(fromJS({ css }).hashCode()).toEqual(224299788);
+    expect(fromJS({ css }).hashCode()).toEqual(-276107851);
   });
   it('buttonVariant should return a css with gradient colors', () => {
     const css = buttonVariant(!defaultProps['$enable-shadows'], '#f00', 'linear-gradient(#B21255, #790A68)', '#0ff', defaultProps['$btn-active-box-shadow'], false);
     expect(css).not.toContain('undefined');
     expect(css).not.toContain('null');
-    expect(fromJS({ css }).hashCode()).toEqual(-568735117);
+    expect(fromJS({ css }).hashCode()).toEqual(989192686);
   });
   it('buttonVariant should return a css by default', () => {
     const css = buttonVariant();
-    expect(fromJS({ css }).hashCode()).toEqual(-915181683);
+    expect(fromJS({ css }).hashCode()).toEqual(461863357);
   });
   it('buttonOutlineVariant should return a css', () => {
     const css = buttonOutlineVariant('#f00', '#0f0');
@@ -103,12 +103,12 @@ describe('bootstrap button mixins', () => {
     );
     expect(css).not.toContain('undefined');
     expect(css).not.toContain('null');
-    expect(fromJS({ css }).hashCode()).toEqual(-810291941);
+    expect(fromJS({ css }).hashCode()).toEqual(82881827);
   });
   it('button should return a button utility by default', () => {
     const css = button();
     expect(css).not.toContain('undefined');
     expect(css).not.toContain('null');
-    expect(fromJS({ css }).hashCode()).toEqual(804299585);
+    expect(fromJS({ css }).hashCode()).toEqual(548086007);
   });
 });
