@@ -1,3 +1,11 @@
+## [2.0.4](https://github.com/bootstrap-styled/css-mixins/compare/v2.0.3...v2.0.4) (2019-01-03)
+
+
+### Bug Fixes
+
+* **button:** fixed linear-gradient values ([c0b640c](https://github.com/bootstrap-styled/css-mixins/commit/c0b640c))
+* **dependencies:** upgrade all dependencies ([8e58fb9](https://github.com/bootstrap-styled/css-mixins/commit/8e58fb9))
+
 ## [2.0.3](https://github.com/bootstrap-styled/css-mixins/compare/v2.0.2...v2.0.3) (2018-12-21)
 
 
