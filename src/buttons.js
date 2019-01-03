@@ -3,7 +3,7 @@ import { borderRadius } from './border-radius';
 import { hover, hoverFocus } from './hover';
 import { boxShadow } from './box-shadow';
 import { transition } from './transition';
-import { ifThen, ifElse } from './conditional';
+import { ifElse } from './conditional';
 import { linearGradientRe } from './regex';
 
 export const defaultProps = {
@@ -104,8 +104,13 @@ export function buttonVariant(
     &.active,
     .show > &.dropdown-toggle {
       color: ${buttonColor};
-      ${ifThen(activeBackground.includes('linear-gradient'), 'background-image: none;')}
-      background-color: ${activeBackground};
+      ${ifElse(activeBackground.includes('linear-gradient'), `
+        background: ${activeBackground};
+      `, `
+        background-color: ${activeBackground};
+        background-image: none;
+      `)}
+      
       border-color: ${activeBorder};
       ${boxShadow(enableShadows, btnActiveBoxShadow)}
     }
