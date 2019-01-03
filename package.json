@@ -1,6 +1,6 @@
 {
   "name": "@bootstrap-styled/css-mixins",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "Bootstrap v4 css-in-js mixins for Bootstrap Styled.",
   "main": "lib/index.js",
   "jsnext:main": "dist/@bootstrap-styled/css-mixins.es.js",
