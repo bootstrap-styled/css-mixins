@@ -1,3 +1,10 @@
+## [2.0.5](https://github.com/bootstrap-styled/css-mixins/compare/v2.0.4...v2.0.5) (2019-01-03)
+
+
+### Bug Fixes
+
+* **button:** using background instead of background for linear-gradient used within buttons ([fde55e6](https://github.com/bootstrap-styled/css-mixins/commit/fde55e6))
+
 ## [2.0.4](https://github.com/bootstrap-styled/css-mixins/compare/v2.0.3...v2.0.4) (2019-01-03)
 
 
