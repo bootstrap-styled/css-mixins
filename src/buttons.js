@@ -14,9 +14,9 @@ export const defaultProps = {
   '$btn-font-weight': 'normal',
   '$btn-line-height': '1.25',
   '$btn-transition': 'all .2s ease-in-out',
-  '$input-btn-border-width': '1px',
+  '$btn-border-width': '1px',
   '$btn-padding-x': '1rem',
-  '$btn-padding-y': '.5rem',
+  '$btn-padding-y': '.5refm',
   '$font-size-base': '1rem',
   '$btn-border-radius': '.25rem',
   '$btn-box-shadow': 'inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075)',
@@ -158,7 +158,7 @@ export function button(
   $btnFontWeight = defaultProps['$btn-font-weight'],
   $btnLineHeight = defaultProps['$btn-line-height'],
   $btnTransition = defaultProps['$btn-transition'],
-  $inputBtnBorderWidth = defaultProps['$input-btn-border-width'],
+  $btnBorderWidth = defaultProps['$btn-border-width'],
   $btnPaddingX = defaultProps['$btn-padding-x'],
   $btnPaddingY = defaultProps['$btn-padding-y'],
   $fontSizeBase = defaultProps['$font-size-base'],
@@ -211,7 +211,7 @@ export function button(
       white-space: nowrap;
       vertical-align: middle;
       user-select: none;
-      border: ${$inputBtnBorderWidth} solid transparent;
+      border: ${$btnBorderWidth} solid transparent;
       ${buttonSize($enableRounded, $btnPaddingY, $btnPaddingX, $fontSizeBase, $btnBorderRadius)}
       ${transition($enableTransitions, $btnTransition)}
       ${hoverFocus($enableHoverMediaQuery, 'text-decoration: none;')}
