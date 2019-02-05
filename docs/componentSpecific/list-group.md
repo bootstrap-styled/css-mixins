@@ -6,48 +6,48 @@ Basic css helper for different colored ListGroupItem components.
 
 ### Parameters
 
--   `enableHoverMediaQuery` **bool**  (optional, default `defaultProps['$enable-hover-media-query']`)
--   `state` **[string][1]** 
--   `background` **[string][1]** 
--   `listColor` **[string][1]** 
+-   `enableHoverMediaQuery` **[boolean][1]**  (optional, default `defaultProps['$enable-hover-media-query']`)
+-   `state` **[string][2]** 
+-   `background` **[string][2]** 
+-   `listColor` **[string][2]** 
 
-Returns **[string][1]** 
+Returns **[string][2]** 
 
 ## hover
 
 ### Parameters
 
--   `content` **[string][1]** 
+-   `content` **[string][2]** 
 
-Returns **[string][1]** 
+Returns **[string][2]** 
 
 ## hoverFocus
 
 ### Parameters
 
--   `enableHoverMediaQuery` **[boolean][2]**  (optional, default `defaultProps['$enable-hover-media-query']`)
--   `content` **[string][1]** 
+-   `enableHoverMediaQuery` **[boolean][1]**  (optional, default `defaultProps['$enable-hover-media-query']`)
+-   `content` **[string][2]** 
 
-Returns **[string][1]** 
+Returns **[string][2]** 
 
 ## plainHoverFocus
 
 ### Parameters
 
--   `enableHoverMediaQuery` **[boolean][2]**  (optional, default `defaultProps['$enable-hover-media-query']`)
--   `content` **[string][1]** 
+-   `enableHoverMediaQuery` **[boolean][1]**  (optional, default `defaultProps['$enable-hover-media-query']`)
+-   `content` **[string][2]** 
 
-Returns **[string][1]** 
+Returns **[string][2]** 
 
 ## hoverFocusActive
 
 ### Parameters
 
--   `enableHoverMediaQuery` **[boolean][2]**  (optional, default `defaultProps['$enable-hover-media-query']`)
--   `content` **[string][1]** 
+-   `enableHoverMediaQuery` **[boolean][1]**  (optional, default `defaultProps['$enable-hover-media-query']`)
+-   `content` **[string][2]** 
 
-Returns **[string][1]** 
+Returns **[string][2]** 
 
-[1]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+[1]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
 
-[2]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+[2]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String

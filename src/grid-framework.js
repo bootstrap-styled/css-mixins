@@ -50,7 +50,7 @@ export function makeGridColumns(
         ${gridColumn}
       }
       
-      ${// Provide basic `.col-{bp}` classes for equal-width flexbox columns
+${// Provide basic `.col-{bp}` classes for equal-width flexbox columns
   mediaBreakpointUp(bp, breakpoints, `
         &.col${infix},
         & .col${infix} {
@@ -93,7 +93,7 @@ export function makeGridColumns(
           }
         `).join('\n')}
       `)}
-    `;
+`;
   }).join('\n') : '';
 }
 
