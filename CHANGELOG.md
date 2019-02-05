@@ -1,3 +1,10 @@
+## [2.0.6](https://github.com/bootstrap-styled/css-mixins/compare/v2.0.5...v2.0.6) (2019-02-05)
+
+
+### Bug Fixes
+
+* **merge:** resolv conflict. ([e9d0ba4](https://github.com/bootstrap-styled/css-mixins/commit/e9d0ba4))
+
 ## [2.0.5](https://github.com/bootstrap-styled/css-mixins/compare/v2.0.4...v2.0.5) (2019-01-03)
 
 
