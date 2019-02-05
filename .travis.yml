@@ -5,7 +5,7 @@ dist: trusty
 # Blocklist
 branches:
   except:
-    - gh-pages # will be deployed to, no need to build it
+    - gh-pages
 
 cache:
   directories:
@@ -53,11 +53,11 @@ jobs:
           organization: $(echo $TRAVIS_REPO_SLUG | awk -F '/' '{print $1}')
       script:
         - npm run test
-        - sonar-scanner -Dsonar.projectVersion=${SONAR_VERSION}
+        - if [[ "$TRAVIS_BRANCH" != greenkeeper* ]]; then sonar-scanner -Dsonar.projectVersion=${SONAR_VERSION}; fi
 
     # Job: Release
     - stage: release
-      if: branch = master
+      if: branch = master AND type = push AND fork = false
       node_js:
         - 'lts/*'
       skip_cleanup: true
@@ -66,7 +66,7 @@ jobs:
 
     # Job: Page
     - stage: deploy
-      if: branch = master
+      if: branch = master AND type = push AND fork = false
       node_js:
         - 'lts/*'
       script:

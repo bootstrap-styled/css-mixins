@@ -1,4 +1,4 @@
-import color from 'color';
+import color from '@bootstrap-styled/color';
 import { hoverFocus } from './hover';
 
 export const defaultProps = {

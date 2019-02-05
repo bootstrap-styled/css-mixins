@@ -1,9 +1,10 @@
-import color from 'color';
+import color from '@bootstrap-styled/color';
 import { borderRadius } from './border-radius';
 import { hover, hoverFocus } from './hover';
 import { boxShadow } from './box-shadow';
 import { transition } from './transition';
 import { ifElse } from './conditional';
+import { linearGradientRe } from './regex';
 
 export const defaultProps = {
   '$enable-shadows': true,
@@ -21,6 +22,7 @@ export const defaultProps = {
   '$btn-border-radius': '.25rem',
   '$btn-box-shadow': 'inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075)',
   '$btn-focus-box-shadow': '0 0 0 2px rgba(2, 117, 216, 0.25)',
+  '$btn-disabled-opacity': '.65',
   '$btn-active-box-shadow': 'inset 0 3px 5px rgba(0, 0, 0, 0.125)',
   '$cursor-disabled': 'not-allowed',
   '$link-color': '#0275d8',
@@ -64,7 +66,11 @@ export function buttonVariant(
   btnActiveBoxShadow = defaultProps['$btn-active-box-shadow'],
   btnBoxShadow = defaultProps['$btn-box-shadow']
 ) {
-  const activeBackground = background && background.includes('gradient') ? background : color(background).darken(0.2).toString();
+  let activeBackground = color(background).darken(0.2).toString();
+  if (background && background.includes('linear-gradient')) {
+    const res = background.match(linearGradientRe);
+    activeBackground = `linear-gradient(${res.map((v) => color(v).darken(0.2).toString()).join(', ')})`;
+  }
   const activeBorder = color(border).darken(0.12).toString();
   return `
     color: ${buttonColor};
@@ -80,7 +86,7 @@ export function buttonVariant(
   
     &:focus,
     &.focus {
-      ${ifElse(`
+      ${ifElse(enableShadows, `
         box-shadow: ${btnBoxShadow}, 0 0 0 2px ${color(border).alpha(0.5).toString()};
       `, `
         box-shadow: 0 0 0 2px ${color(border).alpha(0.5).toString()};
@@ -98,8 +104,13 @@ export function buttonVariant(
     &.active,
     .show > &.dropdown-toggle {
       color: ${buttonColor};
-      background-color: ${activeBackground};
-      background-image: none;
+      ${ifElse(activeBackground.includes('linear-gradient'), `
+        background: ${activeBackground};
+      `, `
+        background-color: ${activeBackground};
+        background-image: none;
+      `)}
+      
       border-color: ${activeBorder};
       ${boxShadow(enableShadows, btnActiveBoxShadow)}
     }
@@ -198,6 +209,7 @@ export function button(
   $btnDangerColor = defaultProps['$btn-danger-color'],
   $btnDangerBg = defaultProps['$btn-danger-bg'],
   $btnDangerBorder = defaultProps['$btn-danger-border'],
+  $btnDisabledOpacity = defaultProps['$btn-disabled-opacity'],
 ) {
   return `
   
@@ -222,17 +234,25 @@ export function button(
         box-shadow: ${$btnFocusBoxShadow};
       }
 
+      /* Disabled comes first so active can properly restyle */
       &.disabled,
       &:disabled {
         cursor: ${$cursorDisabled};
-        opacity: .65;
+        opacity: ${$btnDisabledOpacity};
         ${boxShadow($enableShadows, 'none')}
       }  
 
-      &:active,
-      &.active {
-        background-image: none;
-        ${boxShadow($enableShadows, $btnFocusBoxShadow, $btnActiveBoxShadow)}
+      // Opinionated: add "hand" cursor to non-disabled .btn elements
+      &:not(:disabled):not(.disabled) {
+        cursor: pointer;
+      }
+      &:not(:disabled):not(.disabled):active,
+      &:not(:disabled):not(.disabled).active {
+        ${boxShadow($enableShadows, $btnActiveBoxShadow)}
+    
+        &:focus {
+          ${boxShadow($enableShadows, $btnFocusBoxShadow, $btnActiveBoxShadow)}
+        }
       }
     }
     

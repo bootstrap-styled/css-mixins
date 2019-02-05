@@ -16,7 +16,7 @@ export const defaultProps = {
  * @param {string} $linkDecoration
  * @param {string} $linkHoverColor
  * @param {string} $linkHoverDecoration
- * @param {string} $enableHoverMediaQuery
+ * @param {boolean} $enableHoverMediaQuery
  * @returns {string}
  */
 export function a(

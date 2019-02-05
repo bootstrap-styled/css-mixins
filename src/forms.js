@@ -1,4 +1,4 @@
-import color from 'color';
+import color from '@bootstrap-styled/color';
 import { borderRadius } from './border-radius';
 import { boxShadow } from './box-shadow';
 import { transition } from './transition';

@@ -1,4 +1,4 @@
-import color from 'color';
+import color from '@bootstrap-styled/color';
 import { plainHoverFocus, hoverFocus } from './hover';
 
 export const defaultProps = {
@@ -8,7 +8,7 @@ export const defaultProps = {
 /**
  * @public
  * @description Basic css helper for different colored ListGroupItem components.
- * @param {bool} enableHoverMediaQuery
+ * @param {boolean} enableHoverMediaQuery
  * @param {string} state
  * @param {string} background
  * @param {string} listColor

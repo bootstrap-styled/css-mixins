@@ -10,7 +10,7 @@ Basic css for Anchor component.
 -   `$linkDecoration` **[string][1]**  (optional, default `defaultProps['$link-decoration']`)
 -   `$linkHoverColor` **[string][1]**  (optional, default `defaultProps['$link-hover-color']`)
 -   `$linkHoverDecoration` **[string][1]**  (optional, default `defaultProps['$link-hover-decoration']`)
--   `$enableHoverMediaQuery` **[string][1]**  (optional, default `defaultProps['$enable-hover-media-query']`)
+-   `$enableHoverMediaQuery` **[boolean][2]**  (optional, default `defaultProps['$enable-hover-media-query']`)
 
 Returns **[string][1]** 
 

@@ -1,10 +1,12 @@
 import { fromJS } from 'immutable';
-import { defaultProps, formControl, formControlValidation, formControlFocus, inputSize } from '../forms';
+import {
+  defaultProps, formControl, formControlValidation, formControlFocus, inputSize,
+} from '../forms';
 
 describe('bootstrap forms mixins', () => {
   it('formControl should return a css without shadows', () => {
     const css = formControl(
-      defaultProps['$enable-rounded'],
+      !defaultProps['$enable-rounded'],
       defaultProps['$enable-transitions'],
       defaultProps['$enable-shadows'],
       defaultProps['$input-height'],
@@ -29,7 +31,7 @@ describe('bootstrap forms mixins', () => {
     );
     expect(css).not.toContain('undefined');
     expect(css).not.toContain('null');
-    expect(fromJS({ css }).hashCode()).toEqual(715200646);
+    expect(fromJS({ css }).hashCode()).toEqual(682780003);
   });
   it('formControl should have parameters', () => {
     const css = formControl();

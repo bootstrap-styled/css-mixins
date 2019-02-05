@@ -33,10 +33,10 @@ describe('bootstrap navbar mixins', () => {
     );
     expect(css).not.toContain('undefined');
     expect(css).not.toContain('null');
-    expect(fromJS({ css }).hashCode()).toEqual(-451003017);
+    expect(fromJS({ css }).hashCode()).toEqual(-55871090);
   });
   it('navbar should have arguments', () => {
     const css = navbar();
-    expect(fromJS({ css }).hashCode()).toEqual(974724380);
+    expect(fromJS({ css }).hashCode()).toEqual(334055248);
   });
 });

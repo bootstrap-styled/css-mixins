@@ -1,4 +1,4 @@
-import color from 'color';
+import color from '@bootstrap-styled/color';
 import { hover } from './hover';
 
 // Tables
