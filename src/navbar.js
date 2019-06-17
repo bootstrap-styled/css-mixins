@@ -300,7 +300,7 @@ export function navbar(
       overflow: hidden;
 
       &::before {
-        content: '\00a0';
+        content: '\\00a0';
       }
     }
   `;
