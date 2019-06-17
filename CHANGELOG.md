@@ -1,3 +1,10 @@
+## [2.0.7](https://github.com/bootstrap-styled/css-mixins/compare/v2.0.6...v2.0.7) (2019-06-17)
+
+
+### Bug Fixes
+
+* **dependencies:** upgrade all dependencies ([80d8d0d](https://github.com/bootstrap-styled/css-mixins/commit/80d8d0d))
+
 ## [2.0.6](https://github.com/bootstrap-styled/css-mixins/compare/v2.0.5...v2.0.6) (2019-02-05)
 
 
