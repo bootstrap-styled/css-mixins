@@ -93,7 +93,7 @@
     "babel-plugin-add-module-exports": "^1.0.2",
     "babel-plugin-array-includes": "^2.0.3",
     "babel-plugin-dynamic-import-node": "^2.2.0",
-    "cz-conventional-changelog": "^2.1.0",
+    "cz-conventional-changelog": "^3.0.0",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
     "eslint": "^5.16.0",
