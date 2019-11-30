@@ -1,3 +1,15 @@
+# [2.1.0](https://github.com/bootstrap-styled/css-mixins/compare/v2.0.8...v2.1.0) (2019-11-30)
+
+
+### Bug Fixes
+
+* **utilities:** added utilities mixins ([b81272d](https://github.com/bootstrap-styled/css-mixins/commit/b81272de079aa01b893fbe077eb9894d1a2dfa12))
+
+
+### Features
+
+* **utilities:** added utilities mixins ([01c7905](https://github.com/bootstrap-styled/css-mixins/commit/01c790516356afea985d465dc29067d053431165))
+
 ## [2.0.8](https://github.com/bootstrap-styled/css-mixins/compare/v2.0.7...v2.0.8) (2019-11-29)
 
 
