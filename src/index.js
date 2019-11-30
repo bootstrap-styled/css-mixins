@@ -39,7 +39,7 @@ export { default as textHideMixins } from './text-hide';
 export { textTruncate } from './text-truncate';
 export { transition } from './transition';
 export { default as typographyMixins } from './typography';
+export { generateUtility } from './utilities';
 export { invisible } from './visibility';
-
 // extra
 export { default as unit } from '@bootstrap-styled/utils/lib/unitUtils';
