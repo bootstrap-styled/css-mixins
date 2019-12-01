@@ -106,9 +106,7 @@ describe('bootstrap utilities mixins', () => {
     }],
   ]);
   it('should generate align utility', () => {
-    const css = generateUtility({
-      $utility: utilities.get('align'),
-    });
+    const css = generateUtility(utilities.get('align'));
     expect(css).toEqual(`.align-baseline {
       vertical-align: baseline !important;
     }
@@ -129,10 +127,7 @@ describe('bootstrap utilities mixins', () => {
     }`);
   });
   it('should generate float utility', () => {
-    const css = generateUtility({
-      $utility: utilities.get('float'),
-      $infix: '-sm',
-    });
+    const css = generateUtility(utilities.get('float'), '-sm');
     expect(css).toEqual(`.float-sm-left {
       float: left !important;
     }
@@ -144,9 +139,7 @@ describe('bootstrap utilities mixins', () => {
     }`);
   });
   it('should generate shadow utility', () => {
-    const css = generateUtility({
-      $utility: utilities.get('shadow'),
-    });
+    const css = generateUtility(utilities.get('shadow'));
     expect(css).toEqual(`.shadow-sm {
       box-shadow: 3px !important;
     }
@@ -161,19 +154,14 @@ describe('bootstrap utilities mixins', () => {
     }`);
   });
   it('should generate rounded-top utility', () => {
-    const css = generateUtility({
-      $utility: utilities.get('rounded-top'),
-    });
+    const css = generateUtility(utilities.get('rounded-top'));
     expect(css).toEqual(`.rounded-top {
       border-top-left-radius: 4px !important;
 border-top-right-radius: 4px !important;
     }`);
   });
   it('should generate rounded-top utility with infix -print', () => {
-    const css = generateUtility({
-      $utility: utilities.get('rounded-top'),
-      $infix: '-print',
-    });
+    const css = generateUtility(utilities.get('rounded-top'), '-print');
     expect(css).toEqual(`.rounded-top-print {
       border-top-left-radius: 4px !important;
 border-top-right-radius: 4px !important;

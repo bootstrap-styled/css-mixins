@@ -32,41 +32,40 @@ export function zip(...list) {
 /**
  * Utility generator
  * Used to generate utilities & print utilities
- * @param {object} $utility - an utility object to process
- * @param {string} [$infix=""] - infix (eg: -media, -sm, -md, ...)
+ * @param {object} utility - an utility object to process
+ * @param {string} [infix=""] - infix (eg: -media, -sm, -md, ...)
  * @returns {string} css - the css for utilities
  */
-export function generateUtility({
-  $utility,
-  $infix = '',
-}) {
-  let { values } = $utility;
+export function generateUtility(
+  utility,
+  infix = '',
+) {
+  let { values, property: properties } = utility;
+
   if (values instanceof Array) {
     values = zip(values, values);
+  }
+
+  // Multiple properties are possible, for example with vertical or horizontal margins or paddings
+  if (typeof properties === 'string') {
+    properties = [properties];
   }
 
   const classList = [];
   // eslint-disable-next-line no-restricted-syntax
   for (const [key, value] of values) {
-    let properties = $utility.property;
-
-    // Multiple properties are possible, for example with vertical or horizontal margins or paddings
-    if (typeof properties === 'string') {
-      properties = [properties];
-    }
-
-    let propertyClass = $utility.hasOwnProperty('class') ? $utility.class : properties[0];
+    let propertyClass = utility.hasOwnProperty('class') ? utility.class : properties[0];
     propertyClass = !propertyClass ? '' : propertyClass;
 
-    const infix = propertyClass === '' && $infix[0] === '-' ? $infix.slice(1) : $infix;
+    const infixFinal = propertyClass === '' && infix[0] === '-' ? infix.slice(1) : infix;
 
     // Don't prefix if value key is null (eg. with shadow class)
     // eslint-disable-next-line no-nested-ternary
     const propertyClassModifier = key
-      ? (propertyClass === '' && infix === '' ? '' : '-') + key
+      ? (propertyClass === '' && infixFinal === '' ? '' : '-') + key
       : '';
 
-    classList.push(`.${propertyClass}${infix}${propertyClassModifier} {
+    classList.push(`.${propertyClass}${infixFinal}${propertyClassModifier} {
       ${properties.map((property) => `${property}: ${value} !important;`).join('\n')}
     }`);
   }
