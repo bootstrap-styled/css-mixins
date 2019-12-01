@@ -1,3 +1,11 @@
+## [2.1.1](https://github.com/bootstrap-styled/css-mixins/compare/v2.1.0...v2.1.1) (2019-12-01)
+
+
+### Bug Fixes
+
+* **dependencies:** upgrade all dependencies ([79ef08c](https://github.com/bootstrap-styled/css-mixins/commit/79ef08ce2256c0a9da96f2b8e5193a729c35658b))
+* **utilities:** using 2 arguments in generateUtility instead of options object ([9b4fd9c](https://github.com/bootstrap-styled/css-mixins/commit/9b4fd9cfd9bbb7bd5f364a3cab0c71aa5156c195))
+
 # [2.1.0](https://github.com/bootstrap-styled/css-mixins/compare/v2.0.8...v2.1.0) (2019-11-30)
 
 
