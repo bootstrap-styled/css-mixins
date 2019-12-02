@@ -59,12 +59,12 @@ export function generateUtility(
 
     const infixFinal = propertyClass === '' && infix[0] === '-' ? infix.slice(1) : infix;
 
+
     // Don't prefix if value key is null (eg. with shadow class)
     // eslint-disable-next-line no-nested-ternary
-    const propertyClassModifier = key
+    const propertyClassModifier = key !== null
       ? (propertyClass === '' && infixFinal === '' ? '' : '-') + key
       : '';
-
     classList.push(`.${propertyClass}${infixFinal}${propertyClassModifier} {
       ${properties.map((property) => `${property}: ${value} !important;`).join('\n')}
     }`);

@@ -104,6 +104,41 @@ describe('bootstrap utilities mixins', () => {
         [null, '4px'],
       ]),
     }],
+    ['border', {
+      property: 'border',
+      values: new Map([
+        [null, '1px solid #dee2e6'],
+        [0, 0],
+      ]),
+    }],
+    ['border-top', {
+      property: 'border-top',
+      values: new Map([
+        [null, '1px solid #dee2e6'],
+        [0, 0],
+      ]),
+    }],
+    ['border-right', {
+      property: 'border-right',
+      values: new Map([
+        [null, '1px solid #dee2e6'],
+        [0, 0],
+      ]),
+    }],
+    ['border-bottom', {
+      property: 'border-bottom',
+      values: new Map([
+        [null, '1px solid #dee2e6'],
+        [0, 0],
+      ]),
+    }],
+    ['border-left', {
+      property: 'border-left',
+      values: new Map([
+        [null, '1px solid #dee2e6'],
+        [0, 0],
+      ]),
+    }],
   ]);
   it('should generate align utility', () => {
     const css = generateUtility(utilities.get('align'));
@@ -165,6 +200,15 @@ border-top-right-radius: 4px !important;
     expect(css).toEqual(`.rounded-top-print {
       border-top-left-radius: 4px !important;
 border-top-right-radius: 4px !important;
+    }`);
+  });
+  it('should generate border utility with infix -print', () => {
+    const css = generateUtility(utilities.get('border'), '-print');
+    expect(css).toEqual(`.border-print {
+      border: 1px solid #dee2e6 !important;
+    }
+.border-print-0 {
+      border: 0 !important;
     }`);
   });
 });
