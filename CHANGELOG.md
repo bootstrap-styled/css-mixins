@@ -1,3 +1,10 @@
+## [2.1.2](https://github.com/bootstrap-styled/css-mixins/compare/v2.1.1...v2.1.2) (2019-12-02)
+
+
+### Bug Fixes
+
+* **generateUtility:** key was not generated when equal to 0 resulting in class such as .border-0 being incorrectly generated ([597e1ae](https://github.com/bootstrap-styled/css-mixins/commit/597e1ae2310cdae1d68798994dea77772b3f6c3f))
+
 ## [2.1.1](https://github.com/bootstrap-styled/css-mixins/compare/v2.1.0...v2.1.1) (2019-12-01)
 
 
