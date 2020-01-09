@@ -111,7 +111,7 @@
     "react-dom": "^16.12.0",
     "react-styleguidist": "^10.2.1",
     "rimraf": "^3.0.0",
-    "semantic-release": "^15.13.31",
+    "semantic-release": "^16.0.0",
     "stylelint": "^12.0.0",
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-config-styled-components": "^0.1.1",
