@@ -1,3 +1,11 @@
+## [2.1.3](https://github.com/bootstrap-styled/css-mixins/compare/v2.1.2...v2.1.3) (2020-05-04)
+
+
+### Bug Fixes
+
+* **dependencies:** upgrade all dependencies ([b503ee3](https://github.com/bootstrap-styled/css-mixins/commit/b503ee3a686e40bd2b857b4fdec18321ed70cc91))
+* **documentation:** fix documentation using wrong version fo react-styleguidist ([67efadc](https://github.com/bootstrap-styled/css-mixins/commit/67efadcf3b6036c2a5be50f19f6e0a3274ad38f8))
+
 ## [2.1.2](https://github.com/bootstrap-styled/css-mixins/compare/v2.1.1...v2.1.2) (2019-12-02)
 
 
